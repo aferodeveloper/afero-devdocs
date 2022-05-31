@@ -1,2 +1,2 @@
 afero-devdocs
-Repo for MakeTheDocs files
+Repo for MakeDocs files; published in ReadTheDocs
