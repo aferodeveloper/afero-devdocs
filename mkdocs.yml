@@ -7,7 +7,6 @@ markdown_extensions:
 theme:
     name: mkdocs
 nav:
-   - Welcome: 'index.md'
    - Start Here: 
       - Introducing Afero:
          - INTRODUCING AFERO: 'Overview.md'
