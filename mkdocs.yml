@@ -1,0 +1,95 @@
+site_name: Afero Developer Documentation
+markdown_extensions:
+    - toc:
+        permalink: "#"
+        baselevel: 1
+    - smarty
+theme:
+    name: mkdocs
+nav:
+   - Welcome: 'index.md'
+   - Start Here: 
+      - Introducing Afero:
+         - INTRODUCING AFERO: 'Overview.md'
+         - Afero IoT Platform Overview: 'SystemOverview.md'
+         - Core Development Concepts: 'CoreConcepts.md'
+      - Tutorials:
+         - GETTING STARTED: 'Tutorials.md'
+         - Tutorial 1. Linking Your Afero Development Board: 'Lesson1.md'
+         - Tutorial 2. Creating a Device Profile: 'Lesson2.md'
+         - Tutorial 3. Creating a Device Profile: 'Lesson3.md'
+      - Cookbook:
+         - COOKBOOK: 'Cookbook.md'
+         - MCU Coding Tips: 'MCUCodingTips.md' 
+         - Using the Afero Cloud to Keep Time on the MCU: 'SetMCUTime.md'
+         - Handling Reboot Requests: 'RebootRequests.md' 
+         - Robust af_lib_set_attribute*() Calls: 'RobustafLibSet.md' 
+         - Useful Debugging Methods: 'DebugMethods.md' 
+         - Handling MCU OTA Updates: 'MCU-OTA.md'
+   - User Guides:
+       - Profile Editor User Guide: 
+            - PROFILE EDITOR USER GUIDE: 'Projects.md' 
+            - Select the Project: 'SelectProject.md' 
+            - Define the Device Type: 'DeviceType.md' 
+            - Define the Device Attributes:
+               - Define the Device Attributes: 'AttrDef.md' 
+               - Great Attribute Modeling: 'AttrModel.md' 
+               - Device Attribute RAM Size: 'AttributeRAM.md' 
+            - Define the Mobile App UI: 'AppUIDef.md' 
+            - Define the Rules & Notifications: 'RulesDef.md'
+            - Publish Your Profile: 'Publish.md'
+       - OTA Manager User Guide: 'OTAMgr.md' 
+       - Inspector User Guide: 'Inspector.md' 
+       - Developer Hub Setup: 'StandaloneHub.md' 
+       - Console User Guide: 'Console.md' 
+   - SDKs:
+       - Mobile SDKs: 'MobileSDK.md' 
+       - Secure Linux Device SDK:
+            - SECURE LINUX DEVICE SDK: 'LinuxSDK-Index.md'
+            - Overview of the Linux Device SDK: 'LinuxSDK-Overview.md'
+            - Software Tasks: 'LinuxSDK-SWTasks.md'
+            - Attribute Daemon Client:
+                - ATTRIBUTE DAEMON CLIENT: 'LinuxSDK-AttrDaemon.md'
+                - Defining Your Own Attributes: 'LinuxSDK-DefineAttrs.md'
+            - Wi-Fi Station Daemon: 'LinuxSDK-WiFiStDaemon.md'
+            - WAN Daemon: 'LinuxSDK-WANDaemon.md'
+            - Connection Mgr Daemon: 'LinuxSDK-ConnMgrDaemon.md'
+            - Edge Device Daemon: 'LinuxSDK-EdgeDaemon.md'
+            - OTA Mgr Daemon: 'LinuxSDK-OTAManager.md'
+            - Linux Device Full Image OTA Update: 'LinuxSDK-FullImageUpdate.md'
+            - Potenco Guides:
+               - POTENCO GUIDES: 'LinuxSDK-PotencoSetupGds.md'
+               - Potenco Setup for BBGW Board: 'LinuxSDK-PotencoBBGW.md'
+               - Add a Potenco App for BBGW: 'LinuxSDK-PotencoBBGWApp.md'
+               - Potenco Setup for SAMA5D2: 'LinuxSDK-PotencoSAMA5D2.md'
+               - Add a Potenco App for SAMA5D2: 'LinuxSDK-PotencoSAMA5D2App.md'
+            - Secure Linux SDK FAQ : 'LinuxSDK-FAQ.md'
+   - Cloud APIs:
+      - CLOUD APIs: 'CloudAPIs.md'
+      - OAuth API Endpoint: 'API-OAuthEndpoints.md'
+      - User API Endpoint: 'API-UserEndpoints.md'
+      - Device API Endpoints: 'API-DeviceEndpoints.md'
+      - Over-the-Air (OTA) Update API:
+           - OVER-THE-AIR (OTA) UPDATE API: 'API-OTAEndpoints.md'
+           - OTA API Endpoints: 'API-OTAEndpoints-Funcs.md'
+   - Firmware Reference:
+      - FIRMWARE REFERENCE: 'FW-API.md'
+      - MCU to ASR Communication:
+            - MCU TO ASR COMMUNICATION: 'MCUtoHachi.md'
+            - afPro SPI Protocol - How It Works: 'afPro-SPI.md'
+            - afPro UART Protocol - How It Works: 'afPro-UART.md'
+            - afPro UART Protocol - Practical Guide: 'afPro-UART-S.md'
+      - Device Attribute Message Protocol: 'AttrMsgProtocol.md'
+      - Device Attribute Registry: 'AttrRegistry.md'
+      - Attribute Value Change Rules: 'AttrChangeRules.md'
+      - afLib API:
+           - AFLIB API: 'API-afLib.md'
+           - afLib Lifecycle: 'afLibLifecycle.md'
+           - The Main Loop and the Request Queue: 'afLibLoop.md'
+           - Getting/Setting Attributes: 'afLibAttributes.md'
+           - Callbacks and Events: 'afLibCallbacks.md'
+           - Checking Capabilities: 'afLibCapabilities.md'
+           - Console Logging: 'afLibLogging.md'
+           - afLib Result Codes: 'afLibErrors.md'
+      - Attribute Update Reasons & States: 'PeripheralUpdates.md'
+   - Glossary: 'Glossary.md'

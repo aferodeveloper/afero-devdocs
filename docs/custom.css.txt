@@ -1,0 +1,533 @@
+body {
+	background: #fff;
+}
+
+.body-content {
+	@media(max-width: $screen-xs-max) {
+		width: calc(100% - 155px);
+	}
+
+	.main-head {
+		font-family: 'Roboto Condensed';
+		text-transform: uppercase;
+	}
+
+	h1 {
+		margin-bottom: 20px;
+		font-family: 'Roboto Condensed';
+		font-size: 31px;
+		color: $orange-yellow;
+	}
+
+	h2 {
+		margin-top: 50px;
+		margin-bottom: 10px;
+		font-family: 'Roboto Condensed';
+		font-weight: 500;
+		font-size: 28px;
+		color: black;
+		border-bottom: 1px solid $orange-yellow;
+		padding-bottom: 3px;	
+		}
+
+	h3 {
+		margin-top: 38px;
+		margin-bottom: 8px;
+		color: $dark-gray;
+		font-family: 'Roboto Condensed';
+		font-size: 25px;
+	}
+
+	h4 {
+		margin-top: 18px;
+		margin-bottom: 8px;
+		color: $medium-dark-gray;
+		font-family: 'Roboto Condensed';
+		font-size: 22px;
+	}
+
+	p {
+		font-family: 'Roboto';
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 1.4;
+		margin-bottom: 8px;
+	}
+	
+	.less-space {
+		font-family: 'Roboto';
+		font-weight: 300;
+		font-size: 15px;
+		line-height: .8;
+		margin-bottom: 1px;
+	} 
+	
+	strong {
+		font-family: 'Roboto';
+		font-weight: 500;
+	}
+	
+	.underline {
+		font-family: 'Roboto';
+		text-decoration: underline;	
+		}
+
+	.large {
+		font-family: 'Roboto';
+		font-weight: 400;
+		font-size: 16px;
+	}
+
+	.vlarge {
+		font-family: 'Roboto';
+		font-weight: 400;
+		font-size: 20px;
+	}
+
+	.vvlarge {
+		font-family: 'Roboto';
+		font-weight: 300;
+		font-size: 30px;
+		line-height: .65;
+		vertical-align: top;
+		margin-top: 0px;
+	}
+	
+	.blue {
+		color: blue;
+		font-weight:500;
+	}
+	
+	.ltblue {
+		color: #0184BB;
+		font-weight: 400;
+	}
+	
+	.green {
+		color: green;
+		font-weight:500;
+	}
+	
+	.ltgreen {
+		color: green;
+		font-weight:400;
+	}
+	
+	.brown {
+		color: #986802;
+		font-weight:400;
+	}
+	
+	.red {
+		color: red;
+		font-weight:500;
+	}
+	
+	.yellow {
+		color: #ffcb0c;
+		font-weight:500;
+	}
+	
+	.grey {
+		color: grey;
+		font-weight:500;
+	}
+
+	.af-ul, .af-ol, .af-ul-2, .af-ul-3, .af-ol-lower-alpha {
+		margin: 7px 0 5px 8px;
+		font-size: 15px;
+		font-family: 'Roboto';
+		font-weight: 300;
+	}
+	
+	.af-ul-table {
+		margin-left: 15px;
+		font-size: 15px;
+		list-style-type: disc;
+		margin: 0px 0 5px 15px;
+		& > li {
+			margin-bottom: 2px;
+			}
+	}
+
+	.af-ul-2 {
+		margin-left: 20px;
+		font-size: 15px;
+		list-style-type: circle;
+	}
+
+	.af-ul-3 {
+		margin-left: 20px;
+		list-style-type: square;
+	}
+
+	.af-ul {
+		&.no-bullet {
+			list-style-type: none;
+			font-size: 15px;
+			line-height: 1.35;
+			margin-left: -8px;
+		}
+	}
+	
+	.af-ul-2 {
+		&.no-bullet {
+			list-style-type: none;
+			font-size: 15px;
+			line-height: 1.35;
+			margin-left: 20px;
+		}
+	}
+	.af-ul-2 {
+		&.no-bullet-tight {
+			list-style-type: none;
+			font-size: 15px;
+			line-height: .75;
+			margin-left: 20px;
+		}
+	}
+
+	.af-ul-2 {
+		&.tight {
+			font-size: 15px;
+			line-height: .75;
+			margin-left: 20px;
+		}
+	}
+
+
+	.af-ol {
+		list-style-type: none;
+
+		& > li {
+			position: relative;
+			margin-left: 10px;
+			counter-increment: ol-counter;
+
+			&:before {
+				position: absolute;
+				left: -25px;
+				font-size: 100%;
+				font-weight: 400;
+				content: counter(ol-counter);
+			}
+		}
+	}
+
+	.af-ol-lower-alpha {
+		margin-left: 20px;
+		list-style-type: none;
+
+		& > li {
+			position: relative;
+			margin-left: 10px;
+			margin-bottom: 3px;
+			counter-increment: lower-alpha-counter;
+
+			&:before {
+				position: absolute;
+				left: -20px;
+				font-size: 100%;
+				font-weight: 400;
+				content: counter(lower-alpha-counter, lower-alpha);
+			}
+		}
+	}
+
+	a {
+		color: $bright-blue;
+		text-decoration: underline;
+		font-size: 15px;
+		font-weight: 500;
+		overflow-wrap: break-word;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	em {
+		font-style: italic;
+	}
+
+	img {
+		margin-bottom: 20px;
+		max-width: 100%;
+	}
+	
+	figcaption {
+		font-family: 'Roboto Condensed';
+	}
+
+	pre {
+		margin-bottom: 20px;
+		padding: 10px;
+		background: $xlight-gray;
+		border: 1px solid $light-gray;
+		font-family: "Roboto Mono", "Lucida Console", Courier, Geneva, monospace;
+		font-size: 12px;
+		line-height: 1.3;
+		white-space: pre-wrap;
+
+	}
+
+	code {
+		font-family: "Roboto Mono", "Lucida Console", Courier, Geneva, monospace;
+		font-size: 14px;
+	}
+
+	sub {
+		vertical-align: sub;
+		font-size: smaller;
+	}
+
+	sup {
+		vertical-align: super;
+		font-size: smaller;
+	}
+
+	.content-footer {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-between;
+
+		.next {
+			margin-top: 25px;
+			color: $orange-yellow;
+			font-weight: bold;
+
+			.af-icon-arrow-right-circle {
+				font-weight: bold;
+			}
+
+			a {
+				color: $orange-yellow;
+				font-style: italic;
+
+				&:hover {
+					color: $dark-gray;
+					text-decoration: none;
+				}
+			}
+		}
+
+		.last-modified {
+			margin-top: 28px;
+			padding: 0 0 0 20px;
+			width: 250px;
+			color: $medium-gray;
+			font-size: 14px;
+			text-align: right;
+		}
+	}
+
+	.af-callout {
+		margin-bottom: 15px;
+		padding: 15px 20px;
+		background: $xlight-gray;
+
+		.callout-img {
+			float: left;
+			width: 35px;
+
+			[class^="af-icon-"] {
+				color: $orange-yellow;
+				font-size: 21px;
+			}
+		}
+
+		.callout-text {
+			float: left;
+			width: calc(100% - 35px);
+
+			p {
+				margin-bottom: 0;
+			}
+
+			.callout-br {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.af-table {
+		margin-bottom: 10px;
+		max-width: 100%;
+
+		table {
+			border: 1px solid $light-gray;
+
+			pre {
+				margin: 2px;
+			}
+		}
+
+		caption {
+			font-family: 'Roboto';
+			font-size: 14px;
+			text-align: left;
+			text-transform: uppercase;
+			font-weight: 500;
+			margin-bottom: 5px;
+		}
+		
+    
+            tr.hide_rightleft {
+            border-right-style:hidden;
+            border-left-style:hidden;
+            background:$xlight-gray;
+		}
+		.tdhead
+		{
+			padding: 8px 12px;
+			border-right: 1px solid $light-gray;
+			background: $medium-gray;
+			color: #fff;
+			font-family: 'Roboto';
+			font-size: 15px;
+			font-weight: 300;
+			text-align: left;
+			line-height: 1.3;
+			vertical-align: middle;
+			text-transform: uppercase;
+		}
+		
+		thead th {
+			padding: 8px 12px;
+			border-right: 1px solid $light-gray;
+			background: $medium-gray;
+			color: #fff;
+			font-family: 'Roboto';
+			font-size: 15px;
+			font-weight: 300;
+			text-align: left;
+			line-height: 1.3;
+			vertical-align: middle;
+			text-transform: uppercase;
+		}
+
+		tbody td {
+			padding: 5px;
+			border-right: 1px solid $light-gray;
+			font-family: Roboto;
+			font-size: 15px;
+			font-weight: 300;
+			line-height: 1.3;
+			vertical-align: top;
+		}
+	}
+
+	.af-table-borders {
+		@extend .af-table;
+		thead th, tbody td{
+			border: 1px solid $light-gray;
+			font-family: Roboto;
+			font-size: 15px;
+			font-weight: 300;
+			vertical-align: top;
+		}
+	}
+
+	.af-table-nostyle {
+		margin-bottom: 10px;
+		table {
+			border: 0;
+		}
+		thead th {
+			text-align: left;
+	}
+		tbody td {
+			border: 0;
+			padding: 5px;
+			line-height: 1.3;
+			font-family: 'Roboto';
+			font-size: 15px;
+			font-weight: 300;
+		}
+	}
+
+	.UIText {
+		color: $UIText;
+		font-family: 'Roboto';
+		font-weight: 500;
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+
+	.UITextLarge {
+		color: $UIText;
+		font-family: 'Roboto';
+		font-weight: 500;
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+
+	.internal {
+		color: red;
+		font-size: 15px;
+		font-family: 'Roboto Condensed';
+	}
+
+	.img-br {
+		display: block;
+		margin: 10px 0;
+	}
+
+	.img-inline {
+		margin: 0 5px -1px;
+	}
+
+	.nonbreak {
+		white-space: nowrap;
+	}
+
+	.highlight-orange {
+		color: $orange;
+	}
+
+	/* Specific pages */
+
+	.img-lightbulb {
+		float: left;
+		margin: -5px 10px 0 0;
+		width: 22px;
+	}
+
+	.td-icons {
+		width: 60px;
+		text-align: center;
+	}
+
+	.download-icons {
+		margin: 0 3px -5px 0;
+		width: 20px;
+	}
+	
+	.download-icons-apple {
+		margin: 0 3px -2px 0;
+		width: 20px;
+	}
+		.download-icons-android {
+		margin: 0 3px -3px 0;
+		width: 20px;
+	}
+	
+	hr {
+       display: block;
+       position: relative;
+       padding: 0;
+       margin: 30px auto 5px auto;
+       height: 0;
+       width: 100%;
+       max-height: 0;
+       font-size: 1px;
+       line-height: 0;
+       clear: both;
+       border: none;
+       border-top: 1px solid $orange-yellow;
+       border-bottom: 1px solid $orange-yellow;
+    }
+	
+
+}
