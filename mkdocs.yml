@@ -1,4 +1,4 @@
-site_name: Afero Developer Documentation
+site_name: Afero Developer Docs
 markdown_extensions:
     - toc:
         permalink: "#"
