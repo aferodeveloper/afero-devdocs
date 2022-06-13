@@ -2,8 +2,6 @@
 
 The questions below have been raised during practical use of the Secure Linux SDK and when developing your own app to run on Potenco. Answers to these FAQs are provided in the two sections below.
 
-&nbsp;
-
 ## FAQ on Using the Secure Linux SDK
 
 <hr>
@@ -67,7 +65,6 @@ A: That should be sufficient. Typically, we make sure we have the wpa_supplicant
 A: Afero daemons don’t use DBUS directly; however, BlueZ uses it for inter-process communication.
 
 
-&nbsp;
 ## FAQ on Creating a Potenco App
 
 <hr>

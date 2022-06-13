@@ -32,7 +32,6 @@ Before you begin, make sure you have read the background sections in [Over-the-A
 
 ## Before You Begin
 
-&nbsp;
 ### Problem Description
 
 Similar to any other software in development, firmware is usually set up in CD/CI fashion to streamline development and deployments; i.e., commits to source control trigger builds, which produce artifacts, which are then stored in an artifact repository for testing by QA. While Afero offers a web application to manage firmware images it requires manual interaction.
@@ -55,7 +54,6 @@ Afero account authentication flow follows the OAuth 2.0 standard as described in
 
 <mark>**&#x26A0; Caution!**   In production applications, **do not** use developer credentials obtained through the Afero Profile Editor!</mark>
 
-&nbsp;
 ### General Notes on Using the OTA API Endpoints
 
 - Optional fields can be omitted from request payloads and are omitted from response bodies returned by the service.
@@ -72,12 +70,10 @@ Afero account authentication flow follows the OAuth 2.0 standard as described in
 
     If arithmetic operations need to be performed on these values, they can be converted using a library or type that supports arbitrary-precision integers; i.e., the [BigInteger](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html) type in Java, the [big-integer](https://www.npmjs.com/package/big-integer) package, or BigInt type in JavaScript. These fields are annotated as `"<integer_string>"` in the model schemas.
 
-&nbsp;
 ## Firmware Type Endpoints
 
 This section lists the endpoints that manage firmware types. Make sure you have read [About Firmware Types](../API-OTAEndpoints#about-firmware-types).
 
-&nbsp;
 ### POST /v1/ota/partners/{partnerId}/types
 
 Creates a new partner firmware type.
@@ -120,7 +116,6 @@ Creates a new partner firmware type.
 }                                     
 ```
 
-&nbsp;
 ### GET /v1/ota/partners/{partnerId}/types
 
 Retrieves partner firmware types.
@@ -154,7 +149,6 @@ Retrieves partner firmware types.
 ```                                       
 
 
-&nbsp;
 ### GET /v1/ota/partners/{partnerId}/types/{type}
 
 Retrieves a firmware type, by type.
@@ -189,7 +183,6 @@ Retrieves a firmware type, by type.
 ]
 ```
 
-&nbsp;
 ### PUT /v1/ota/partners/{partnerId}/types/{type}
 
 Updates a partner firmware type.
@@ -214,7 +207,6 @@ Updates a partner firmware type.
  "description": "<string, optional>"
 }
 ```                                              
-&nbsp;
 ## Firmware Pool Image Endpoints
 
 This section lists the endpoints that manage images in the firmware pool. Make sure you have read [About Firmware Pools and Associations](../API-OTAEndpoints#aboutfwpool).
@@ -276,7 +268,6 @@ Creates a new firmware record in the firmware image pool.
 
 Associations can be created or deleted any time after a firmware image has been created in the pool.
 
-&nbsp;
 ### POST /v1/ota/partners/{partnerId}/binaries
 
 Uploads a firmware file to a temporary location.
@@ -310,7 +301,6 @@ Uploads a firmware file to a temporary location.
     - Upload via a web browser-style file upload using `multipart/form-data`.
 - The returned value is a file identifier of the uploaded file in a temporary location. It the SHA-256 hash of the file.
 
-&nbsp;
 ### POST /v1/ota/partners/{partnerId}/binaries/moveToRepository
 
 Moves a file from the temporary location to the permanent firmware image repository.
@@ -348,7 +338,6 @@ Moves a file from the temporary location to the permanent firmware image reposit
 - Use the response body from the file upload endpoint as the payload.
 - The response body will contain the URL of the firmware binary in the firmware repository. This URL should be used to update the respective firmware pool record; otherwise, the service will not be able to send OTAs.
 
-&nbsp;
 ### GET /v1/ota/partners/{partnerId}/pool
 
 Retrieves some firmware images from the pool.
@@ -399,7 +388,6 @@ Retrieves some firmware images from the pool.
 }
 ```                                                               
 
-&nbsp;
 ### GET /v1/ota/partners/{partnerId}/pool/types/{type}
 
 Retrieves some firmware images of a specific type from the pool.
@@ -450,7 +438,6 @@ Retrieves some firmware images of a specific type from the pool.
     "sort": "<string>"}
 ```                                                               
 
-&nbsp;
 ### GET /v1/ota/partners/{partnerId}/pool/types/{type}/names/{name}/versions/{version}/exists
 
 Checks if a firmware image with given type, name, and version already exists in the pool.
@@ -485,7 +472,6 @@ Checks if a firmware image with given type, name, and version already exists in 
 
 - Retrieves all device type associations of a given firmware image.
 
-&nbsp;
 ### GET /v1/ota/partners/{partnerId}/pool/types/{type}/versionNumbers/{versionNumber}/associations
 
 Retrieves all device type associations of a given firmware image.
@@ -522,7 +508,6 @@ Retrieves all device type associations of a given firmware image.
 ]
 ```                                                              
 
-&nbsp;
 ### PUT /v1/ota/partners/{partnerId}/pool/types/{type}/versionNumbers/{versionNumber}
 
 Updates a firmware image in the pool.
@@ -553,7 +538,6 @@ Updates a firmware image in the pool.
   "tags": ["<string, optional>", "..."]
 }
 ```                                                               
-&nbsp;
 ## Firmware Image Endpoints
 
 This section lists the endpoints that manage firmware images.
@@ -614,7 +598,6 @@ Creates a new firmware image association with a device type.
 - This endpoint creates an association between a generic firmware image record in the firmware pool with a specific device type. Thus, the `versionNumber` field is a required field in this request payload.
 - It is recommended that you use the same object as request payload as is returned from one of the GET endpoints in the Firmware Pool namespace. Modifying the payload from the original pool record will cause errors and prevent OTAs from succeeding!
 
-&nbsp;
 ### GET /v1/ota/partners/{partnerId}/deviceTypes/{deviceTypeId}/firmwareImages
 
 Retrieves some firmware images.
@@ -674,7 +657,6 @@ Retrieves some firmware images.
 - This endpoint retrieves a paged result set of associated firmware image records for a specific device type.
 - The firmware image records of type 4 (DEVICE_DESCRIPTION) will have two additional fields that identify the related entities that make up a device Profile in the Afero Platform.
 
-&nbsp;
 ### GET /v1/ota/partners/{partnerId}/deviceTypes/{deviceTypeId}/firmwareImages/types/{type}
 
 Retrieves some firmware images by type.
@@ -731,7 +713,6 @@ Retrieves some firmware images by type.
 
 - This endpoint retrieves the associated firmware image records for a specific device type and firmware type.
 
-&nbsp;
 ### GET /v1/ota/partners/{partnerId}/deviceTypes/{deviceTypeId}/firmwareImages/types/{type}/versionNumbers/{versionNumber}
 
 Retrieves a firmware image by type and version number.
@@ -778,7 +759,6 @@ Retrieves a firmware image by type and version number.
 
 - This endpoint retrieves one associated firmware image records for a specific device type and firmware type and version number.
 
-&nbsp;
 ### PUT /v1/ota/partners/{partnerId}/deviceTypes/{deviceTypeId}/firmwareImages/{firmwareImageId}/push
 
 Pushes a firmware image to a device.
@@ -810,7 +790,6 @@ Pushes a firmware image to a device.
 
 - The payload contains the device ID of the target device.
 
-&nbsp;
 ### DELETE /v1/ota/partners/{partnerId}/deviceTypes/{deviceTypeId}/firmwareImages/types/{type}/versionNumbers/{versionNumber}
 
 Pushes a firmware image to a device.
@@ -836,10 +815,8 @@ Pushes a firmware image to a device.
 - Dissociates a firmware image from a device type.
 
 
-&nbsp;
 ## Firmware Tag Endpoints
 
-&nbsp;
 ### GET /v1/ota/partners/{partnerId}/tags
 
 Retrieves all firmware tags.

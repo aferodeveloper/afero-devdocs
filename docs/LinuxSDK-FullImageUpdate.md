@@ -79,8 +79,7 @@ Follow the instructions outlined below to perform a full OTA image update. (The 
 
 **Step 3**&nbsp;&nbsp;[Install the OTA image](../LinuxSDK-FullImageUpdate#step-3-install-image-on-device-using-otamgr-daemon) on the device using the otamgr daemon.
 
-&nbsp;
-### Step 1. Create the OTA Image
+### ### Step 1. Create the OTA Image
 
 This section focuses on how to create your OTA image, including integrating the OTA image creation with your build process.
 
@@ -204,7 +203,6 @@ $ cp ../deploy/images/sama5d2-xplained-emmc/core-image-minimal-sama5d2-xplained-
 $ python partner-ota-hub-uploader.py -n <your build number> --uploadOTAImage
 You are done!
 ```
-&nbsp;
 ### Step 2. Deploy the OTA Image to a Device
 
 Deploying an OTA image can be independent of the creating the image. In this section, it is assumed that you have already uploaded your OTA image to the Afero OTA service and now you want to deploy this uploaded image to an device. Currently, we only support deploying image one at a time using this tool.
@@ -294,7 +292,6 @@ If sysupgrade is not available, you will see:
 
 sh: /sbin/sysupgrade: No such file or directory
 ```
-&nbsp;
 ### Step 3. Install Image on Device Using otamgr Daemon
 
 Once the OTA image has been deployed to the device and hubby has informed the otamgr daemon (via an Afero attribute) the location of the validated firmware in the filesystem, the otamgr daemon can install the image on the device. Please refer to [OTA Manager (otamgr)](../LinuxSDK-Overview#ota-manager-otamgr) and [OTA Manager Daemon Implementation](../LinuxSDK-OTAManager) for details.

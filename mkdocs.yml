@@ -6,6 +6,9 @@ markdown_extensions:
     - smarty
 theme:
     name: mkdocs
+extra_css:
+   - css/extra.css
+
 nav:
    - Start Here: 
       - Introducing Afero:
