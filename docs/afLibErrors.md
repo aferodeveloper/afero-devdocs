@@ -19,4 +19,4 @@ The following result codes are defined in `af_lib.h`:
 | AF_ERROR_FORBIDDEN         | What you tried to do is not permitted.                       |
 | AF_ERROR_ASR_REBOOTING     | We can’t do what you requested at this moment because ASR is rebooting. All GET/SET calls will return this error until the AF_SYSTEM_ASR_STATE_ATTR_ID attribute update is received from ASR. |
 
- **&#8674;** *Next:* [Attribute Update Reasons and States](../PeripheralUpdates)
+ *Next:*&nbsp;&nbsp;[**&#8674;** Attribute Update Reasons and States](../PeripheralUpdates)

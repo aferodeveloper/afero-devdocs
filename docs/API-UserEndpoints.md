@@ -85,4 +85,4 @@ The `users/me` endpoint provides a variety of user-specific information useful f
 }
 ```
 
- **&#8674;** *Next:* [Device API Endpoints](../API-DeviceEndpoints)
+ *Next:*&nbsp;&nbsp;[**&#8674;** Device API Endpoints](../API-DeviceEndpoints)

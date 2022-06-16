@@ -944,4 +944,4 @@ The attributes that this code handles are:
 
 These attributes are described in more detail in the [Attribute Daemon Client Implementation](../LinuxSDK-AttrDaemon). With few exceptions (WAN_APN, WAN_ITF_STATE, WAN_DL_BIT_RATE, and WAN_UL_BIT_RATE) the attribute values for these attributes are derived from the WAN status structure in the RIL. See the [Concurrency and Debug Data](../LinuxSDK-WANDaemon#concurrency-and-debug-data) section for more details.
 
-  **&#8674;** *Next:* [Connection Manager Daemon Implementation](../LinuxSDK-ConnMgrDaemon)
+  *Next:*&nbsp;&nbsp;[**&#8674;** Connection Manager Daemon Implementation](../LinuxSDK-ConnMgrDaemon)

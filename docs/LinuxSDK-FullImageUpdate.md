@@ -506,4 +506,4 @@ Request accepted for processing
 
 
 
- **&#8674;** *Next:* [Afero Potenco Setup Guides](../LinuxSDK-PotencoSetupGds)
+ *Next:*&nbsp;&nbsp;[**&#8674;** Afero Potenco Setup Guides](../LinuxSDK-PotencoSetupGds)

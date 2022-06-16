@@ -24,4 +24,4 @@ Sign in to the Afero Profile Editor and open the VIEW > ACCOUNT INFO window (exa
 2. Afero responds with an access key, which will expire after approximately four hours.
 3. Include the access key in all HTTP requests to the API endpoints as an Authorization header, as shown in examples in the next section.
 
- **&#8674;** *Next:* [OAuth API Endpoint](../API-OAuthEndpoints)
+ *Next:*&nbsp;&nbsp;[**&#8674;** OAuth API Endpoint](../API-OAuthEndpoints)

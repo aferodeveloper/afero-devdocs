@@ -78,4 +78,4 @@ void loop() {
 }
 ```
 
- **&#8674;** *Next:* [Console Logging](../afLibLogging)
+ *Next:*&nbsp;&nbsp;[**&#8674;** Console Logging](../afLibLogging)

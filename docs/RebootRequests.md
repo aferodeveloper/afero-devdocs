@@ -98,4 +98,4 @@ void loop() {
 
 Our `attrEventCallback()` checks the supplied attribute ID, looking for AF_SYSTEM_ASR_STATE. If we have received an update message for that attribute ID, we check the attribute value. If the value is 3 (AF_MODULE_STATE_UPDATE_READY), then we trigger a reboot by setting a global, `rebootPending`. In our main `loop()` function, any time `rebootPending` is true, we’ll call `af_lib_set_attribute_32()` for the AF_SYSTEM_COMMAND attribute, with value 1 (which is the value that signals a reboot). Our code resets `rebootPending` to false if it succeeds; if the `set_attribute()` call fails (for instance if the request queue is full), we’ll try again next time around the `loop()`.
 
- **&#8674;** *Next:* [Robust af_lib_set_attribute*() Calls](../RobustafLibSet)
+ *Next:*&nbsp;&nbsp;[**&#8674;** Robust af_lib_set_attribute*() Calls](../RobustafLibSet)

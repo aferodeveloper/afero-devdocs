@@ -185,4 +185,4 @@ void af_lib_destroy(af_lib_t* af_lib)
 
 None.
 
- **&#8674;** *Next:* [The Main Loop and the Request Queue](../afLibLoop)
+ *Next:*&nbsp;&nbsp;[**&#8674;** The Main Loop and the Request Queue](../afLibLoop)

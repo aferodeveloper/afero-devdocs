@@ -55,14 +55,14 @@ GG=0x0D & TTTT=0xF5FD; if TTTT!=0xF5FD, then discard
 
 ASR notifies MCU of Afero System Attribute changes.
 
-This example is designed to demonstrate basic principles while keeping things simple. The suggestion “if TTTT!=0xF5FD, then discard” is based on that idea of simplicity, but deserves some explanation, below.
+<mark>This example is designed to demonstrate basic principles while keeping things simple. The suggestion “if TTTT!=0xF5FD, then discard” is based on that idea of simplicity, but deserves some explanation, below.
 
-The attribute ID 0xF5FD translates to 65013 decimal… which is ASR_SYSTEM_STATE. Even a simple application must watch for messages with this attribute ID, for a couple reasons:
+<mark>The attribute ID 0xF5FD translates to 65013 decimal… which is ASR_SYSTEM_STATE. Even a simple application must watch for messages with this attribute ID, for a couple reasons:
 
-- After a reboot, an MCU must wait for an ASR_SYSTEM_STATE message with value AF_MODULE_STATE_INITIALIZED before it is allowed to begin sending afLib commands.
-- At any time, if the device receives an Over-The-Air application update, MCU will receive an ASR_SYSTEM_STATE with value AF_MODULE_STATE_UPDATE_READY when the update has been completely received. At that point, the MCU should trigger a reboot of ASR, to install the new software.
+- <mark>After a reboot, an MCU must wait for an ASR_SYSTEM_STATE message with value AF_MODULE_STATE_INITIALIZED before it is allowed to begin sending afLib commands.
+- <mark>At any time, if the device receives an Over-The-Air application update, MCU will receive an ASR_SYSTEM_STATE with value AF_MODULE_STATE_UPDATE_READY when the update has been completely received. At that point, the MCU should trigger a reboot of ASR, to install the new software.
 
-So, in the case of a very simple application (like this example), your code could choose to ignore ASR-to-MCU Notifications EXCEPT those where attribute ID is 65013. Those notifications must be handled, even by simple applications.
+<mark>So, in the case of a very simple application (like this example), your code could choose to ignore ASR-to-MCU Notifications EXCEPT those where attribute ID is 65013. Those notifications must be handled, even by simple applications.</mark>
 
 
 
@@ -72,11 +72,11 @@ So, in the case of a very simple application (like this example), your code coul
 | :--- | :------------------- | :------------- | :----------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | 1    | 0x32                 |                | ASR Ready                |                                                              | ASR sends ASR Ready to MCU when ASR has bytes to send. 0x32 sent every one second until MCU responds. |
 | 2    |                      | 0x300000000030 | Sync Request             |                                                              |                                                              |
-| 3    | 0x300000YYYYZZ       |                | Sync Response            | •YYYY (# of bytes of data ASR will send) = LLLL + 2 (for value of LLLL, see row 7 below) <br>•ZZ = Checksum |                                                              |
+| 3    | 0x300000YYYYZZ       |                | Sync Response            | <ul><li>YYYY (# of bytes of data ASR will send) = LLLL + 2 (for value of LLLL, see row 7 below)</li><li>ZZ = Checksum</li></ul> |                                                              |
 | 4    | 0x32                 |                | Sync Response Terminator |                                                              | 0x32 sent every one second until MCU responds.               |
-| 5    |                      | 0x310000YYYYZZ | Sync Acknowledgement     | •YYYY= YYYY from Sync Response (above) <br>•ZZ = Checksum        |                                                              |
+| 5    |                      | 0x310000YYYYZZ | Sync Acknowledgement     | <ul><li>YYYY= YYYY from Sync Response (above)</li><li>ZZ = Checksum</li></ul>        |                                                              |
 | 6    | 0x32                 |                | Sync Complete            |                                                              |                                                              |
-| 7    | LLLLGGRRTTTTSSUUNNNN |                | Update Attribute Header  | •LLLL = NNNN + 8 <br>•GG = 0x0D <br>•RR = Ignore <br>•TTTT = Attribute ID (if !=0xF5FD, then discard) <br>•SS = 0x00 <br>•UU = Ignore <br>•NNNN = Length of Attribute Data | See [Attribute Data](../afPro-UART-S/#attribute-data) below for details of "TTTT" and "NNNN". |
+| 7    | LLLLGGRRTTTTSSUUNNNN |                | Update Attribute Header  | <ul><li>LLLL = NNNN + 8</li><li>GG = 0x0D</li><li>RR = Ignore</li><li>TTTT = Attribute ID (if !=0xF5FD, then discard)</li><li>SS = 0x00</li><li>UU = Ignore</li><li>NNNN = Length of Attribute Data</li></ul> | See [Attribute Data](../afPro-UART-S/#attribute-data) below for details of "TTTT" and "NNNN". |
 | 8    | V…                   |                | Set Attribute Data       | NNNN Bytes of Attribute Data                                 | See [Attribute Data](../afPro-UART-S/#attribute-data) below for details of "V…". |
 | 9    | 0x32                 |                | Procedure Complete       |                                                              | 0x32 sent every five seconds until MCU sends next message.   |
 
@@ -145,4 +145,4 @@ Use the table format below to plan your attribute data and how it relates to afP
 | 0xF5FD              |           | 0x0100        | •0x00, 0x01, 0x02, 0x05=Ignore <br>•0x03=Update Ready to Apply <br>•0x04=Initialized |                        | •When ASR sets to 0x03, MCU toggles Reset line on ASR (reboot ASR). <br>•When ASR sets to 0x04, MCU sends all current attribute values to ASR using MCU to ASR Attribute Procedure (this happens after reboot). | N/A                                                          |                                                              |
 | 0xF6FD-FFFF         |           | IGNORE        |                                                              |                        |                                                              |                                                              |                                                              |
 
- **&#8674;** *Next:* [Device Attribute Message Protocol](../AttrMsgProtocol)
+ *Next:*&nbsp;&nbsp;[**&#8674;** Device Attribute Message Protocol](../AttrMsgProtocol)

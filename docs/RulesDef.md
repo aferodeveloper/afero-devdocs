@@ -57,4 +57,4 @@ You can always modify your rules & notifications definition:
 </li></ul>
 
 
- **&#8674;** *Next:* [Publish Your Profile](../Publish)
+ *Next:*&nbsp;&nbsp;[**&#8674;** Publish Your Profile](../Publish)

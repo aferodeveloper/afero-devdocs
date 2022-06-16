@@ -513,4 +513,4 @@ void loop() {
 }
 ```
 
- **&#8674;** *Next:* [Checking Capabilities](../afLibCapabilities)
+ *Next:*&nbsp;&nbsp;[**&#8674;** Checking Capabilities](../afLibCapabilities)
