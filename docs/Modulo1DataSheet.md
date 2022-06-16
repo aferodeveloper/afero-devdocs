@@ -221,4 +221,4 @@ The UART interface offers fast, full-duplex, asynchronous serial communication s
 | Operating temperature range | -20  | 75   | °C   |
 | VCC                         | 2.1  | 3.6  | V    |
 
- *Next:*&nbsp;&nbsp;[**&#8674;** Modulo-1B-TY Data Sheet](../Modulo1BTYDataSheet)
+ **&#8674;** *Next:*&nbsp;&nbsp;[Modulo-1B-TY Data Sheet](../Modulo1BTYDataSheet)

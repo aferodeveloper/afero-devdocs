@@ -145,4 +145,4 @@ Use the table format below to plan your attribute data and how it relates to afP
 | 0xF5FD              |           | 0x0100        | •0x00, 0x01, 0x02, 0x05=Ignore <br>•0x03=Update Ready to Apply <br>•0x04=Initialized |                        | •When ASR sets to 0x03, MCU toggles Reset line on ASR (reboot ASR). <br>•When ASR sets to 0x04, MCU sends all current attribute values to ASR using MCU to ASR Attribute Procedure (this happens after reboot). | N/A                                                          |                                                              |
 | 0xF6FD-FFFF         |           | IGNORE        |                                                              |                        |                                                              |                                                              |                                                              |
 
- *Next:*&nbsp;&nbsp;[**&#8674;** Device Attribute Message Protocol](../AttrMsgProtocol)
+ **&#8674;** *Next:*&nbsp;&nbsp;[Device Attribute Message Protocol](../AttrMsgProtocol)

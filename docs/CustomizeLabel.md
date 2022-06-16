@@ -65,4 +65,4 @@ x_coord: (x coordinate of the left edge of the association ID in DOTS)
 y_coord: (y coordinate of the bottom edge of the association ID in DOTS)
 ```
 
- *Next:*&nbsp;&nbsp;[**&#8674;** Add Environment Variable Paths on a PC](../AddPath)
+ **&#8674;** *Next:*&nbsp;&nbsp;[Add Environment Variable Paths on a PC](../AddPath)

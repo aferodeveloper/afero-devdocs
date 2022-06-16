@@ -71,4 +71,4 @@ static void on_notify(uint32_t attributeId, uint8_t *value, int length, void *co
 
 As the code snippet above shows, otamgr passively listens to the system notifications. When a supported notification is received, otamgr acts on it. The AF_ATTR_HUBBY_OTA_UPGRADE_PATH notification from hubby triggers the actual system update process, provided the “sysupgrade” functionality has been implemented by the third-party developer.
 
- *Next:*&nbsp;&nbsp;[**&#8674;** Linux Device Full Image OTA Update](../LinuxSDK-FullImageUpdate)
+ **&#8674;** *Next:*&nbsp;&nbsp;[Linux Device Full Image OTA Update](../LinuxSDK-FullImageUpdate)

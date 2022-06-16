@@ -53,4 +53,4 @@ The Afero Cloud provides secure, managed services:
 
 Our Secure RESTful API is SSL encrypted and protected using the two-legged authentication model of the OAuth 2.0 specification. The Cloud API lets you securely authenticate your customers using custom applications so they can control the Afero powered devices associated with their accounts.
 
- *Next:*&nbsp;&nbsp;[**&#8674;** Core Development Concepts](../CoreConcepts)
+ **&#8674;** *Next:*&nbsp;&nbsp;[Core Development Concepts](../CoreConcepts)

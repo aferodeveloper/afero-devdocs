@@ -838,4 +838,4 @@ As explained above, the binary “`app`” is placed into the root filesystem as
 
 Now you have a full distribution image as per the [Potenco Setup Guide for BBGW](../LinuxSDK-PotencoBBGW). You can use those instructions to burn the image into an SD card and then install the image onto your BeagleBone Green Wireless board.
 
- *Next:*&nbsp;&nbsp;[**&#8674;** Afero Potenco Setup Guide for SAMA5D2 Board](../LinuxSDK-PotencoSAMA5D2)
+ **&#8674;** *Next:*&nbsp;&nbsp;[Afero Potenco Setup Guide for SAMA5D2 Board](../LinuxSDK-PotencoSAMA5D2)

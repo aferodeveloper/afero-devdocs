@@ -90,32 +90,33 @@ hr {
 }
 
 p {
-	font-family: 'Roboto';
-	font-weight: 400;
+	font-family: "Roboto";
+	font-weight: 200;
 	font-size: 14px;
 	line-height: 1.4;
 	margin-bottom: 8px;
 }
 
 td {
-	font-family: 'Roboto';
-	font-weight: 400;
-	font-size: 13px;
+	font-family: "Roboto";
+	font-weight: 200;
+	font-size: 14px;
 	line-height: 1.4;
 	margin-bottom: 8px;
 }
 
 ul, ol, li {
-		margin: 3px 0 3px -8px;
-		font-size: 14px;
-     	line-height: 1.4;
-		font-family: 'Roboto';
-		font-weight: 400;
-	}
+	margin: 3px 0 3px 0px;
+	font-family: "Roboto";
+	font-weight: 200;
+	font-size: 14px;
+	line-height: 1.4;
+	margin-bottom: 8px;
+}
 	
 strong {
-	font-family: 'Roboto';
-	font-weight: 900;
+	font-family: "Roboto";
+	font-weight: 800;
 	font-size: 14px;
 }
 
@@ -125,7 +126,7 @@ mark,.mark
 }
 	.UIText {
 		color: #077292;
-		font-family: 'Roboto';
+	font-family: "Roboto";
 		font-weight: 400;
 		font-size: 14px;
 		text-transform: uppercase;

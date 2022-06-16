@@ -189,4 +189,4 @@ At this point, ASR has queued its request and we are back in sync. After this me
 
 In general, the protocol is designed so that whenever there is an unexpected result, the MCU can resend the Sync Request to get things back in sync. You may need to send the Sync Request a couple of times, but ASR will eventually respond with the correct result.
 
-*Next:*&nbsp;&nbsp;[**&#8674;** afPro UART Protocol](../afPro-UART)
+**&#8674;** *Next:*&nbsp;&nbsp;[afPro UART Protocol](../afPro-UART)

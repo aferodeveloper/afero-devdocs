@@ -69,4 +69,4 @@ The device Profile leaves the Profile Editor and enters the Afero Cloud. Profile
 - For ASR, the Device Attributes are installed into it via the Afero Secure Hub. ASR can then securely report device state to the Afero Cloud and be controlled by the mobile app via the Afero Cloud and hub.
 - For the device MCU, a header file (“device-description.h”) is generated, which must be included in any MCU code you write that uses [afLib](../API-afLib).
 
- *Next:*&nbsp;&nbsp;[**&#8674;** Getting Started](../Tutorials)
+ **&#8674;** *Next:*&nbsp;&nbsp;[Getting Started](../Tutorials)

@@ -236,4 +236,4 @@ Here are some helpful tips when editing MCU attribute definitions:
 - If you’ve added several attributes, scrolling can become annoying; clicking an attribute name at the top-left of the attribute editor will collapse/expand the editor.
 - **Important!** Once you’ve enabled MCU attributes and updated the Profile on your ASR, it will expect to have an MCU available on the serial bus, and will attempt to communicate with that device. If there is no device present, communication will fail and recovery may require power-cycling. So it’s important to have your MCU connected to ASR **before** you publish a Profile that includes MCU attribute definitions.
 
- *Next:*&nbsp;&nbsp;[**&#8674;** Define the Mobile App UI](../AppUIDef)
+ **&#8674;** *Next:*&nbsp;&nbsp;[Define the Mobile App UI](../AppUIDef)

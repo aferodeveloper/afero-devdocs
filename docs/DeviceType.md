@@ -35,4 +35,4 @@ After selecting a project on the Startup window, the Profile Editor opens to the
 <mark>**&check; Note:**  Every time you save, your data is validated. If validation fails for any reason, an error message will appear then move to the left. Click the error description in the message to highlight the field that needs correcting.</mark>
 
 
- *Next:*&nbsp;&nbsp;[**&#8674;** Define the Device Attributes](../AttrDef)
+ **&#8674;** *Next:*&nbsp;&nbsp;[Define the Device Attributes](../AttrDef)

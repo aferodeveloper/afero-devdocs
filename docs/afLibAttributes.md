@@ -269,4 +269,4 @@ void loop() {
 }
 ```
 
- *Next:*&nbsp;&nbsp;[**&#8674;** Callbacks and Events](../afLibCallbacks)
+ **&#8674;** *Next:*&nbsp;&nbsp;[Callbacks and Events](../afLibCallbacks)

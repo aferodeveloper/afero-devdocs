@@ -181,4 +181,4 @@ Developers can add and support their own attributes by first adding the attribut
 
 
 
- *Next:*&nbsp;&nbsp;[**&#8674;** WAN Daemon Implementation](../LinuxSDK-WANDaemon)
+ **&#8674;** *Next:*&nbsp;&nbsp;[WAN Daemon Implementation](../LinuxSDK-WANDaemon)
