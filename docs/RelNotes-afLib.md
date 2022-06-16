@@ -52,7 +52,7 @@ Release date: August 9, 2018
 
 - More granular event-handling in callback to simplify usage.
 
-- MCU OTA support. You can upload and deploy new firmware for your connected MCU via the Afero OTA Manager. Read more in [Handling MCU OTA Updates](../MCU_OTA).
+- MCU OTA support. You can upload and deploy new firmware for your connected MCU via the Afero OTA Manager. Read more in [Handling MCU OTA Updates](../MCU-OTA).
 
 - New system attributes:
 

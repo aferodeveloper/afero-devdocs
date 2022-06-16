@@ -35,7 +35,7 @@ Release date: July 24, 2018
 
 Version numbers: 27144 for Modulo-2, 27144 for Abelo-2A
 
-- API added to support MCU over-the-air (OTA) firmware updates. Read more in [Handling MCU OTA Updates](../MCU_OTA).
+- API added to support MCU over-the-air (OTA) firmware updates. Read more in [Handling MCU OTA Updates](../MCU-OTA).
 - New version of [afLib](http://github.com/aferodeveloper/afLib) is available, called afLib3. Read more in [afLib Release Notes](../RelNotes-afLib) and [afLib3 API](../API-afLib).
 - Better handling of MCU attribute default values.
 - Changes to Update All.

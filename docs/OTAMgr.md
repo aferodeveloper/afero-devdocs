@@ -122,5 +122,5 @@ Once you have found the firmware image you want to deploy, you’re ready to pus
 
 ## See Also
 
-- Read [Handling MCU OTA Updates](../MCU_OTA) for details on what you’ll need to include in your application code to accept an MCU OTA update.
+- Read [Handling MCU OTA Updates](../MCU-OTA) for details on what you’ll need to include in your application code to accept an MCU OTA update.
 - Read [Configure the MCU](../AttrDef#ConfigMCU) for details on using the Profile Editor to prepare your MCU for accepting specific Image Types.

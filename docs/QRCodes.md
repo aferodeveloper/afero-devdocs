@@ -134,7 +134,7 @@ Assn ID
 
 This section contains instructions for generating the QR codes that will be printed on the labels, for:
 
-- [Products using the latest QR code version](../products-using-the-latest-qr-code-version), and
+- [Products using the latest QR code version](../QRCodes#products-using-the-latest-qr-code-version), and
 - [Products Using the legacy QR code version](../QRCodes#products-using-the-legacy-qr-code-version)
 
 Unless explicitly instructed otherwise, assume you will be generating the latest QR code version.
@@ -227,4 +227,4 @@ The plain-text Association ID is used for manual-entry of the Association ID by 
 
 
 
- **&#8674;** *Next:* [Hardware Design Files](../Datasheets)
+ **&#8674;** *Next:* [Hardware Design Files](../DataSheets)

@@ -207,7 +207,7 @@ First you will configure your MCU, then add attributes:
 
 If you don’t see any Image Types, or need an Image Type that isn’t shown, go to the [Afero OTA Manager](https://otamanager.afero.io/) and create a new Image Type. Once you’ve saved this new Image Type, return to the Profile Editor to select the Image Type and complete your Profile.
 
-For more information on preparing your MCU application code to receive OTA updates, please read [Handling MCU OTA Updates](../MCU_OTA).
+For more information on preparing your MCU application code to receive OTA updates, please read [Handling MCU OTA Updates](../MCU-OTA).
 
 **5**&nbsp;&nbsp;Now you’re ready to add an MCU attribute. Click the + MCU ATTRIBUTE button to open the MCU attribute definition editor:<br>
 <img src="../img/Define_MCU_Attr.png" width="500" style="vertical-align:middle;margin:0px 0px;border:none">

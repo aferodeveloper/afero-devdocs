@@ -128,7 +128,8 @@ $ bash ./addrepo.sh
 
    This will fetch the afero-ble and afero-hub packages as well as any other prerequisite packages you may need.
 
-**2**&nbsp;&nbsp;During installation, you will be prompted to accept the [Afero Developer Terms of Service](https://www.afero.io/legal#developer), which is the license that covers your use of the Afero ble and hub packages.
+**2**&nbsp;&nbsp;During installation, you will be prompted to accept the [Afero Developer Terms of Service](https://www.afero.io/html/home/privacy.html) (scroll down on this page to read Developer Terms) before the packages will install.
+, which is the license that covers your use of the Afero ble and hub packages.
 
 **3**&nbsp;&nbsp;Skip down to [Add the Virtual-Hub Device to Your Account](../StandaloneHub#add-the-virtual-hub-device-to-your-account) to continue.
 
@@ -149,7 +150,8 @@ $ sudo reboot
 $ sudo dpkg -i afero-ble*.deb
 ```
 
-**3**&nbsp;&nbsp;You will be prompted to accept the [Afero Developer Terms of Service](https://www.afero.io/legal#developer), which is the license that covers your use of the Afero ble and hub packages.
+**3**&nbsp;&nbsp;You will be prompted to accept the [Afero Developer Terms of Service](https://www.afero.io/html/home/privacy.html) (scroll down on this page to read Developer Terms) before the packages will install.
+, which is the license that covers your use of the Afero ble and hub packages.
 
 ```
 $ sudo dpkg -i afero-hub*.deb
@@ -161,7 +163,7 @@ $ sudo dpkg -i afero-hub*.deb
 
 The installation of the Hub Software package will create a virtual-hub device that you can connect to your Afero account by scanning a QR code, just as with other devices such as Modulo. Follow the steps below:
 
-**1**&nbsp;&nbsp;**Accept Terms of Service** - During installation, you must accept the [Afero Developer Terms of Service](https://www.afero.io/legal#developer) before the packages will install.
+**1**&nbsp;&nbsp;**Accept Terms of Service** - During installation, you must accept the [Afero Developer Terms of Service](https://www.afero.io/html/home/privacy.html) (scroll down on this page to read Developer Terms) before the packages will install.
 
 **2**&nbsp;&nbsp;Scan QR code with Afero mobile app - The package installation will present a QR code on your screen. Launch the Afero mobile app on your smartphone, and tap ADD DEVICE to add a device to your account, then scan the QR code.
 

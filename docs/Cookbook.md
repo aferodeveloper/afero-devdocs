@@ -7,6 +7,6 @@ This section contains tips and “recipes” that you can use when integrating y
 - [Handling Reboot Requests](../RebootRequests)
 - [Robust af_lib_set_attribute*() Calls](../RobustafLibSet)
 - [Useful Debugging Methods](../DebugMethods)
-- [Handling MCU OTA Updates](../MCU_OTA)
+- [Handling MCU OTA Updates](../MCU-OTA)
 
  **&#8674;** *Next:* [MCU Coding Tips](../MCUCodingTips)
