@@ -19,7 +19,7 @@ In order to support receipt of MCU OTA updates, your device Profile must include
 
 ### OTA Delivery
 
-- You’ll use the Afero OTA Manager to [deploy a firmware image](../OTAMgr#DeployFWImage) to your device.
+- You’ll use the Afero OTA Manager to [deploy a firmware image](../OTAMgr#deploy-a-firmware-image) to your device.
 
 - The incoming update will be handled as described below. Your MCU code will:
     - Receive an AF_LIB_EVENT_ASR_NOTIFICATION event for attribute AF_MCU_OTA_INFO.
