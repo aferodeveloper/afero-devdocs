@@ -60,7 +60,7 @@ The first time you sign in to the Afero OTA Manager, you will be taken through a
 
 After the first sign-in wizard flow, you will be able to create Image Types from the main window of the OTA Manager:
 
-**1**&nbsp;&nbsp;From the upper-right of the OTA Manager main window, select the ADD button, just to the right of the heading IMAGE TYPES. The Add Firmware Image Type window appears:
+**1**&nbsp;&nbsp;From the upper-right of the OTA Manager main window, select the <span class="UIText">ADD</span> button, just to the right of the heading <span class="UIText">IMAGE TYPES</span>. The Add Firmware Image Type window appears:
 
 <img src="../img/NewImageType.png" width="300" style="vertical-align:middle;margin:0px 0px;border:none"> 
 
@@ -70,7 +70,7 @@ After the first sign-in wizard flow, you will be able to create Image Types from
 
 If you want to change the name or description of an existing Image Type, you can do this from the main window. Note that once you’ve created an Image Type, that type is assigned an ID that does not change even when you edit the name or description. So, if what you want is the underlying category of the image to be different, create a new Image Type rather than changing the name on an existing type.
 
-**1**&nbsp;&nbsp;From the OTA Manager main window on the left, hover your cursor over the pencil icon<img src="../img/EditIcon.png" width="25" style="vertical-align:middle;margin:0px 0px;border:none">to the left of an existing Image Type. The option to EDIT IMAGE TYPE will appear. Select the icon.
+**1**&nbsp;&nbsp;From the OTA Manager main window on the left, hover your cursor over the pencil icon<img src="../img/EditIcon.png" width="25" style="vertical-align:middle;margin:0px 0px;border:none">to the left of an existing Image Type. The option to <span class="UIText">EDIT IMAGE TYPE</span> will appear. Select the icon.
 
 **2**&nbsp;&nbsp;The Edit Firmware Image Type window will appear. Make your edits and SAVE.
 
@@ -78,22 +78,22 @@ If you want to change the name or description of an existing Image Type, you can
 
 When you are ready to upload a firmware image, start from the OTA Manager main window.
 
-<mark>**&check; Note:** Remember that before uploading an image, you must have already used the Profile Editor to create and publish a device Profile that has a firmware Image Type selected. You do this on the Attributes Definition window > MCU Configuration pane > Firmware OTA Updates section. Read [Configure the MCU](../AttrDef#ConfigMCU) for more details.</mark>
+<mark>**&check; Note:** Remember that before uploading an image, you must have already used the Profile Editor to create and publish a device Profile that has a firmware Image Type selected. You do this on the Attributes Definition window > MCU Configuration pane > Firmware OTA Updates section. Read [Define the MCU Attributes](../AttrDef#define-the-mcu-attributes) for more details.</mark>
 
-**1**&nbsp;&nbsp;From the upper-right of the window, select +UPLOAD NEW IMAGE. The three-step upload wizard appears.
+**1**&nbsp;&nbsp;From the upper-right of the window, select <span class="UIText">+UPLOAD NEW IMAGE</span>. The three-step upload wizard appears.
 
 **2**&nbsp;&nbsp;You can upload your image in either of two ways:
 
 - Drag & drop the image into the target Image Type folder; or
 - Select the target Image Type folder then navigate to your image file and select it.
 
-When finished, click  NEXT: ADD INFO FOR YOUR FIRMWARE.
+When finished, click <span class="UIText">NEXT: ADD INFO FOR YOUR FIRMWARE</span>.
 
 **3**&nbsp;&nbsp;On the next window you’ll add some metadata for your image: image name, description, version string, and tag(s). You will be able to search on this information later if you want to find a specific image quickly, or use one of the fields to filter your images. Press Enter after typing a tag to add more tags.
 
-When finished, click  NEXT: ASSOCIATE DEVICE TYPES.
+When finished, click <span class="UIText">NEXT: ASSOCIATE DEVICE TYPES</span>.
 
-**4**&nbsp;&nbsp;All your eligible Device Types appear on the next window. Select those you want to receive the firmware image. Select DONE when you’re finished.
+**4**&nbsp;&nbsp;All your eligible Device Types appear on the next window. Select those you want to receive the firmware image. Select <span class="UIText">DONE</span> when you’re finished.
 
 ## Deploy a Firmware Image
 
@@ -104,17 +104,17 @@ Once you’re ready to deploy your uploaded firmware image, you do so from the m
 The main window of the OTA Manager displays all your images. If you have a large number of images, you may want to limit the images shown:
 
 - Use the left-hand Navigation pane to filter images based on Image Type or Device Type.
-- Use the SEARCH MY TAGS box to search on one or more image tags you’ve assigned.
+- Use the <span class="UIText">SEARCH MY TAGS</span> box to search on one or more image tags you’ve assigned.
 
 ### Push Image
 
 Once you have found the firmware image you want to deploy, you’re ready to push the image to your device(s):
 
-**1**&nbsp;&nbsp;With the firmware image you want to deploy selected, click the DEPLOY button to the far-right of the firmware image entry.
+**1**&nbsp;&nbsp;With the firmware image you want to deploy selected, click the <span class="UIText">DEPLOY</span> button to the far-right of the firmware image entry.
 
 **2**&nbsp;&nbsp;Below the image name, the target device ID(s) are shown. Select the targets.
 
-**3**&nbsp;&nbsp;Click the PUSH NOW button on the far-right.
+**3**&nbsp;&nbsp;Click the <span class="UIText">PUSH NOW</span> button on the far-right.
 
 **4**&nbsp;&nbsp;You can see deployment status in a message (in orange text) below your selected device(s):
 
@@ -123,4 +123,4 @@ Once you have found the firmware image you want to deploy, you’re ready to pus
 ## See Also
 
 - Read [Handling MCU OTA Updates](../MCU-OTA) for details on what you’ll need to include in your application code to accept an MCU OTA update.
-- Read [Configure the MCU](../AttrDef#ConfigMCU) for details on using the Profile Editor to prepare your MCU for accepting specific Image Types.
+- Read [Define the MCU Attributes](../AttrDef#define-the-mcu-attributes) for details on using the Profile Editor to prepare your MCU for accepting specific Image Types.

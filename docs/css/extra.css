@@ -51,15 +51,15 @@ body > .container {
 h1 {
     color: #ffac3e;
 		margin-bottom: 20px;
-		font-family: 'Roboto Condensed';
+		font-family: 'Roboto';
 		font-size: 31px;
-		font-weight: 600;
+		font-weight: 500;
 }
 
 h2 {
 	margin-top: 50px;
 	margin-bottom: 10px;
-	font-family: 'Roboto Condensed';
+	font-family: 'Roboto-Condensed';
 	font-weight: 500;
 	font-size: 26px;
 	color: black;
@@ -72,7 +72,7 @@ h3 {
 	margin-top: 22px;
 	margin-bottom: 8px;
 	color: #414042;
-	font-family: 'Roboto Condensed';
+	font-family: 'Roboto-Condensed';
 	font-size: 22px;
 }
 
@@ -80,7 +80,7 @@ h4 {
 	margin-top: 18px;
 	margin-bottom: 8px;
 	color: #58595b;
-	font-family: 'Roboto Condensed';
+	font-family: 'Roboto-Condensed';
 	font-size: 22px;
 }
 
@@ -90,16 +90,16 @@ hr {
 }
 
 p {
-	font-family: "Roboto";
-	font-weight: 200;
+	font-family: 'Roboto-Regular';
+	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.4;
 	margin-bottom: 8px;
 }
 
 td {
-	font-family: "Roboto";
-	font-weight: 200;
+	font-family: 'Roboto-Regular';
+	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.4;
 	margin-bottom: 8px;
@@ -107,26 +107,26 @@ td {
 
 ul, ol, li {
 	margin: 3px 0 3px 0px;
-	font-family: "Roboto";
-	font-weight: 200;
+	font-family: 'Roboto-Regular';
+	font-weight: 4 00;
 	font-size: 14px;
 	line-height: 1.4;
 	margin-bottom: 8px;
 }
 	
 strong {
-	font-family: "Roboto";
+	font-family: 'Roboto-Regular';
 	font-weight: 800;
 	font-size: 14px;
 }
 
 mark,.mark
 {
-   background-color:#f7efe9;
+   background-color:#ffffff;
 }
 	.UIText {
 		color: #077292;
-	font-family: "Roboto";
+		font-family: 'Roboto-Regular';
 		font-weight: 400;
 		font-size: 14px;
 		text-transform: uppercase;
@@ -175,11 +175,13 @@ kbd {
 
 
 a code {
-    color: #0984aa;
+    color: #077292;
+    text-decoration: underline;
 }
 
 a:hover code, a:focus code {
-    color: #157AB5;
+    color: #077292;
+    text-decoration: underline;
 }
 
 footer {
