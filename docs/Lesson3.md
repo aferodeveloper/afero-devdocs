@@ -22,7 +22,7 @@ Be sure you’ve done the following before starting the steps below:
 
 ## The Steps
 
-**1. Download and install afLib for Arduino:**
+**1&nbsp;&nbsp;Download and install afLib for Arduino:**
 
 - You can obtain afLib by going to http://github.com/aferodeveloper/afLib.
 - Follow your [IDE instructions](https://www.arduino.cc/en/Guide/Libraries) on how to install the library.

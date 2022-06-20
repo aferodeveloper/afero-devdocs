@@ -6,14 +6,14 @@ Before programming ASR you must install [Python 2.7](https://www.python.org/down
 <br><img src="../img/AddPath-01.png" style="vertical-align:middle;margin:0px 0px;border:none"><br>
 Windows Settings window opens, where you should start typing “envi”, as shown. Select “Edit the system environment variables” in the drop-down list, as indicated below by the red arrow; this will open the System Properties window.<br><img src="../img/AddPath-02.png" style="vertical-align:middle;margin:0px 0px;border:none">
 
-**2**&nbsp;&nbsp;On the System Properties window, click the ENVIRONMENTAL VARIABLES button:<br>
+**2**&nbsp;&nbsp;On the System Properties window, click the <span class="UIText">ENVIRONMENTAL VARIABLES</span> button:<br>
 <img src="../img/AddPath-03.png" style="vertical-align:middle;margin:0px 0px;border:none">
 
-**3**&nbsp;&nbsp;On the Environment Variables window, select PATH to highlight it, then click the EDIT button:
+**3**&nbsp;&nbsp;On the Environment Variables window, select <span class="UIText">PATH</span> to highlight it, then click the <span class="UIText">EDIT</span> button:
 
 <img src="../img/AddPath-04.png" style="vertical-align:middle;margin:0px 0px;border:none">
 
-**4**&nbsp;&nbsp;The Edit Environment Variable window, opens. Click the NEW button on the right, then add the three entries for Python and J-Link, as shown below. Earlier versions of Windows (<10) may require that you add paths by separating them from existing paths with a semicolon (;).<br>__Be careful you **DO NOT** remove any existing paths when adding your new variable paths.__ 
+**4**&nbsp;&nbsp;The Edit Environment Variable window, opens. Click the <span class="UIText">NEW</span> button on the right, then add the three entries for Python and J-Link, as shown below. Earlier versions of Windows (<10) may require that you add paths by separating them from existing paths with a semicolon (;).<br>__Be careful you **DO NOT** remove any existing paths when adding your new variable paths.__ 
 
 <img src="../img/AddPath-05.png" style="vertical-align:middle;margin:0px 0px;border:none">
 

@@ -18,7 +18,7 @@ This window offers you the following information and actions:
 
     - Device icon - Can be changed on the Profile Editor’s Device Type window.
   
-    - Device’s friendly name - Can be changed in the DEVICE INFORMATION pane of Inspector, on the mobile app, and on the Profile Editor’s Publish window.
+    - Device’s friendly name - Can be changed in the <span class="UIText">DEVICE INFORMATION</span> pane of Inspector, on the mobile app, and on the Profile Editor’s Publish window.
     
     - Device ID (alpha-numeric string under the device name) - Click the Device ID to copy the ID to your clipboard.
     
@@ -53,20 +53,20 @@ The selected device details are presented in the following panes:
 
 The attributes relevant to the selected device are displayed in two tabs: [Device Attributes](../Inspector#DeviceAttr) and [Afero System Attributes](../Inspector#SystemAttr).
 
-You can download the information and even edit the READ/WRITE attributes from these windows.
+You can download the information and even edit the <span class="UIText">READ/WRITE</span> attributes from these windows.
 
 - Click<img src="../img/Inspector-DownloadIcon.png" width="30" style="vertical-align:middle;margin:0px 0px;border:none">(there is one on each tab) to download the attribute information to a file in JSON format.
 
 - You can sort on the Attribute ID, Attribute Name, or Last Update columns. Click the associated arrow to select that column for sort (the arrow will turn orange), plus reverse the sort order.
 
-- You can edit READ/WRITE attribute values in real-time when the device is online; these values are indicated with a pencil icon. Click the pencil to edit and update a value:<br>
+- You can edit <span class="UIText">READ/WRITE</span> attribute values in real-time when the device is online; these values are indicated with a pencil icon. Click the pencil to edit and update a value:<br>
 <img src="../img/Inspector-EditValue.png" width="300" style="vertical-align:middle;margin:0px 0px;border:none">
 
     Click<img src="../img/Inspector-SaveIcon.png" width="25" style="vertical-align:middle;margin:0px 0px;border:none">to save an edit and update the value, or<img src="../img/Inspector-DismissIcon.png" width="25" style="vertical-align:middle;margin:0px 0px;border:none">to dismiss the edit box with no update. If the value you type is invalid or if your device is offline, you’ll see an error message (in orange text) below the edit value field.
 
 #### Device Attributes
 
-The DEVICE ATTRIBUTES tab details the activity of your device attributes:
+The <span class="UIText">DEVICE ATTRIBUTES</span> tab details the activity of your device attributes:
 
 | FIELD          | DESCRIPTION                                                  | EXAMPLE                |
 | :------------- | :----------------------------------------------------------- | :--------------------- |
@@ -78,7 +78,7 @@ The DEVICE ATTRIBUTES tab details the activity of your device attributes:
 
 #### Afero System Attributes
 
-The attributes shown in the AFERO SYSTEM ATTRIBUTES tab are generally set by the Cloud and read by the ASR module, but they can also be set by ASR. For a description of these attributes, refer to the [Device Attribute Registry](../AttrRegistry).
+The attributes shown in the <span class="UIText">AFERO SYSTEM ATTRIBUTES</span> tab are generally set by the Cloud and read by the ASR module, but they can also be set by ASR. For a description of these attributes, refer to the [Device Attribute Registry](../AttrRegistry).
 
 ### Connection - Wi-Fi/Bluetooth Signal Strength
 

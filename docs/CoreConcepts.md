@@ -60,7 +60,7 @@ When the definitions are complete, the Profile Editor “publishes” your devic
 
 ## Device Profile Distribution
 
-The device definitions that the Profile Editor packages into the device Profile are used throughout the Afero Platform. The picture below illustrates the information flow once you click the PUBLISH button in the Profile Editor:
+The device definitions that the Profile Editor packages into the device Profile are used throughout the Afero Platform. The picture below illustrates the information flow once you click the <span class="UIText">PUBLISH</span> button in the Profile Editor:
 <br><img src="../img/APE-ProfileDistr.png" style="vertical-align:middle;margin:0px 0px;border:none">
 
 The device Profile leaves the Profile Editor and enters the Afero Cloud. Profiles are stored in the cloud and retrieved on demand by components within the Afero Platform.

@@ -97,8 +97,16 @@ p {
 	margin-bottom: 8px;
 }
 
+thead, td{
+	font-family: 'Roboto-Condensed';
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.4;
+	margin-bottom: 8px;
+}
+
 td {
-	font-family: 'Roboto-Regular';
+	font-family: 'Roboto';
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.4;
@@ -108,15 +116,15 @@ td {
 ul, ol, li {
 	margin: 3px 0 3px 0px;
 	font-family: 'Roboto-Regular';
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 14px;
 	line-height: 1.4;
 	margin-bottom: 8px;
 }
 	
 strong {
-	font-family: 'Roboto-Regular';
-	font-weight: 800;
+	font-family: 'Roboto';
+	font-weight: 525;
 	font-size: 14px;
 }
 

@@ -1,6 +1,6 @@
 # Device Attribute RAM Size
 
-Your Profile’s attributes are allocated a limited amount of RAM, the limit being a function of which module you are using for your project. To quickly see how much RAM your Profile’s attributes are using, check the PROFILE RAM USAGE indicator at the top of the Profile Editor Attributes window (read more in [Attribute Sizing](../AttrDef#attribute-sizing)). But if you want *details*, read the sections below.
+Your Profile’s attributes are allocated a limited amount of RAM, the limit being a function of which module you are using for your project. To quickly see how much RAM your Profile’s attributes are using, check the <span class="UIText">PROFILE RAM USAGE</span> indicator at the top of the Profile Editor Attributes window (read more in [Attribute Sizing](../AttrDef#attribute-sizing)). But if you want *details*, read the sections below.
 
 ## Calculating Buffer Length
 
