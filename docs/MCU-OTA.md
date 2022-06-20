@@ -154,7 +154,7 @@ In order to accept and receive an MCU OTA update, your application code must:
 
     In the example code, we calculate the SHA as data arrives because the example does not store the download; in real-world applications you are free to calculate the SHA as data arrives, or after the download is complete. The example code handles this task in `handle_ota_transfer()`.
 
-<mark>**&check; Note:** The example code provides the skeleton for handling receipt of an incoming MCU OTA update, but does **not** include any procedures required to install, such as an OTA update once downloaded. Because such procedures will be platform-specific, writing that code is your responsibility.</mark>
+<mark>**Note:**&nbsp; The example code provides the skeleton for handling receipt of an incoming MCU OTA update, but does **not** include any procedures required to install, such as an OTA update once downloaded. Because such procedures will be platform-specific, writing that code is your responsibility.</mark>
 
 ```
 typedef struct {

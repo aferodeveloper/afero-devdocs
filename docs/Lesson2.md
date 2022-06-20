@@ -26,7 +26,7 @@ To be sure we’re all starting in the same view, your window should look someth
 
 <img src="../img/Mod2_DeviceType.png" width="500" style="vertical-align:middle;margin:0px 0px;border:none">
 
-<mark>**&check; Note:** Notice the MODULE TYPE of the Profile is specified right at the top of the pane (in the example, we’re working with a Modulo-2.) This module type was specified in the pre-built Profile you downloaded; when creating a Profile from scratch, you must specify the module type right from the beginning. Doing so is the first step in the NEW PROFILE window. It’s critical that the module type in the Profile match the hardware you’re using in your project!</mark>
+<mark>**Note:**&nbsp; Notice the MODULE TYPE of the Profile is specified right at the top of the pane (in the example, we’re working with a Modulo-2.) This module type was specified in the pre-built Profile you downloaded; when creating a Profile from scratch, you must specify the module type right from the beginning. Doing so is the first step in the NEW PROFILE window. It’s critical that the module type in the Profile match the hardware you’re using in your project!</mark>
 
 In the DEVICE TYPE view, you can set the device name, type a detailed device description, and set the device icon. Of these items, only the icon will be visible to the end-user. Notice the PREVIEW panel on the right of the view – it shows the selected device icon as it will appear in the mobile app.
 
@@ -72,7 +72,7 @@ You will probably not be surprised to find that two UI controls have been define
 
 There are two steps to defining the UI controls: a) we first define the “attribute options” for each attribute; and b) we then assign UI controls to each attribute.
 
-<mark>**&check; Note:** You might be wondering why defining attribute options is separate from assigning controls. The reason is so you can easily assign multiple controls to the same attribute without having to retype a lot of details (although that doesn’t apply to this Tutorial). To learn more about attribute options, read [Define the Mobile App UI > Define the Attribute Options](../AppUIDef#Options).</mark>
+<mark>**Note:**&nbsp; You might be wondering why defining attribute options is separate from assigning controls. The reason is so you can easily assign multiple controls to the same attribute without having to retype a lot of details (although that doesn’t apply to this Tutorial). To learn more about attribute options, read [Define the Mobile App UI > Define the Attribute Options](../AppUIDef#Options).</mark>
 
 ***6a*** In the far-right pane under the heading ATTRIBUTE OPTIONS, click the pencil icon in the LED:LED ATTRIBUTE box to open its Attribute Option Details dialog:
 
@@ -129,7 +129,7 @@ The left-hand pane, DEFINE THE UI CONTROL GROUPS, displays a representation of t
 
 Below the selected group, you’ll see the **LED** menu control. We’ve already moved the **LED** menu into the **LED** group, but if we hadn’t, you would add a control by dragging it from the AVAILABLE UI CONTROLS pane on the right into the controls display on the left, below the groups ribbon.
 
-***7d*** To remove a control from a group, simply drag it back to the AVAILABLE UI CONTROLS pane.<br><mark>**&check; Note:** A control can appear in multiple groups, but *must* appear in at least one group or it won’t appear at all in the mobile app UI. That means that even if you have just one UI control, you’ll need to create a UI control group to contain it.</mark>
+***7d*** To remove a control from a group, simply drag it back to the AVAILABLE UI CONTROLS pane.<br><mark>**Note:**&nbsp; A control can appear in multiple groups, but *must* appear in at least one group or it won’t appear at all in the mobile app UI. That means that even if you have just one UI control, you’ll need to create a UI control group to contain it.</mark>
 
 ***7e*** Click SAVE when you are finished defining UI control groups.
 

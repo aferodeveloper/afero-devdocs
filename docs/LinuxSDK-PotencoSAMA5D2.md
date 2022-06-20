@@ -171,7 +171,7 @@ $ cp ~/sama5/meta-afero/conf/bblayers.conf  ~/sama5/poky/build-microchip/conf/bb
 $ cp ~/sama5/meta-afero/conf/local.conf     ~/sama5/poky/build-microchip/conf/local.conf
 ```
 
-<mark>**&check; Note:**  Any changes to bblayers.conf or local.conf need to be saved to the meta-afero version. Specifically…<br>If you change the following files:</mark>
+<mark>**Note:**&nbsp;  Any changes to bblayers.conf or local.conf need to be saved to the meta-afero version. Specifically…<br>If you change the following files:</mark>
 
 `~/sama5/poky/build-microchip/conf/local.conf~/sama5/poky/build-microchip/conf/bblayers.conf`
 

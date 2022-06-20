@@ -25,7 +25,7 @@ For each of your attributes, you will define “attribute options”, which spec
    | Default Label                                                | This is the label that will be displayed in the mobile app UI; it is what the end-user will see. Type a label that clearly identifies the device characteristic that is being displayed or controlled. | All Controls                               |
    | Primary Operation                                            | On/Off checkbox, **only** available for write attributes that toggle between two values, and for controls that support writing to an attribute. Only one of your UI controls can be set as Primary Operation within a given device Profile.With this option **selected**, you’ll be able to control the attribute from the mobile app Home screen by double-tapping the device icon. Double-tapping will toggle between the attribute values. | &bull; Menu<br>&bull; Slider<br>&bull; Temperature<br>&bull; Battery Level<br>&bull; Switch
 
-<mark>**&check; Note:** If you're defining **both** Value and Range Options (below) for the same attribute option, **make the number of value options equal to the number of range steps**. For example, if your Range is *0-50*, with step size *10*, make sure you have *6* Value Options defined.</mark>
+<mark>**Note:**&nbsp; If you're defining **both** Value and Range Options (below) for the same attribute option, **make the number of value options equal to the number of range steps**. For example, if your Range is *0-50*, with step size *10*, make sure you have *6* Value Options defined.</mark>
 
    | FIELD                                                        | DESCRIPTION                                                  | RELEVANT UI CONTROL(S)                     |
    | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------- |
@@ -200,7 +200,7 @@ It’s possible to preview the UI as you’re creating it, right in the Afero mo
 
 **2**&nbsp;&nbsp;Check the mobile app UI. You will see that a new device icon has been added to your devices: this is the Preview Device.
 
-<mark>**&check; Note:** The Preview Device is a virtual device. Changing controls in the Preview UI will not affect the state of any actual device.</mark>
+<mark>**Note:**&nbsp; The Preview Device is a virtual device. Changing controls in the Preview UI will not affect the state of any actual device.</mark>
 
 **3**&nbsp;&nbsp; In the mobile app, tap the Preview Device to open it and see the UI that you defined. You can test the controls, see changes to the Primary Operation, Running State, and so on.
 

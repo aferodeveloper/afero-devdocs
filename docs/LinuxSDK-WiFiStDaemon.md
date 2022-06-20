@@ -127,7 +127,7 @@ network={
 }
 ```
 
-<mark>**&check; Note:**   It is very important to disable the Wi-Fi network configuration so it doesn’t interfere with wifistad functionality.</mark>
+<mark>**Note:**&nbsp;   It is very important to disable the Wi-Fi network configuration so it doesn’t interfere with wifistad functionality.</mark>
 
 #### WPA SCAN and SSID List
 
@@ -177,7 +177,7 @@ The following Wi-Fi related attributes are supported by wifstad:
 
 Developers can add and support their own attributes by first adding the attributes into the attrd database, then implementing the `get` and `set` functionality of these attributes.
 
-<mark>**&check; Note:**  These attributes must be part of the device Profile to work properly.
+<mark>**Note:**&nbsp;  These attributes must be part of the device Profile to work properly.
 
 
 

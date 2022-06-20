@@ -2,7 +2,7 @@
 
 The RESTful API exposes the OAuth function described in this section.
 
-<mark>**&check; Note:**   Before you begin using the API below, be sure you have read the information in [Afero Cloud APIs](../CloudAPIs).</mark>
+<mark>**Note:**&nbsp;   Before you begin using the API below, be sure you have read the information in [Afero Cloud APIs](../CloudAPIs).</mark>
 
 ## OAuth Authentication
 

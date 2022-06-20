@@ -51,9 +51,9 @@ body > .container {
 h1 {
     color: #ffac3e;
 		margin-bottom: 20px;
-		font-family: 'Roboto';
+		font-family: 'Roboto-Condensed';
 		font-size: 31px;
-		font-weight: 500;
+		font-weight: 600;
 }
 
 h2 {
@@ -90,7 +90,7 @@ hr {
 }
 
 p {
-	font-family: 'Roboto-Regular';
+	font-family: 'Roboto';
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.4;
@@ -108,7 +108,7 @@ td {
 ul, ol, li {
 	margin: 3px 0 3px 0px;
 	font-family: 'Roboto-Regular';
-	font-weight: 4 00;
+	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.4;
 	margin-bottom: 8px;
@@ -122,7 +122,7 @@ strong {
 
 mark,.mark
 {
-   background-color:#ffffff;
+   background-color:#fff;
 }
 	.UIText {
 		color: #077292;
@@ -251,7 +251,7 @@ footer {
 }
 .bs-sidebar .nav > li > a:hover,
 .bs-sidebar .nav > li > a:focus {
-    text-decoration: none;
+    text-decoration: underline;
     border-right: 1px solid;
 }
 .bs-sidebar .nav > li > a.active,
