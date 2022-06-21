@@ -34,5 +34,5 @@ We’ve built Afero to be accessible to a broad range of developers, from novice
 - If you have an MCU on your developer device, refer to the [afLib](API-afLib) docs to use the library in your MCU application.
 - For MCU firmware updates, use the [Afero OTA Manager](OTAMgr) web app to update the MCU firmware.
 - Create a standalone developer hub using the [Developer Hub](StandaloneHub) setup instructions.
-- Access cloud functions using our [Cloud API](en/latest/CloudAPIs).
-- Monitor and evaluate your device deployments and usage with the [Afero Console](en/latest/Console).
+- Access cloud functions using our [Cloud API](CloudAPIs).
+- Monitor and evaluate your device deployments and usage with the [Afero Console](Console).
