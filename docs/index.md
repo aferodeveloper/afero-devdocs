@@ -20,19 +20,19 @@ We’ve built Afero to be accessible to a broad range of developers, from novice
 
 ## Getting Started
 
-- Read an overview of the [Afero Platform](/SystemOverview).
-- Understand our [core development concepts](/CoreConcepts).
-- Read and refer to our [Glossary](/Glossary) for a clear understanding of concepts and instructions.
+- Read an overview of the [Afero Platform](en/latest/SystemOverview).
+- Understand our [core development concepts](en/latest/CoreConcepts).
+- Read and refer to our [Glossary](en/latest/Glossary) for a clear understanding of concepts and instructions.
 - Install the Afero mobile app on your smartphone.
 - Download and install the Afero Profile Editor.
 
 ## Building Devices
 
-- Read our [Firmware](/FW-API)  <!--- and [Hardware](/HWRef)---> docs to get your device ready for programming.
-- Define and program your device with Afero Profile Editor, following the [Profile Editor User Guide](/Projects).
-- Use the [Afero Inspector](/Inspector) web app to look inside your device definitions.
+- Read our [Firmware](en/latest/FW-API)  <!--- and [Hardware](/HWRef)---> docs to get your device ready for programming.
+- Define and program your device with Afero Profile Editor, following the [Profile Editor User Guide](en/latest/Projects).
+- Use the [Afero Inspector](en/latest/Inspector) web app to look inside your device definitions.
 - If you have an MCU on your developer device, refer to the [afLib](/API-afLib) docs to use the library in your MCU application.
-- For MCU firmware updates, use the [Afero OTA Manager](/OTAMgr) web app to update the MCU firmware.
-- Create a standalone developer hub using the [Developer Hub](/StandaloneHub) setup instructions.
-- Access cloud functions using our [Cloud API](/CloudAPIs).
-- Monitor and evaluate your device deployments and usage with the [Afero Console](/Console).
+- For MCU firmware updates, use the [Afero OTA Manager](en/latest/OTAMgr) web app to update the MCU firmware.
+- Create a standalone developer hub using the [Developer Hub](en/latest/StandaloneHub) setup instructions.
+- Access cloud functions using our [Cloud API](en/latest/CloudAPIs).
+- Monitor and evaluate your device deployments and usage with the [Afero Console](en/latest/Console).
