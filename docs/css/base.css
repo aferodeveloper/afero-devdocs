@@ -84,7 +84,6 @@ h4 {
 	font-size: 22px;
 }
 
-
 hr {
     border-top: 2px solid #ffac3e;
 }
@@ -92,23 +91,23 @@ hr {
 p {
 	font-family: 'Helvetica';
 	font-weight: 300;
-	font-size: 14px;
+	font-size: 13.5px;
 	line-height: 1.4;
 	margin-bottom: 8px;
 }
 
 thead, td{
-	font-family: 'Helvetica-Neue';
-	font-weight: 300;
-	font-size: 14px;
+	font-family: 'Helvetica';
+	font-weight: 500;
+	font-size: 13.5px;
 	line-height: 1.4;
 	margin-bottom: 8px;
 }
 
 td {
-	font-family: 'Helvetica-Neue';
+	font-family: 'Helvetica';
 	font-weight: 300;
-	font-size: 14px;
+	font-size: 13.5px;
 	line-height: 1.4;
 	margin-bottom: 8px;
 }
@@ -117,7 +116,7 @@ ul, ol, li {
 	margin: 3px 0 3px 0px;
 	font-family: 'Helvetica';
 	font-weight: 300;
-	font-size: 14px;
+	font-size: 13.5px;
 	line-height: 1.4;
 	margin-bottom: 8px;
 }
@@ -125,7 +124,7 @@ ul, ol, li {
 strong {
 	font-family: 'Helvetica';
 	font-weight: 525;
-	font-size: 14px;
+	font-size: 13.5px;
 }
 
 mark,.mark {
@@ -136,7 +135,7 @@ mark,.mark {
 	color: #077292;
 	font-family: 'Helvetica';
 	font-weight: 500;
-	font-size: 14px;
+	font-size: 13.5px;
 	text-transform: uppercase;
 }
 
@@ -184,6 +183,7 @@ kbd {
 
 a code {
     color: #077292;
+    font-weight:500;
     text-decoration: underline;
 }
 
@@ -197,6 +197,7 @@ footer {
     margin-bottom: 10px;
     text-align: center;
     font-weight: 200;
+    font-size:10px;
 }
 
 .modal-dialog {
