@@ -57,7 +57,7 @@ h1 {
 }
 
 h2 {
-	margin-top: 100px;
+	margin-top: 22px;
 	margin-bottom: 10px;
 	font-family: 'Roboto-Condensed';
 	font-weight: 500;
@@ -84,61 +84,60 @@ h4 {
 	font-size: 22px;
 }
 
-
 hr {
     border-top: 2px solid #ffac3e;
 }
 
 p {
-	font-family: 'Roboto';
-	font-weight: 400;
-	font-size: 14px;
+	font-family: 'Helvetica';
+	font-weight: 300;
+	font-size: 13.5px;
 	line-height: 1.4;
 	margin-bottom: 8px;
 }
 
 thead, td{
-	font-family: 'Roboto-Condensed';
+	font-family: 'Helvetica';
 	font-weight: 500;
-	font-size: 14px;
+	font-size: 13.5px;
 	line-height: 1.4;
 	margin-bottom: 8px;
 }
 
 td {
-	font-family: 'Roboto';
-	font-weight: 400;
-	font-size: 14px;
+	font-family: 'Helvetica';
+	font-weight: 300;
+	font-size: 13.5px;
 	line-height: 1.4;
 	margin-bottom: 8px;
 }
 
 ul, ol, li {
 	margin: 3px 0 3px 0px;
-	font-family: 'Roboto-Regular';
+	font-family: 'Helvetica';
 	font-weight: 300;
-	font-size: 14px;
+	font-size: 13.5px;
 	line-height: 1.4;
 	margin-bottom: 8px;
 }
 	
 strong {
-	font-family: 'Roboto';
+	font-family: 'Helvetica';
 	font-weight: 525;
-	font-size: 14px;
+	font-size: 13.5px;
 }
 
-mark,.mark
-{
+mark,.mark {
    background-color:#fff;
 }
-	.UIText {
-		color: #077292;
-		font-family: 'Roboto-Regular';
-		font-weight: 400;
-		font-size: 14px;
-		text-transform: uppercase;
-	}
+
+.UIText {
+	color: #077292;
+	font-family: 'Helvetica';
+	font-weight: 500;
+	font-size: 13.5px;
+	text-transform: uppercase;
+}
 
 pre, .rst-content tt {
     max-width: 100%;
@@ -184,6 +183,7 @@ kbd {
 
 a code {
     color: #077292;
+    font-weight:500;
     text-decoration: underline;
 }
 
@@ -197,6 +197,7 @@ footer {
     margin-bottom: 10px;
     text-align: center;
     font-weight: 200;
+    font-size:10px;
 }
 
 .modal-dialog {

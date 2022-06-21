@@ -59,11 +59,11 @@ You can update the firmware on your MCU by using the Afero OTA Manager in conjun
 
 We’ll start by defining the GPIO attributes. Note that not all modules have GPIO pins.
 
-**1**&nbsp;&nbsp;Click ATTRIBUTES in the Navigation pane to open the Attribute Definition window.** (We’ll talk about the MCU PROTOCOL drop-down menu when we [define MCU attributes](../AttrDef#define-the-mcu-attributes), later.) By default the GPIO attributes appear, ready to be defined:
+**1**&nbsp;&nbsp;Click ATTRIBUTES in the Navigation pane to open the Attribute Definition window. (We’ll talk about the MCU PROTOCOL drop-down menu when we [define MCU attributes](../AttrDef#define-the-mcu-attributes), later.) By default the GPIO attributes appear, ready to be defined:
 
 <img src="../img/AttributeDefinition.png" width="500" style="vertical-align:middle;margin:0px 0px;border:none">
 
-**2**&nbsp;&nbsp;Click an attribute’s ON/OFF toggle switch to turn it ON and open the attribute’s definition editor.** Depending on the Operation Mode you select for your GPIO pin (INPUT vs. OUTPUT), different options will appear:
+**2**&nbsp;&nbsp;Click an attribute’s ON/OFF toggle switch to turn it ON and open the attribute’s definition editor.  Depending on the Operation Mode you select for your GPIO pin (INPUT vs. OUTPUT), different options will appear:
 
 **GPIO Input Options**<br><img src="../img/GPIO-Attributes-Input.png" width="500" style="vertical-align:middle;margin:0px 0px;border:none">
 
@@ -71,7 +71,7 @@ We’ll start by defining the GPIO attributes. Note that not all modules have GP
 
 <mark>**Note:**&nbsp; If you turn an attribute OFF, you will lose its current definition. To retain your attribute definition but close that attribute’s editor, click the name of the attribute shown in orange at the top-left of the editor. Save your work at any time by clicking the SAVE button in the upper-right of the window.</mark>
 
-**3**&nbsp;&nbsp;Complete the fields using the information in the table below:**
+**3**&nbsp;&nbsp;Complete the fields using the information in the table below:
 
    | FIELD                                                        | DESCRIPTION                                                  |
    | :----------------------------------------------------------- | :----------------------------------------------------------- |

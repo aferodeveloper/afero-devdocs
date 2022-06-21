@@ -156,7 +156,7 @@ An UPDATE is also sent in response to a GET, to return the current value.
 
 ### Summary of Operations
 
-**ASR-owned attributes** (such as the Modulo button or LED) support these operations:
+<strong>ASR-owned attributes</strong> (such as the Modulo button or LED) support these operations:
 
 | MESSAGE TYPE | FROM  | TO          |
 | :----------- | :---- | :---------- |
@@ -166,16 +166,22 @@ An UPDATE is also sent in response to a GET, to return the current value.
 | GET          | Cloud | ASR         |
 | UPDATE       | ASR   | MCU & Cloud |
 
-**MCU-owned attributes** support these operations:
 
-| MESSAGE TYPE | FROM  | TO                    | DETAILS                                                      |
-| :----------- | :---- | :-------------------- | :----------------------------------------------------------- |
+&nbsp;
+
+<strong>MCU-owned attributes</strong> support these operations:
+
+| MESSAGE TYPE | FROM  | TO                    | DETAILS  |
+| :----------- | :---- | :-------------------- |----------------- |
 | SET          | Cloud | MCU (via ASR)         | ASR forwards to the MCU.                                     |
 | GET          | Cloud | ASR                   | ASR returns UPDATE with cached value (ASR does not forward GET to the MCU). |
 | GET          | MCU   | ASR                   | ASR returns UPDATE with cached value (or default value if never updated). |
 | UPDATE       | MCU   | Cloud (via ASR).      | ASR caches and forwards to the Cloud.                        |
 | UPDATE       | ASR   | MCU                   | Response to GET from the MCU. This operation is an exception to the model. Under ordinary circumstances, the MCU would already know the values of its own attributes. However, for convenience, the ASR allows this exception: it allows the MCU to use ASR as storage for MCU attributes. |
 | UPDATE       |       | Cloud of cached value | This happens only at startup during the Update-All process.  |
+
+
+&nbsp;
 
 Note that the following operations **do not** exist:
 
