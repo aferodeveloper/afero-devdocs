@@ -20,7 +20,7 @@ We’ve built Afero to be accessible to a broad range of developers, from novice
 
 ## Getting Started
 
-- Read an overview of the [Afero Platform](../docs/SystemOverview).
+- Read an overview of the [Afero Platform](../SystemOverview).
 - Understand our [core development concepts](/CoreConcepts).
 - Read and refer to our [Glossary](/Glossary) for a clear understanding of concepts and instructions.
 - Install the Afero mobile app on your smartphone.
