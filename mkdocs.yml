@@ -6,7 +6,7 @@ markdown_extensions:
     - smarty
 theme:
     name: mkdocs
-    favicon: img/favicon.ico
+    favicon: https://www.afero.io/assets/img/favicon.ico
 extra_css:
    - css/extra.css
    - css/bootstrap.min.css
