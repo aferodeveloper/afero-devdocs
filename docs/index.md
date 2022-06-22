@@ -28,11 +28,11 @@ We’ve built Afero to be accessible to a broad range of developers, from novice
 
 ## Building Devices
 
-- Read our [Firmware](FW-API)  <!--- and [Hardware](/HWRef)---> docs to get your device ready for programming.
+- Read our [Firmware](/FW-API)  <!--- and [Hardware](/HWRef)---> docs to get your device ready for programming.
 - Define and program your device with Afero Profile Editor, following the [Profile Editor User Guide](/Projects).
 - Use the [Afero Inspector](/Inspector) web app to look inside your device definitions.
 - If you have an MCU on your developer device, refer to the [afLib](/API-afLib) docs to use the library in your MCU application.
 - For MCU firmware updates, use the [Afero OTA Manager](/OTAMgr) web app to update the MCU firmware.
 - Create a standalone developer hub using the [Developer Hub](/StandaloneHub) setup instructions.
 - Access cloud functions using our [Cloud API](/CloudAPIs).
-- Monitor and evaluate your device deployments and usage with the [Afero Console](Console).
+- Monitor and evaluate your device deployments and usage with the [Afero Console](/Console).
