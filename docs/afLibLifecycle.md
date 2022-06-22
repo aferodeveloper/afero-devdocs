@@ -28,13 +28,11 @@ af_transport_t* arduino_transport_create_spi(int chipSelect);
 
 #### Parameters for arduino_transport_create_spi
 
-| `chipSelect` | The number of the pin to be used for SPI Chip Select. (This is 10 for Teensy and Uno.) |
+| PARAMETER | DESCRIPTION |
 | ------------ | ------------------------------------------------------------ |
-|              |                                                              |
+|  `chipSelect`  | The number of the pin to be used for SPI Chip Select. (This is 10 for Teensy and Uno.)                                                              |
 
 The other SPI data pins (MOSI, MISO, and SCK) are the hardware SPI pins on your MCU; e.g., for Teensy, MOSI, MISO, and SCK are pins 11, 12, and 13. You do **not** need to define these pins in your application.
-
-
 
 ### UART Syntax
 
@@ -44,8 +42,9 @@ af_transport_t* arduino_transport_create_uart(uint8_t rxPin, uint8_t txPin)
 
 #### Parameters for arduino_transport_create_uart
 
-| `rxPin` | The number of the pin to be used for UART RX. It is 7 for Teensy and Uno. |
+| PARAMETER | DESCRIPTION |
 | ------- | ------------------------------------------------------------ |
+| `rxPin` | The number of the pin to be used for UART RX. It is 7 for Teensy and Uno. |
 | `txPin` | The number of the pin to be used for UART TX. It is 8 for Teensy and Uno. |
 
 Remember that the txPin needs to connect to the ASR “HOST_RX” pin, and vice versa. For Arduino, it is not necessary to use hardware UART pins; however, for other MCU platforms, using a hardware UART may be required. The platform-specific transport code will pass TX/RX pins if any pins can be used, or will pass a pointer to a UART interface if a hardware UART is required.
@@ -70,8 +69,9 @@ af_lib_t* af_lib_create_with_unified_callback(af_lib_event_callback_t event_cb, 
 
 ### Parameters
 
+| PARAMETER | DESCRIPTION |
+| ------- | ------------------------------------------------------------ |
 | `event_cb`  | The callback (`attrEventCallback()`) to let your MCU code know that one of the ASR attributes has changed. |
-| ----------- | ------------------------------------------------------------ |
 | `transport` | Pointer to an `af_transport_t` to handle communications.     |
 
 ### Returns
@@ -178,8 +178,11 @@ void af_lib_destroy(af_lib_t* af_lib)
 
 ### Parameters
 
-| `af_lib` | Pointer to an af_transport_t to be destroyed. |
+| PARAMETER | DESCRIPTION |
 | -------- | --------------------------------------------- |
+| `af_lib` | Pointer to an af_transport_t to be destroyed. |
+
+
 
 ### Returns
 

@@ -48,30 +48,25 @@ hr
 	overflow:visible
 }
 
-h2,h3,h4,h5,h6,.h2,.h3,.h4,.h5,.h6 {
-	margin-top:3rem;
-	margin-bottom:1rem;
+h1,.h1 {
+	margin-top: 10px;
+	margin-bottom:20px;
 	font-family:inherit;
+	font-size:2.5rem;
+	font-weight:500;
+	line-height:1.2;
+	color:ffac3e;
+}
+
+h2,h3,h4,h5,h6,.h2,.h3,.h4,.h5,.h6 {
+	margin-top:22px;
+	margin-bottom:9px;
+	font-family:Roboto-Condensed;
 	font-weight:500;
 	line-height:1.2;
 	color:inherit;
 }
 
-h1,.h1 {
-	margin-top:3rem;
-	margin-bottom:1rem;
-	font-family:inherit;
-	font-weight:500;
-	line-height:1.2;
-	color:ffac3e;
-}
-h1,.h1
-{
-	margin-top:0rem;
-	font-size:2.5rem
-	margin-bottom:inherit;
-
-}
 h2,.h2
 {
 	font-size:2rem

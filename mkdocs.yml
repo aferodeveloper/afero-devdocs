@@ -1,4 +1,6 @@
 site_name: AFERO DEVELOPER DOCS
+site_url: https://afero-inc-aferodeveloper.readthedocs-hosted.com/
+use_directory_urls: true 
 markdown_extensions:
     - toc:
         permalink: "#"
