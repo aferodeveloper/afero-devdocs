@@ -6,7 +6,7 @@ Follow these simple steps to set up your Afero dev board:
 
 <ol class="af-ol">
 	<li>If you haven’t already, go to the Afero Developer Portal Welcome page, where you’ll find links to:
-		<ul class="af-ol-lower-alpha">
+		<ul class="af-ul-2">
 			<li>Install the Afero mobile app (iOS or Android) on your smartphone, and</li>
 			<li>Download the Afero Profile Editor (Windows or macOS) on your computer.</li>
 		</ul>
