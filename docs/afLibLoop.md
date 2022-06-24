@@ -217,4 +217,4 @@ void loop() {
 }
 ```
 
- **&#8674;** *Next:*&nbsp;&nbsp;[Getting/Setting Attributes](../afLibAttributes)
+<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Getting/Setting Attributes](../afLibAttributes)

@@ -14,4 +14,4 @@ Use the information in this section if you have an MCU in your device that must 
     - [Checking Capabilities](../afLibCapabilities)
 - [Attribute Update Reasons and States](../PeripheralUpdates)
 
- **&#8674;** *Next:*&nbsp;&nbsp;[MCU to ASR Communication](../MCUtoHachi)
+<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[MCU to ASR Communication](../MCUtoHachi)

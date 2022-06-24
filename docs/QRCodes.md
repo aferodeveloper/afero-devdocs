@@ -227,4 +227,4 @@ The plain-text Association ID is used for manual-entry of the Association ID by 
 
 
 
- **&#8674;** *Next:*&nbsp;&nbsp;[Hardware Design Files](../DataSheets)
+<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Hardware Design Files](../DataSheets)

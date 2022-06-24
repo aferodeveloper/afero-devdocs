@@ -216,4 +216,4 @@ Lastly, there is the rare situation in which both the master and the slave have 
 
 The protocol dictates that whenever there is a collision, the MCU wins. Both the MCU and ASR notice the collision. ASR queues its Sync Response and prepares to handle the MCU Sync Request. The MCU just waits for the next Ready byte from ASR and then resends the Sync Request. At this point the transaction looks just like [Example 3: Update Attribute](../afPro-UART/#example-3-update-attribute), above.
 
- **&#8674;** *Next:*&nbsp;&nbsp;[afPro UART Protocol - A Practical Guide](../afPro-UART-S)
+<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[afPro UART Protocol - A Practical Guide](../afPro-UART-S)

@@ -81,4 +81,4 @@ With a Profile Editor project open:
 - Selected checkboxes and radio buttons are partially filled with orange<img src="../img/APE-CheckboxSel.png" width="40" style="vertical-align:middle;margin:0px 0px;border:none">; deselected checkboxes and radio buttons are filled with dark grey<img src="../img/APE-CheckboxDesel.png" width="40" style="vertical-align:middle;margin:0px 0px;border:none">.
 - Selected options have an orange background (“OUTPUT” in the example); deselected options have a black background<img src="../img/APE-Selection.png" width="100" style="vertical-align:middle;margin:0px 0px;border:none">.
 
-   **&#8674;** *Next:*&nbsp;&nbsp;[Define the Device Type](../DeviceType)
+  <strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Define the Device Type](../DeviceType)

@@ -53,4 +53,4 @@ Different types of devices often have some hardware components in common. Not on
 
 This is where the firmware pool comes into play. The firmware for the radio module is written once and only one artifact exists. This firmware is uploaded to the firmware pool and a general firmware record is created in the Afero Platform. To make this firmware available for OTAs, the firmware must be associated with a specific device type.
 
- **&#8674;** *Next:*&nbsp;&nbsp;[OTA API Endpoints](../API-OTAEndpoints-Funcs)
+<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[OTA API Endpoints](../API-OTAEndpoints-Funcs)

@@ -58,4 +58,4 @@ Project files are complete and saved locally. This has a few practical implicati
 
 <mark>**&#x26A0; Caution!**  Avoid making edits directly on project files with tools other than the Afero Profile Editor. If you do, normal consistency checks and validation are bypassed, which could cause unexpected results.</mark>
 
- **&#8674;** *Next:*&nbsp;&nbsp;[Select the Project](../SelectProject)
+<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Select the Project](../SelectProject)

@@ -9,4 +9,4 @@ This section will help you integrate Afero products into your IoT product:
 - [ASR-2 Hardware Integration](../ASR2HWInt)
 - [Hardware Design Files](../DataSheets)
 
- **&#8674;** *Next:*&nbsp;&nbsp;[Afero Hardware Products](../Hardware)
+<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Afero Hardware Products](../Hardware)

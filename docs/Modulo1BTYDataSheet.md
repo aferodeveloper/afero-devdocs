@@ -227,4 +227,4 @@ Contains EYSHCN: 001-A10745
 
 This product installs a radio system which has been approved as a radio station in a low power data communication system based on the Radio Law.
 
- **&#8674;** *Next:*&nbsp;&nbsp;[Modulo-2 Data Sheet](../Modulo2DataSheet)
+<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Modulo-2 Data Sheet](../Modulo2DataSheet)

@@ -111,10 +111,7 @@ ol,ul,dl
 	margin-top:0;
 	margin-bottom:1rem
 }
-ol ol,ul ul,ol ul,ul ol
-{
-	margin-bottom:0
-}
+
 dt
 {
 	font-weight:700
@@ -207,7 +204,8 @@ svg
 }
 table
 {
-	border-collapse:collapse
+	border-collapse:collapse;
+	margin-bottom:2rem
 }
 caption
 {

@@ -189,4 +189,4 @@ Note that the following operations **do not** exist:
 - UPDATE of an ASR attribute from MCU or the Cloud
 - UPDATE of an MCU attribute from the Cloud
 
- **&#8674;** *Next:*&nbsp;&nbsp;[afLib API](../API-afLib)
+<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[afLib API](../API-afLib)

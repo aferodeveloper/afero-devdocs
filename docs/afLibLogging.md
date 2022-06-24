@@ -54,4 +54,4 @@ None.
 
 2. On Arduino, the following two lines of code are functionally identical:<br>```Serial.println( int8variable, HEX );```<br>```  af_logger_println_formatted_value( int8variable, AF_LOGGER_HEX );```
 
- **&#8674;** *Next:*&nbsp;&nbsp;[afLib Result Codes](../afLibErrors)
+<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[afLib Result Codes](../afLibErrors)

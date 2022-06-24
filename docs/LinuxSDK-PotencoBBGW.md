@@ -210,4 +210,4 @@ Potenco also acts as an Afero edge device and can communicate with the Afero Clo
 
 If you have any questions or issues with Potenco please use the project's [GitHub Project Issue Tracker](https://github.com/AferoCE/potenco/issues).
 
- **&#8674;** *Next:*&nbsp;&nbsp;[Add an afLib C-Based App to Potenco Build for BBGW](../LinuxSDK-PotencoBBGWApp)
+<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Add an afLib C-Based App to Potenco Build for BBGW](../LinuxSDK-PotencoBBGWApp)

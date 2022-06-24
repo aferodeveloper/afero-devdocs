@@ -213,4 +213,4 @@ To use the Attribute Tester, click any group icon to reveal the associated Attri
 
 **6**&nbsp;&nbsp;When you’re done testing your UI, remove the Preview Device by doing this: In the mobile app, go to the Preview Device > Settings screen, then tap the Remove Device button.
 
- **&#8674;** *Next:*&nbsp;&nbsp;[Define the Rules & Notifications](../RulesDef)
+<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Define the Rules & Notifications](../RulesDef)

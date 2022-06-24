@@ -139,4 +139,4 @@ void attrEventCallback(const af_lib_event_type_t eventType,
 }
 ```
 
- **&#8674;** *Next:*&nbsp;&nbsp;[Handling MCU OTA Updates](../MCU-OTA)
+<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Handling MCU OTA Updates](../MCU-OTA)

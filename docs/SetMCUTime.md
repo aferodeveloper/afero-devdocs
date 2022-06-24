@@ -89,4 +89,4 @@ The example Profiles provided in the afero_clock project enable the ASR_UTC_TIME
     - int32_t utc_offset_change_time
     - int32_t asr_utc_time
 
- **&#8674;** *Next:*&nbsp;&nbsp;[Handling Reboot Requests](../RebootRequests)
+<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Handling Reboot Requests](../RebootRequests)

@@ -513,4 +513,4 @@ void loop() {
 }
 ```
 
- **&#8674;** *Next:*&nbsp;&nbsp;[Checking Capabilities](../afLibCapabilities)
+<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Checking Capabilities](../afLibCapabilities)

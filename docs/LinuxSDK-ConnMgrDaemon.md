@@ -246,4 +246,4 @@ Developers can add and support their own attributes by first adding these attrib
 <mark>**&#x26A0; Caution!**  These attributes must be part of the device Profile to work properly.</mark>
 
 
- **&#8674;** *Next:*&nbsp;&nbsp;[Edge Device Daemon Implementation](../LinuxSDK-EdgeDaemon)
+<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Edge Device Daemon Implementation](../LinuxSDK-EdgeDaemon)

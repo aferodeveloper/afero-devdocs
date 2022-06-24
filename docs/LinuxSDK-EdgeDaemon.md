@@ -115,4 +115,4 @@ Differences from afLib:
 - Logging is done to syslog, instead of a supplied stream.
 - The concept of transport is not supported. The “transport” implements a serial communication protocol for communicating with an MCU attached to the device.
 
- **&#8674;** *Next:*&nbsp;&nbsp;[OTA Manager Daemon Implementation](../LinuxSDK-OTAManager)
+<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[OTA Manager Daemon Implementation](../LinuxSDK-OTAManager)

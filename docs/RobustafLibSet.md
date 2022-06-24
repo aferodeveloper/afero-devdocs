@@ -123,4 +123,4 @@ Examples #1 and #2 demonstrate a useful pattern: Code in the callback is restric
 
 - Example #3 shows a variation in which retrying is limited by a timeout: as above, the code retries `af_lib_set_attribute()`, waiting for AF_SUCCESS. But here a timeout prevents an indefinite cycle of re-trying in the face of some serious condition that is blocking us. If the timeout is exceeded, we assume that communication with afLib is fatally obstructed, so we trigger a reboot by directly manipulating the reset pin.
 
- **&#8674;** *Next:*&nbsp;&nbsp;[Useful Debugging Methods](../DebugMethods)
+<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Useful Debugging Methods](../DebugMethods)

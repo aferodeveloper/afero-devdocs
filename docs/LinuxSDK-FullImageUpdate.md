@@ -79,7 +79,7 @@ Follow the instructions outlined below to perform a full OTA image update. (The 
 
 **Step 3**&nbsp;&nbsp;[Install the OTA image](../LinuxSDK-FullImageUpdate#step-3-install-image-on-device-using-otamgr-daemon) on the device using the otamgr daemon.
 
-### ### Step 1. Create the OTA Image
+### Step 1. Create the OTA Image
 
 This section focuses on how to create your OTA image, including integrating the OTA image creation with your build process.
 
@@ -506,4 +506,4 @@ Request accepted for processing
 
 
 
- **&#8674;** *Next:*&nbsp;&nbsp;[Afero Potenco Setup Guides](../LinuxSDK-PotencoSetupGds)
+<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Afero Potenco Setup Guides](../LinuxSDK-PotencoSetupGds)

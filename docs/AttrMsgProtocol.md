@@ -10,8 +10,9 @@ You will need the information on this page only if you are implementing the prot
 
 The format of the messages is defined below:
 
-| MESSAGE |        | uint16_t | Message length including header, but not including the two bytes of the length itself|
+|  |  |  |  |
 | :------ | :------ | :---------- |--------------------------------------------|
+| MESSAGE |        | uint16_t | Message length including header, but not including the two bytes of the length itself|
 |    | **Header**         | uint8_t  |Message type:<br>0x0B = Set<br>0x0C = Get<br>0x0D = Update<br>0x29 = Update Rejected<br>0x2A = Set Default 
 |    |                    | uint8_t  | Request ID:<br>0 = Transaction initiated from peripheral<br>>0 = Transaction initiated from authenticator                                                             
 |    |   **SET**         | uint16_t  | Attribute ID 
@@ -63,4 +64,4 @@ The format of the messages is defined below:
     - When the MCU performs a SET or GET, it uses a request ID of zero.
 - If the MCU forgets to send an UPDATE for a SET initiated from the service for a specific attribute, that attribute **cannot be SET by the service again**. The attribute will remain **stuck** until ASR reboots and forgets that the SET is still pending.
 
- **&#8674;** *Next:*&nbsp;&nbsp;[Device Attribute Registry](../AttrRegistry)
+<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Device Attribute Registry](../AttrRegistry)

@@ -161,4 +161,4 @@ Notice that the LED is on, which is indicated on the Home screen. Because it’s
 
 You should now be able to control the Modulo LED using the LED buttons on your smartphone, and the pushbutton on the Modulo board should toggle the On/Off Button control in the mobile app UI.
 
- **&#8674;** *Next:*&nbsp;&nbsp;[Tutorial 3: Afero + Arduino](../Lesson3)
+<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Tutorial 3: Afero + Arduino](../Lesson3)

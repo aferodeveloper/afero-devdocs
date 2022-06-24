@@ -10,5 +10,5 @@ In addition, we have instructions for creating your own Potenco apps:
 - [Add an afLib C-Based App to the Potenco Build for BeagleBone Green Wireless](../LinuxSDK-PotencoBBGWApp)
 - [Add an afLib C-Based App to the Potenco Build for SAMA5D2](../LinuxSDK-PotencoSAMA5D2App)
 
- **&#8674;** *Next:*&nbsp;&nbsp;[Afero Potenco Setup Guide for BeagleBone Green Wireless Board](../LinuxSDK-PotencoBBGW)
+<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Afero Potenco Setup Guide for BeagleBone Green Wireless Board](../LinuxSDK-PotencoBBGW)
 

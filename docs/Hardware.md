@@ -28,4 +28,4 @@ A shield board to be used with the Modulo-1 development board. Use Plinto to ext
 
 Read the [Product Brief](../files/PlintoProductBrief.pdf) – Purchase from [Mouser](https://www.mouser.com/ProductDetail/Afero/AFERO-DB-02?qs=KdD021b6dNchrTtiVGrGiA%3d%3d) – P/N 461-AFERO-DB-02
 
- **&#8674;** *Next:*&nbsp;&nbsp;[Modulo-1 Data Sheet](../Modulo1DataSheet)
+<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Modulo-1 Data Sheet](../Modulo1DataSheet)
