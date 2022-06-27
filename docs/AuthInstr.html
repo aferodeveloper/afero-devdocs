@@ -1,0 +1,534 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<!DOCTYPE html>
+<html>
+<%- include partials/head.html %>
+<body id="devdoc-auth-instr">
+
+	<div class="af-body-wrapper">
+
+	<%- include partials/header.html %>
+
+		<div class="af-body-container af-container">
+
+		<%- include partials/side-nav.html %>
+
+			<div class="body-content col-xs-9-last">
+
+				<h1 id="DevDocTemplate">Developer Doc Authoring Instructions</h1>
+				<p>When writing in the developer docs, please use the instructions and HTML tags and classes included in this document. The developer docs are in the “devportal” git repo. The posted HTML files are in the devportal://src/client-side/views/ directory. Linked files and image files are in the devportal://src/client-side/static/custom/files and /images directories, respectively.</p>
+				<ul class="af-ul">
+					<li><a id="1481754658.55" href="#AuthInstruc">Authoring Environment</a></li>
+					<li><a id="1481754658.65" href="#OrgOfFiles">Organization of Files</a></li>
+					<li><a id="1505928073.43" href="#AddNewFile">How to Add a New Developer Doc File</a></li>
+					<li><a id="1481754658.75" href="#TemplateInstr">HTML Instructions</a>
+						<ul class="af-ul">
+							<li><a id="1481754658.85" href="#Conventions">Characters and Other Conventions</a></li>
+							<li><a id="1481754658.95" href="#Variables">Variables</a></li>
+							<li><a id="1481754659.05" href="#Headings">Headings</a></li>
+							<li><a id="1481754659.16" href="#Lists">Lists</a></li>
+							<li><a id="1481754659.26" href="#Tables">Tables</a></li>
+							<li><a id="1481754659.36" href="#Links">Links</a></li>
+							<li><a id="1481754659.46" href="#SpanTags">Span Tags</a></li>
+							<li><a id="1481754659.57" href="#Images">Images</a></li>
+							<li><a id="1481754659.67" href="#NotesWarnings">Notes and Warnings</a></li>
+						</ul>
+					</li>
+				</ul>
+
+				<h2 id="AuthInstruc">Authoring Environment</h2>
+
+				<p>To get started with the developer docs, you must first get your environment ready by doing the following:</p>
+				<ol class="af-ol">
+					<li>Install <a id="1481752131.06" href="https://nodejs.org" target="_blank">Node.js</a>.</li>
+					<li>Log in to <a id="1481752131.16" href="https://www.npmjs.com/" target="_blank">npm</a> using the command line interface.</li>
+					<li>If you don’t have an npm account, create one. Then see someone on the service team to get your account added to our corporate account.</li>
+				</ol>
+				<p>Once your environment is set up, do the following:</p>
+				<ol class="af-ol">
+					<li>From the command line, go to the base directory of the devportal repo. You’ll know you’re in the right place if, when you type you <code>ls</code>, you should see a package.json file.</li>
+					<li>Install all the necessary libraries by typing: <code>npm install</code></li>
+					<li>Start the server by typing: <code>npm run local</code></li>
+					<li>Point your browser to <a id="1481752131.26" href="http://localhost:3000/" target="_blank">http://localhost:3000/</a> to view the documentation set.</li>
+				</ol>
+
+				<h2 id="OrgOfFiles">Organization of Files</h2>
+
+				<p><strong>GitHub Repository:</strong> devportal</p>
+				<div class="af-table-borders">
+						<table>
+							<thead>
+								<tr>
+									<th align="left">File(s)</th>
+									<th align="left">Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>/src/client-side/views/*.html</td>
+									<td>Source for developer doc content; edit docs here.</td>
+								</tr>
+								<tr>
+									<td>/src/client-side/views/AuthInstr.html</td>
+									<td>These instructions.</td>
+								</tr>
+								<tr>
+									<td>/src/client-side/views/Template.html</td>
+									<td>When creating a new .html file, use a copy of this file as your starting point.
+								<tr>
+									<td>/src/client-side/views/partials/*.html</td>
+									<td>Source for reusable “snippits”. Reference them in HTML files using: <code>&lt;%- include partials/snippet-filename.html %&gt;</code>. We’re using them for style sheet links and footers right now.</td>
+								</tr>
+								<tr>
+									<td>/src/client-side/views/partials/nav-data.html</td>
+									<td>File that defines the left-hand Dev Portal Navigation pane. This is where you  create the nav panel order and hierarchy.</td>
+								</tr>
+								<tr>
+									<td>/src/client-side/static/custom/images/</td>
+									<td>Source for all images referenced in HTML files (PNG, JPG, etc.); put new/modified images here.</td>
+								</tr>
+								<tr>
+									<td>/src/client-side/static/custom/files/</td>
+									<td>Source for all files referenced in HTML files (PDF, ZIP, etc.); put new/modified files here.</td>
+								</tr>
+								<tr>
+									<td>/src/server-side/server.js</td>
+									<td>To be viewable as part of the devportal, a file in the /client-side/views/ directory must have an entry in this file, along with some of its attributes and the link to the “Next” file in series (if relevant). See <a id="1505952053.37" href="#AddNewFile">How to Add a New Developer Doc Page</a>.</td>
+								</tr>
+								<tr>
+									<td>locale/en/locale.json</td>
+									<td>Localized file, in which “variables” are defined. Read more in <a id="1505869178.12" href="#Variables">Variables</a> below.</td>
+								</tr>
+								<tr>
+									<td>/src/client-side/sass/custom/pages.scss</td>
+									<td>Source for basic page style sheets; reference and edit styles here.</td>
+								</tr>
+								<tr>
+									<td>pdf_png_source/Source-Guides/</td>
+									<td>Holds the Word source for various guides.</td>
+								</tr>
+								<tr>
+									<td>pdf_png_source/Source-HW-Specs/</td>
+									<td>Holds the hardware spec Word source files.</td>
+								</tr>
+								<tr>
+									<td>pdf_png_source/Source-Images/</td>
+									<td>Holds the image source files (usually .sketch files).</td>
+								</tr>
+							</tbody>
+						</table>
+				</div>
+
+				<h2 id="AddNewFile">How to Add a New Developer Doc File</h2>
+				<p>When writing new content, follow these steps:</p>
+				<ol class="af-ol">
+					<li>Make a copy of /src/client-side/views/Template.html, then rename it using a short name that clearly and uniquely identifies the content. Use initial caps to separate words; e.g., Modulo2DataSheet.html. If you must use a dash, that’s ok, but don’t use underscores or spaces in the filename.</li>
+					<li>
+						<p>Open this file for editing: /src/server-side/server.js. You must add your new file to the list of dev doc HTML files. It doesn’t matter where you add it in the list of files, but try to insert it in a logical place. The format to use is:</p>
+						<pre>
+{
+ file: "SystemOverview",
+ pageDescription: "",
+ pageTitle: "Afero IoT Platform Overview | Afero",
+ twitterPageTitle: "Afero IoT Platform Overview",
+ next: {
+   id: "025-237C3t5",
+   href: "/CoreConcepts",
+   title: "Core Development Concepts"
+ }
+},</pre>
+						<p><em>Where:</em></p>
+						<div class="af-table-nostyle">
+						<table>
+							<caption></caption>
+							<thead></thead>
+							<tbody>
+								<tr>
+									<td><code>file</code></td>
+									<td>HTML filename, without the “.html”.</td>
+								</tr>
+								<tr>
+									<td><code>pageDescription</code></td>
+									<td>Leave blank, for now.</td>
+								</tr>
+								<tr>
+									<td><code>pageTitle</code></td>
+									<td>The title of the page (H1 tag contents). Add the “| Afero” as shown in the example above.</td>
+								</tr>
+
+								<tr>
+									<td><code>twitterPageTitle</code></td>
+									<td>The title of the page (H1 tag contents).</td>
+								</tr>
+								<tr>
+									<td><code>next*</code></td>
+									<td><code>id</code> - Create using the ider.py script, described in <a id="1505948431.94" href="#Links">Links</a>, Step 2.<br>
+										<code>href</code> - The filename of the next page in the section, without the .html extension.<br>
+										<code>title</code> - The page’s H1 title content.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+						<p>*<em>Within each major section</em> of the developer docs, we provide navigation at the bottom of the pages to the next file <em>in that section</em>. You define this navigation in the <code>next</code> attributes described above. Note that even if there is no file that comes next in the section, include a next entry, but do not put any information within the brackets; e.g.:</p>
+						<pre>
+{
+file: "LabX",
+pageDescription: "",
+pageTitle: "Lab X: Atmel XPlained Pro Demo | Afero",
+twitterPageTitle: "Lab X: Atmel XPlained Pro Demo",
+next: {}
+},</pre>
+						<p>Pay close attention to proper punctuation in the server.js file!</p>
+						<div class="af-callout">
+							<div class="callout-img">
+								<i class="af-icon-checkmark-circle"></i>
+							</div>
+							<div class="callout-text">
+								<p>After modifying the server.js file, you must restart <code>npm</code> (by typing <code>npm run local</code>) in order to view the new file.</p>
+							</div>
+							<br class="af-clear">
+						</div>
+					</li>
+					<li>Make sure you can view your new file by starting up npm and pointing your browser to “localhost:3000/<em>NewFileName</em>”. It’s not uncommon for npm to fail to start due to some syntax error in the server.js file. If this happens, check your new entry in server.js and try again.</li>
+					<li>Create your new document content following HTML markup conventions listed below in <a id="1505948432.04" href="#TemplateInstr">HTML Instructions</a>. Be careful to retain all the content that you started with (from Template.html), except the commented-out portion. The file clearly identifies where you should substitute your new content: <code>&lt;!-- ########### INSERT CONTENT HERE ########### --&gt;</code>.</li>
+					<li>When your new content has been reviewed and is final, add your page into the left-hand Navigation pane:
+						<ol class="af-ol-lower-alpha">
+							<li>Open the file: /src/client-side/views/partials/nav-data.html.</li>
+							<li>Locate where you want to insert the new page in the list of files and add your file, following the syntax used. For example:
+							<pre>
+{
+	link: "/Overview",
+	name: "Introducing " + locale.CompNameShort,
+	id: "TOC-Intro",
+	subMenu: [
+	{
+		link: "/SystemOverview",
+		name: locale.CompNameShort + " IoT Platform Overview",
+		id: "TOC-Overview"
+	},
+	{
+		link: "/CoreConcepts",
+		name: "Core Development Concepts",
+		id: "TOC-CoreConcepts"
+	}]
+},</pre>
+							<p>You can create two levels of submenus, as shown here:<p>
+							<pre>
+{
+	link: "/FW-API",
+	name: "Firmware Reference",
+	id: "TOC-FW-API",
+	subMenu: [
+	{
+		link: "/MCUtoHachi",
+		name: "MCU to ASR Communication",
+		id: "TOC-MCUtoHachi",
+		subMenu: [
+		{
+			link: "/afPro-SPI",
+			name: "afPro SPI Protocol - How It Works",
+			id: "TOC-afPro-SPI"
+		},
+		{
+			link: "/afPro-UART",
+			name: "afPro UART Protocol - How It Works",
+			id: "TOC-afPro-UART"
+		}]
+	},
+...
+},</pre>
+
+							</li>
+						</ol>
+					</li>
+					<li>Check that your new page shows up correctly in the Navigation pane; make adjustments to the nav-data.html file until the page displays correctly.</li>
+					
+				</ol>
+
+				<h2 id="TemplateInstr">HTML Instructions</h2>
+				<p>We currently follow the HTML5 standard.</p>
+
+				<h3 id="Conventions">Characters and Other Conventions</h3>
+				<ul class="af-ul">
+					<li>Indent the HTML code using tabs, not spaces.</li>
+					<li>Use “curly quotes” and ‘curly apostrophes’.<br>Note! If you set your HTML/text editor to automatically use the curly quotes, then when you give a tag class a value, you must do whatever it takes to use straight quotes, or the value won’t be recognized.</li>
+					<li>Use the ellipsis character: …  Never use three periods for an ellipsis as they can break across lines.</li>
+					<li>Spaces (<code>&amp;nbsp;</code>) should not be used for formatting purposes - instead, use CSS margin styling.</li>
+					<li>Always place punctuation outside quote marks; for example, in the fragment below, the comma is placed outside the ending quote after Mindy:<br>…if your ClientID was “Mork” and your Client Secret was “Mindy”, you would…</li>
+					<li>Spell out numbers zero through nine, unless a higher number appears in the same sentence.</li>
+				</ul>
+				<p>For more information about terminology and style, refer to these documents :</p>
+				<ul class="af-ul">
+					<li><a id="1481756961.19" href="https://drive.google.com/open?id=0ByLEvOOG939QaW9SRzQySzhNMGc" target="_blank">Afero Localization Glossary</a></li>
+					<li><a id="1481756961.3" href="https://drive.google.com/open?id=0ByLEvOOG939QWFJjcmJ0SVYxVGs" target="_blank">Afero Localization Style Guide</a></li>
+					<li><a id="1481756961.4" href="https://drive.google.com/open?id=15Ea0q2RLsSAQkkWc3_Wo7wN1dJnT_dN0mfQmtnOkn_0" target="_blank">Standard UI Text</a></li>
+					<li><a id="1505869178.23" href="http://wiki.afero.io/display/PROD/Afero+Product+Names" target="_blank"><%- locale.CompNameShort %> Product Names</a></li>
+				</ul>
+
+				<h3 id="Variables">Variables</h3>
+				<p>Variables are defined in this file: <code>devportal://locale/en/locale.json</code>. </p>
+				<p>To reference these terms in the HTML files, use the format: <code>&lt;%- locale.<em>variable-name</em> %&gt;</code>. For example, this code:<code>&nbsp;&lt;%- locale.MobileAppLong %&gt;</code> will display as:&nbsp;<%- locale.MobileAppLong %>.</p>
+
+				<h3 id="Headings">Headings</h3>
+				<p>Begin each HTML file with an <code>&lt;h1&gt;</code> tag. If the heading maps to a top-level heading in the Navigation pane, add this class: <code>&lt;h1 class="main-head"&gt;</code>. This will create an all-caps heading.</p>
+				<p>For all headings, add an id if you think you might want to link to it. For example:</p>
+				<p><code>&lt;h2 id=&quot;First-Heading&quot;&gt;My First Heading&lt;/h2&gt;</code>. Use hyphens when naming IDs to separate words.</p>
+				<p>Here are examples of each heading:</p>
+					<h1 id="SampleH1A" class="main-head">Sample H1 (Section) Heading</h1>
+					<h1 id="SampleH1">Sample H1 Heading</h1>
+					<h2 id="SampleH2">Sample H2 Heading</h2>
+					<h3 id="SampleH3">Sample H3 Heading</h3>
+					<h4 id="SampleH4">Sample H4 Heading</h4>
+					<h5 id="SampleH5">Sample H5 Heading</h5>
+
+				<h3 id="Lists">Lists</h3>
+				<p>Use ordered lists for steps or for displaying information that occurs sequentially. Use unordered lists for plain lists that imply no order. It’s common sense.</p>
+				<p>Keep ordered lists to no more than two levels, using numbers then lowercase alpha characters. If you find you need a third level, try hard to reorganize the information so it doesn’t require three levels. There are some exceptions to this, especially for hardware checklists, such as in the <em><%- locale.OurChip1 %> Hardware Integration Guide</em>.</p>
+
+				<h4 id="UnorderedLists">Unordered Lists</h4>
+				<ul class="af-ul">
+					<li>For your basic, bulleted list, use <code>&lt;ul class="af-ul"&gt;</code>.</li>
+					<li>To create a list without markers, use <code>&lt;ul class="af-ul no-bullet"&gt;</code>.</li>
+					<ul class="af-ul-2">
+						<li>Level 2 unordered list. Use <code>&lt;ul class="af-ul-2"&gt;</code>.</li>
+						<li>Another level 2 item.</li>
+						<ul class="af-ul-3">
+							<li>Level 3 nested list. Use <code>&lt;ul class="af-ul-3"&gt;</code>.</li>
+							<li>Use this many levels only in an emergency!</li>
+						</ul>
+					</ul>
+				</ul>
+
+				<h4 id="OrderedLists">Ordered Lists</h4>
+				<ol class="af-ol">
+					<li>Use <code>&lt;ol class="af-ul"&gt;</code>.</li>
+					<li>Another list item.</li>
+						<ol class="af-ol-lower-alpha">
+							<li>Level 2 ordered list using <code>&lt;ol class="af-ol-lower-alpha"&gt;</code>.</li>
+							<li>Another list item.</li>
+						</ol>
+					<li>Final item in this ordered list.</li>
+				</ol>
+
+				<h3 id="Tables">Tables</h3>
+				<p>Use a table for defining terms, parameters, screen elements, etc. When appropriate, use headings and/or captions. Captions aren’t required unless they’re needed for clarity. Only number the tables (i.e., Table 1, ...) if the numbers are applied consistently throughout the section/page.</p>
+				
+				<h4>Table with Borders, Headings, and Optional Caption</h4>
+				<p>You can use the same table template to include a heading row and/or caption, or not.</p>
+				<p>Wrap table in: <code>&lt;div class="af-table-borders"&gt;</code>.</p>
+				<div class="af-table-borders">
+					<table>
+						<caption>Table 1. Caption (Optional)</caption>
+						<thead>
+							<tr>
+								<th align="left">Heading 1</th>
+								<th align="left">Heading 2</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Info</td>
+								<td>Even more info.</td>
+							</tr>
+							<tr>
+								<td>Text</td>
+								<td>More text.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<h4>Table with Borders But No Headings</h4>
+				<p>Wrap table in: <code>&lt;div class="af-table-borders"&gt;</code>.</p>
+				<div class="af-table-borders">
+					<table>
+						<caption></caption>
+						<thead></thead>
+						<tbody>
+							<tr>
+								<td>Parameter1</td>
+								<td>What it means.</td>
+							</tr>
+							<tr>
+								<td>Parameter2</td>
+								<td>All about it.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<h4>Table with No Internal Borders</h4>
+				<p>Wrap table in: <code>&lt;div class="af-table"&gt;</code>.</p>
+				<div class="af-table">
+					<table>
+						<caption></caption>
+						<thead></thead>
+						<tbody>
+							<tr>
+								<td>First column entry.</td>
+								<td>Second column entry.</td>
+							</tr>
+							<tr>
+								<td>Another column entry.</td>
+								<td>And another.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<h4>Table with No Borders At All</h4>
+				<p>Wrap table in: <code>&lt;div class="af-table-nostyle"&gt;</code>.</p>
+				<div class="af-table-nostyle">
+				<table>
+					<caption></caption>
+					<thead></thead>
+					<tbody>
+						<tr>
+							<td>First column entry.</td>
+							<td>Second column entry.</td>
+						</tr>
+						<tr>
+							<td>Another column entry.</td>
+							<td>And another.</td>
+						</tr>
+					</tbody>
+				</table>
+				</div>
+
+
+				<h3 id="Links">Links</h3>
+				<p><strong>Every link (anchor tag) must contain an ID that is unique across the developer docs</strong>. This is for auto-test purposes. We use a timestamp as the ID and generate it using a script. The script, ider.py, is located in the same directory as the HTML files (/src/client-side/views/). Note that you might have to give yourself execute permission first by typing: <code>chmod +x ider.py</code></p>
+				<p><strong>“Next” page links are special.</strong> Most of the links you’ll create will be within the HTML pages that make up the developer portal. The exception to this is the “Next” page link at the bottom of pages within sections. These links are defined in the /src/server-side/server.js file, and you generate their IDs using the Template.html file. Read comment 12 in Template.html for details and use the ider.py directions in step 2 below.</p> 
+				<p>To create an ID for a link in an HTML file living in /src/client-side/views/, do the following:</p>
+				<ol class="af-ol">
+					<li>In your HTML file, within the <code>&lt;a&gt;</code> tag, create the ID as follows: <code>&lt;a id=&quot;&quot; href="/<em>File- or anchor-name</em>"&gt;</code>. The script will look for occurrences of <code>id=&quot;&quot;</code> (single quotes also work), and then will insert a timestamp inside the quotes.</li>
+					<li>
+						<p>Run the ider.py script in the HTML working directory:<p>
+						<p><strong>Usage:</strong></p>
+						<p><code>ider.py [-h] [-d] target_file</code></p>
+						<p><strong>Positional arguments:</strong></p>
+						<p><code>target_file&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>Path to the file to be ID’d.</p>
+						<p><strong>Optional arguments:</strong></p>
+						<p><code>-h, --help&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>Show this help message and exit.</p>
+						<p><code>-d, --dry_run&nbsp;&nbsp;&nbsp;</code>Don’t save; just report what it WOULD do.</p>
+						<p>As you can see, you can provide an optional <code>-d</code> to make it just say what it <em>would</em> do, but not save the output. The script will print the file (with inserted IDs) to your console, and then report how many changes it would have made.</p>
+						<p>If you <em>don’t</em> provide <code>-d</code>, the script will overwrite the input file and report how many changes it made.</p>
+					</li>
+				</ol>
+
+				<h3 id="SpanTags">Span Tags</h3>
+				<p>Within paragraphs, you can use <code>&lt;span&gt;</code> tags to create inline styles. We’ve defined the following span tags:</p>
+				<div class="table">
+					<table class="af-table-borders">
+						<thead>
+							<tr>
+								<th align="left">Span Class</th>
+								<th align="left">Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>internal </td>
+								<td><span class="internal">Text is large and red for visibility.</span> Use to note to-do items, questions, etc. These must be removed before a deployment so use with care.</td>
+							</tr>
+							<tr>
+								<td>UIText</td>
+								<td><span class="UIText">Text is bold and blue.</span> Use to call out UI elements, such as button names, menu item names, and field labels.</td>
+							</tr>
+							<tr>
+								<td>highlight-orange</td>
+								<td><span class="highlight-orange">No real purpose but it exists.
+						</tbody>
+					</table>
+				</div>
+				<p>For <strong>bold</strong> and <em>italic</em>, use the <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> tags, respectively.</p>
+	
+				<h3 id="Images">Images</h3>
+				<p>Source your image files (screenshots, diagrams, etc.) using Sketch or Adobe Photoshop if possible. You can place related images in the same source file, then export slices. Try to name the source file and the slice files using the same base so they can be related if updates to the slices are needed.</p>
+				<p>For <code>&lt;img&gt;</code> tags:</p>
+				<ul class="af-ul">
+					<li>The attributes <code>src</code> and <code>alt</code> are required.</li>
+					<li>If you need to size the image, only specify the <code>height</code> attribute, in pixels (default).</li>
+			    	<li>Use <code>class="img-inline"</code> for small images inline with text, such as illustrative icons.</li>
+					<li>Use <code>class="img-br"</code> if within <code>&lt;ol&gt;</code> or <code>&lt;ul&gt;</code> tags and if image is not inline.</li>
+				</ul>
+				<p>You can also use the parental <code>&lt;figure&gt;</code> element, which can include a <code>&lt;figcaption&gt;</code> tag in addition to the required <code>&lt;img&gt;</code> tag. We don’t usually use captions with figures, but if you do, position it above (or below) the image by placing the <code>&lt;figcaption&gt;</code> tag before (or after) the <code>&lt;img&gt;</code> tag. For example:</p>
+				<figure>
+					<img alt="Afero Logo" src="/static/custom/images/afero-logo.svg" width="175">
+					<figcaption>Afero Logo</figcaption>
+				</figure>
+				<br>
+				<p>If using a caption, only number the figures (i.e., Figure 1, ...) if the numbers are applied consistently throughout the section/page.</p>
+
+				<h3 id="ProgramListings">Program Listings</h3>
+				<p>To include a block of code, use the <code>&lt;pre&gt;</code> tag. It will display like this:</p>
+				<pre>
+afLib *aflib;
+
+void setup() {
+  Serial.begin(115200); 
+  // Initialize afLib
+  aflib = new afLib(CS_PIN, INT_PIN, ISRWrapper, onAttrSet, onAttrSetComplete);
+}
+
+void loop() {
+  aflib-&gt;loop()
+}</pre>
+
+				<p>To highlight code/scripts/input/etc. within a paragraph, wrap the word(s) in the <code>&lt;code&gt;</code> tag. It will display like this:</p>
+				<p>Allow the <code><%- locale.FWAPI %></code> state machine to run and call <code>onAttrSet</code> and <code>onAttrSetComplete</code> callbacks when appropriate.</p>
+	
+				<h3 id="NotesWarnings">Notes and Warnings</h3>
+				<p>We use notes and warnings to draw the reader’s attention to information:</p>
+
+				<div class="af-callout">
+					<div class="callout-img">
+						<i class="af-icon-checkmark-circle"></i>
+					</div>
+					<div class="callout-text">
+						<p>This is the note style to use when the note contains <em>just one paragraph of information</em>. Use this to call out important but noncritical information to the reader.</p>
+					</div>
+					<br class="af-clear">
+				</div>
+
+				<div class="af-callout">
+					<div class="callout-img">
+						<i class="af-icon-checkmark-circle"></i>
+					</div>
+					<div class="callout-text">
+						<p class="callout-br">This is the note style to use when the note contains <em>more than one paragraph of information</em>. Simply add a class to all but the last <code>&lt;p&gt;</code> tag: <code>&lt;p class="callout-br&gt;</code> to have multiple paragraphs.</p>
+						<p>Use this to call out important but noncritical information to the reader.</p>
+					</div>
+					<br class="af-clear">
+				</div>
+
+
+				<div class="af-callout">
+					<div class="callout-img">
+						<i class="af-icon-warning"></i>
+					</div>
+					<div class="callout-text">
+						<p>This is the warning style. Use this to call out really important and critical information to the user.</p>
+					</div>
+					<br class="af-clear">
+				</div>
+
+
+				<%- include partials/content-footer.html %>
+
+			</div>
+
+			<br class="af-clear">
+
+	</div><!-- .af-body-container -->
+
+	<%- include partials/footer.html %>
+
+</div><!-- .af-body-wrapper -->
+
+</body>
+<%- include partials/footer-scripts.html %>
+</html>

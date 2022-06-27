@@ -4,32 +4,129 @@ The Afero architecture uses a messaging protocol that is independent of the wire
 
 You will need the information on this page only if you are implementing the protocol yourself, **not** using afLib API. If you **are** using the API to communicate with ASR, the information below will be implemented for you.
 
-
-
 ## Message Format
 
 The format of the messages is defined below:
 
-|  |  |  |  |
-| :------ | :------ | :---------- |--------------------------------------------|
-| MESSAGE |        | uint16_t | Message length including header, but not including the two bytes of the length itself|
-|    | **Header**         | uint8_t  |Message type:<br>0x0B = Set<br>0x0C = Get<br>0x0D = Update<br>0x29 = Update Rejected<br>0x2A = Set Default 
-|    |                    | uint8_t  | Request ID:<br>0 = Transaction initiated from peripheral<br>>0 = Transaction initiated from authenticator                                                             
-|    |   **SET**         | uint16_t  | Attribute ID 
-|    |                    | uint16_t | Value length                          |    
-|    |                    | n bytes  | Variable-length attribute value       |    
-|    |  **GET**           |uint16_t  | Attribute ID                          |
-|    | **UPDATE**         | uint16_t | Attribute ID                          |                               |
-|    |                    | uint8_t  | Update state:<br>0x00 = UPDATED<br>0x01 = INTERRUPTED; device-side UPDATE in progress or preempted by device-side UPDATE<br>0x02 = UNKNOWN_ATTRIBUTE<br>0x03 = LENGTH_EXCEEDED<br>0x04 = CONFLICT; Previous SET in progress<br>0x05 = TIMEOUT; SET operation timed out<br>0x06 = FORBIDDEN; SET not allowed<br>0x07 = Q_FULL; Queued attribute queue full failure<br>0xAA = INVALID_STATE; Cloud received unrecognized state value |
-|    |                    | uint8_t  | Update reason:<br>0x00 = UNKNOWN<br>0x01 = MODULE; Unsolicited Afero module-initiated or MCU-initiated UPDATE; e.g., button press<br>0x02 = SERVICE; Response to Cloud-initiated SET<br>0x03 = MCU; Response to MCU-initiated SET<br>0x04 = LINK; Linking completed<br>0x05 = BOUND; A bound attribute was changed<br>0x06 = FORBIDDEN; SET not allowed<br>0x07 = NOTIFY_MCU_WE_REBOOTED; Notify MCU that ASR rebooted; not sent to Cloud<br>0x08 = LOCAL_SET; Response to local SET; e.g., when a scheduled event fires<br>0x09 = REBOOT0x0A = CRC_FAILURE; Cyclic redundancy check (CRC) failure; used to sync state between device and Cloud when attribute values no longer match<br>0x0B = GET_RESPONSE; Response to GET (Cloud or MCU-initiated)<br>0xAA = Invalid reason; SET when the Cloud receives an UPDATE with either no reason or an invalid reason |
-|    |                    | uint16_t            | Value length                                                 |
-|    |                    | n bytes             | Variable-length attribute value                              |
-|    | **Update Rejected** | uint16_t           | Attribute ID                                                 |
-|    |                    | uint8_t             | Update state: See "Update state" above. |
-|    |                    | uint8_t             | Update reason: See "Update reason" above. |
-|    | **Set Default**    | uint16_t            | Attribute ID                                                 | 
-|    |                    | uint16_t            | Value length                                                 |
-|    |                    | n bytes             | Variable-length attribute value                              |
+<div>
+<table class="af-table-borders">
+<colgroup>
+<col class="c1">
+<col class="c2">
+<col class="c3">
+<col class="c4">
+</colgroup>
+<tbody>
+<tr>
+<td rowspan="18"><strong>Message</strong></td>
+<td></td>
+<td>uint16_t</td>
+<td>Message length including header, but <strong>not</strong> including the two bytes of the length itself</td>
+</tr>
+<tr>
+<td rowspan="2"><strong>Header</strong></td>
+<td>uint8_t</td>
+<td><p>Message type:</p>
+	<p>0x0B = Set</p>
+	<p>0x0C = Get</p>
+	<p>0x0D = Update</p>
+	<!-- Used between service and ASR only<p>0x0F = Update Historical</p>-->
+	<p>0x29 = Update Rejected</p>
+	<p>0x2A = Set Default</p></td>
+</tr>
+<tr>
+<td>uint8_t</td>
+<td><p>Request ID:</p>
+	<p>&nbsp; 0 = Transaction initiated from peripheral</p>
+	<p>&gt;0 = Transaction initiated from authenticator</p></td>
+</tr>
+<tr>
+<td rowspan="3"><strong>SET</strong></td>
+<td>uint16_t</td>
+<td>Attribute ID</td>
+</tr>
+<tr>
+<td>uint16_t</td>
+<td>Value length</td>
+</tr>
+<tr>
+<td>n bytes</td>
+<td>Variable-length attribute value</td>
+</tr>
+<tr>
+<td><strong>GET</strong></td>
+<td>uint16_t</td>
+<td>Attribute ID</td>
+</tr>
+<tr>
+<td rowspan="5"><strong>UPDATE</strong></td>
+<td>uint16_t</td>
+<td>Attribute ID</td>
+</tr>
+<tr>
+<td>uint8_t</td>
+<td id="UpdateState"><p>Update states:</p>
+	<p>0x00 = UPDATED</p>
+	<p>0x01 = INTERRUPTED; device-side UPDATE in progress or preempted by device-side UPDATE</p>
+	<p>0x02 = UNKNOWN_ATTRIBUTE</p>
+	<p>0x03 = LENGTH_EXCEEDED</p>
+	<p>0x04 = CONFLICT; Previous SET in progress</p>
+	<p>0x05 = TIMEOUT; SET operation timed out</p>
+	<p>0x06 = FORBIDDEN; SET not allowed</p>
+	<p>0x07 = Q_FULL; Queued attribute queue full failure</p>
+	<p>0xAA = INVALID_STATE; Cloud received unrecognized state value</p></td>
+</tr>
+<tr>
+<td>uint8_t</td>
+<td id="UpdateReason"><p>Update reasons:</p>
+	<p>0x00 = UNKNOWN</p>
+	<p>0x01 = MODULE; Unsolicited Afero module-initiated or MCU-initiated UPDATE; e.g., button press</p>
+	<p>0x02 = SERVICE; Response to Cloud-initiated SET</p>
+	<p>0x03 = MCU; Response to MCU-initiated SET</p>
+	<p>0x04 = LINK; Linking completed</p>
+	<p>0x05 = BOUND; A bound attribute was changed</p>
+	<p>0x06 = FORBIDDEN; SET not allowed</p>
+	<p>0x07 = NOTIFY_MCU_WE_REBOOTED; Notify MCU that ASR rebooted; not sent to Cloud</p>
+	<p>0x08 = LOCAL_SET; Response to local SET; e.g., when a scheduled event fires</p>
+	<p>0x09 = REBOOT</p>
+	<p>0x0A = CRC_FAILURE; Cyclic redundancy check (CRC) failure; used to sync state between device and Cloud when attribute values no longer match</p>
+	<p>0x0B = GET_RESPONSE; Response to GET (Cloud or MCU-initiated)</p>
+	<p>0xAA = Invalid reason; SET when the Cloud receives an UPDATE with either no reason or an invalid reason</p>
+</td>
+</tr>
+<tr>
+<td>uint16_t</td>
+<td>Value length</td>
+</tr>
+<tr>
+<td>n bytes</td>
+<td>Variable-length attribute value</td>
+</tr>
+<tr>
+<td rowspan="3"><strong>Update Rejected</strong></td>
+<td>uint16_t</td>
+<td>Attribute ID</td>
+</tr>
+<td>uint8_t</td>
+<td>Update state: See <a id="1536862623.88" href="#UpdateState">state codes</a> above.</td>
+<tr>
+<td>uint8_t</td>
+<td>Update reason: See <a id="1536862623.99" href="#UpdateReason">reason codes</a> above.</td>
+</tr>
+<tr>
+<td rowspan="3"><strong>Set Default</strong></td>
+<td>uint16_t</td>
+<td>Attribute ID</td>
+</tr>
+<td>uint16_t</td>
+<td>Value length</td>
+<tr>
+<td>n bytes</td>
+<td>Variable-length attribute value</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ## Protocol Rules
 
