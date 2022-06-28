@@ -190,7 +190,6 @@ ul, ol, li {
 	}
 }
 
-
 .af-ol {
 	list-style-type: numeric;
 
@@ -226,7 +225,6 @@ ul, ol, li {
 			font-weight: 400;
 			content: counter(lower-alpha-counter, lower-alpha);
 			color: #494a4c;
-
 		}
 	}
 }
@@ -471,7 +469,10 @@ table .af-table-nostyle .table-borderless {
 		font-weight: 300;
 	}
 }
-
+.img-br {
+	display: block;
+	margin: 10px 0;
+}
 .img-inline {
 	margin: 0 5px -1px;
 	horizontal-align:baseline;

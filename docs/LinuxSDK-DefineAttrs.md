@@ -6,8 +6,10 @@ The Afero Profile Editor allows you to create a custom set of attributes that yo
 
 The Profile Editor is available to all Afero partner-developers and can be downloaded for either Windows or macOS:
 
-- [Windows <img src="../img/windows.svg" width="25" style="vertical-align:middle;margin:0px 0px;border:none">](http://cdn.afero.io/latest-ape/win)
-- [macOS <img src="../img/macos.svg" alt="drawing" width="25" style="vertical-align:middle;margin:0px 0px;border:none">](http://cdn.afero.io/latest-ape/mac)
+<ul class="af-ul">
+	<li><a id="1560890585.92" href="http://cdn.afero.io/latest-ape/win" target="_blank">Windows <img src="../img/windows.svg" alt="Download for Windows" width="25"></a></li>
+	<li><a id="1501187220.85" href="http://cdn.afero.io/latest-ape/mac" target="_blank">macOS <img src="../img/macos.svg" alt="Download for Mac OS" width="25"></a></li>
+</ul> 
 
 For all the details, refer to the [Afero Profile Editor User Guide](../Projects).
 
@@ -15,61 +17,50 @@ For all the details, refer to the [Afero Profile Editor User Guide](../Projects)
 
 In this section, we will create a small sample profile to create some attributes you can manipulate through Attribute Daemon Client. These attributes will be referenced in the examples in the following sections.
 
-**1**&nbsp;&nbsp;Open the Profile Editor and sign in using your Afero developer account email and password.
-
-**2**&nbsp;&nbsp;Select NEW to open the New Project dialog box. For MODULE TYPE, select the module for your Linux hub. In the example, we’ll use “Potenco”, but ensure that the Module Type here matches your Linux hub product. Give your Device Type a name, which will also be used for your default project name. Click the CREATE button to save your new project.
-
-**3**&nbsp;&nbsp;Click ATTRIBUTES in the left-hand navigation bar. You’ll define two attributes for this project.
-
-***3a***&nbsp;&nbsp;Select the network interfaces available in your Linux hub hardware to enable or disable support for that network interface in your device. For Potenco devices, ensure Wi-Fi is checked.
-
-***3b***&nbsp;&nbsp;Still in the Attributes window, click +DEVICE ATTRIBUTE. Create a new attribute using:
-
-- ID = 1
-- Name = Output
-- Data type = Boolean
-- Attribute Options = Select both Read and Write checkboxes.
-
-***3c***&nbsp;&nbsp;Click +DEVICE ATTRIBUTE again. Create a new attribute using:
-
-- ID = 2
-- Name = Input
-- Data type = Boolean
-- Attribute Options = Select Read checkbox **only**, leaving Write unchecked.
-      
-***3d***&nbsp;&nbsp;Click SAVE in the upper-right of the window to save your attribute definitions.
-   
-**4**&nbsp;&nbsp;Click UI CONTROLS in the left-hand navigation bar. You’ll now start defining the user interface.
-
-***4a***&nbsp;&nbsp;Click +ATTRIBUTE OPTION to open the Attribute Option Details dialog box for the Output attribute. Complete the fields as shown:
-
-<img src="../img/LinuxSDK-APE-1.png" width="500" style="vertical-align:middle;margin:0px 0px;border:none">
-
-Click OK to save the Output attribute details.
-
-***4b***&nbsp;&nbsp;Click +ATTRIBUTE OPTION again to open the Attribute Option details for the Input attribute. Complete the fields as shown:
-
-<img src="../img/LinuxSDK-APE-2.png" width="500" style="vertical-align:middle;margin:0px 0px;border:none">
-
-Click OK to save the Input attribute details.
-
-***4c***&nbsp;&nbsp;Still on the UI Controls window, under DEFINE THE UI CONTROLS heading, click +CONTROL to assign a UI control to the Output attribute. Select MENU as the control type. Click ADD to assign the control. On the pane that opens, select “Output” for the ATTRIBUTE OPTION and “Inline” as the VIEW STYLE.
-
-<img src="../img/LinuxSDK-APE-3.png" width="400" style="vertical-align:middle;margin:0px 0px;border:none">
-
-***4d***&nbsp;&nbsp;Click +CONTROL again to assign a UI control to the Input attribute. Select MENU as the control type as well. Click ADD to assign it. On the pane that opens, select “Input” as the ATTRIBUTE OPTION and “Inline” as the VIEW STYLE.
-
-***4e***&nbsp;&nbsp;Click SAVE in the upper-right of the window to save your UI Controls.
-   
-**5**&nbsp;&nbsp;Click UI CONTROL GROUPS in the navigation bar. You’ll now define the last part of the user interface: grouping your two menu controls.
-
-***5a***&nbsp;&nbsp;Click the + button to create a new group and give the group a name, like “IO”. Drag both UI Controls from the far-right pane into the group.
-
-<img src="../img/LinuxSDK-APE-4.png" width="400" style="vertical-align:middle;margin:0px 0px;border:none">
-
-***5b***&nbsp;&nbsp;Click SAVE in the upper-right of the window to save your UI Control Group.
-
-**6**&nbsp;&nbsp;Click PUBLISH in the left-hand navigation bar. If you have a Linux hub device on your Afero account, you can publish this profile to that device now from the Publish window. This will update the device profile that is visible to Attribute daemon and you can then access and modify these attributes via client applications described elsewhere in this Afero Linux SDK Guide.
+<ol class="af-ol">
+	<li>Open the Profile Editor and sign in using your Afero developer account email and password.</li>
+	<li>Select <span class="UIText">New</span> to open the New Project dialog box. For <span class="UIText">Module Type</span>, select the module for your Linux hub. In the example, we’ll use “Potenco”, but ensure that the Module Type here matches your Linux hub product. Give your Device Type a name, which will also be used for your default project name. Click the <span class="UIText">Create</span> button to save your new project.</li>
+	define two attributes for this project.</li>
+	<ol class="af-ol-lower-alpha">
+		<li>Select the network interfaces available in your Linux hub hardware to enable or disable support for that network interface in your device. For Potenco devices, ensure Wi-Fi is checked.</li>
+		<li>Still in the Attributes window, click <span class="UIText">+Device Attribute</span>. Create a new attribute using:
+		<ul class="af-ul">
+			<li>ID = 1</li>
+			<li>Name = Output</li>
+			<li>Data type = Boolean</li>
+			<li>Attribute Options = Select both Read and Write checkboxes.</li>
+		</ul>
+		<li>Click <span class="UIText">+Device Attribute</span> again. Create a new attribute using:
+		<ul class="af-ul">
+			<li>ID = 2</li>
+			<li>Name = Input</li>
+			<li>Data type = Boolean</li>
+			<li>Attribute Options = Select Read checkbox <strong>only</strong>, leaving Write unchecked.</li>
+		</ul>
+		</li>
+		<li>Click <span class="UIText">Save</span> in the upper-right of the window to save your attribute definitions.</li>
+	</ol>
+	<li>Click <span class="UIText">UI Controls</span> in the left-hand navigation bar. You’ll now start defining the user interface.</li>
+	<ol class="af-ol-lower-alpha">
+		<li>Click <span class="UIText">+Attribute Option</span> to open the Attribute Option Details dialog box for the Output attribute. Complete the fields as shown:
+<br><img src="../img/LinuxSDK-APE-1.png" alt="Output Attribute Option Details" width="500"><br>
+Click <span class="UIText">OK</span> to save the Output attribute details.</li>
+		<li>Click <span class="UIText">+Attribute Option</span> again to open the Attribute Option details for the Input attribute. Complete the fields as shown:
+<br><img src="../img/LinuxSDK-APE-2.png" alt="Input Attribute Option Details" width="500"><br>
+Click <span class="UIText">OK</span> to save the Input attribute details.</li>
+		<li>Still on the UI Controls window, under <span class="UIText">Define the UI Controls</span> heading, click <span class="UIText">+Control</span> to assign a UI control to the Output attribute. Select <span class="UIText">Menu</span> as the control type. Click <span class="UIText">Add</span> to assign the control. On the pane that opens, select “Output” for the <span class="UIText">Attribute Option</span> and “Inline” as the <span class="UIText">View Style</span>.</li>
+<img src="../img/LinuxSDK-APE-3.png" width="350" alt="Output Menu Control">
+		<li>Click <span class="UIText">+Control</span> again to assign a UI control to the Input attribute. Select <span class="UIText">Menu</span> as the control type as well. Click <span class="UIText">Add</span> to assign it. On the pane that opens, select “Input” as the <span class="UIText">Attribute Option</span> and “Inline” as the <span class="UIText"> View Style</span>.</li>
+		<li>Click <span class="UIText">Save</span> in the upper-right of the window to save your UI Controls.</li>
+	</ol>
+		<li>Click <span class="UIText">UI Control Groups</span> in the navigation bar. You’ll now define the last part of the user interface: grouping your two menu controls.</li>
+	<ol class="af-ol-lower-alpha">
+		<li>Click the <span class="UIText">+</span> button to create a new group and give the group a name, like “IO”. Drag both UI Controls from the far-right pane into the group.</li>
+<img src="../img/LinuxSDK-APE-4.png" alt="UI Control Groups">
+		<li>Click <span class="UIText">Save</span> in the upper-right of the window to save your UI Control Group.</li>
+	</ol>
+	<li>Click <span class="UIText">Publish</span> in the left-hand navigation bar. If you have a Linux hub device on your Afero account, you can publish this profile to that device now from the Publish window. This will update the device profile that is visible to Attribute daemon and you can then access and modify these attributes via client applications described elsewhere in this Afero Linux SDK Guide.</li>
+</ol>
 
 ### Attribute Definition Reference
 
