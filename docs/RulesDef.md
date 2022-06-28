@@ -36,7 +36,11 @@ A rule is defined by specifying at least one condition in which an attribute you
 
 **5**&nbsp;&nbsp;Define the CONDITION(S), or triggering events, by selecting an ATTRIBUTE and the corresponding VALUE it must report to trigger the notification.
 
-<mark>**Note:**&nbsp; If you list more than one condition, **all** conditions must be met before a notification is triggered.</mark>
+<div class="af-callout">
+<div class="callout-text">
+<p><strong>NOTE:</strong> If you list more than one condition, <strong>all</strong> conditions must be met before a notification is triggered.
+</div>
+</div>
 
 **6**&nbsp;&nbsp;To create another rule, simply click + RULE.
 

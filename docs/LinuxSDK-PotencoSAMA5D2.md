@@ -171,13 +171,14 @@ $ cp ~/sama5/meta-afero/conf/bblayers.conf  ~/sama5/poky/build-microchip/conf/bb
 $ cp ~/sama5/meta-afero/conf/local.conf     ~/sama5/poky/build-microchip/conf/local.conf
 ```
 
-<mark>**Note:**&nbsp;  Any changes to bblayers.conf or local.conf need to be saved to the meta-afero version. Specifically…<br>If you change the following files:</mark>
-
-`~/sama5/poky/build-microchip/conf/local.conf~/sama5/poky/build-microchip/conf/bblayers.conf`
-
-<mark>You must copy them and commit the changes to repo:</mark>
-
-`~/sama5/meta-afero/conf/bblayers.conf~/sama5/meta-afero/conf/local.conf`
+<div class="af-callout">
+<div class="callout-text">
+<p><strong>NOTE:</strong>  Any changes to bblayers.conf or local.conf need to be saved to the meta-afero version. Specifically…<br>If you change the following files:</p>
+<p><code>~/sama5/poky/build-microchip/conf/local.conf~/sama5/poky/build-microchip/conf/bblayers.conf</code></p>
+<p>You must copy them and commit the changes to repo:</p>
+<p><code>~/sama5/meta-afero/conf/bblayers.conf~/sama5/meta-afero/conf/local.conf</code></p>
+</div>
+</div>
 
 **10**&nbsp;&nbsp;Workaround for now, until we have a fix for a bug in Microchip at91bootstrap v3.8.11: Use v3.8.10 by deleting the at91bootstrap_3.8.11.bb:
 

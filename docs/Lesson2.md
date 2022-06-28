@@ -42,7 +42,7 @@ Before you start, we assume that you’ve already run through [Tutorial 1: Linki
 <li>Don’t select any of the <span class="UIText">Bind to Attributes</span> buttons.</li>
 </ul>
 </li>
-<li>Click <span class="UIText">Button Attribute</span>, the attribute name for GPIO 3, to open its detailed view:<img src="../img/Tut2_Button_Attr.png" width="500" alt="Attribute Definitions">
+<li>Click <span class="UIText">Button Attribute</span>, the attribute name for GPIO 3, to open its detailed view:<img src="../img/Tut2_Button_Attr.png" width="400" alt="Attribute Definitions">
 <ul class="af-ul">
 <li><span class="UIText">Attribute Name</span> is a required field for all attributes. We’ve named this one <span class="UIText">Button Attribute</span> but you can change it here.</li>
 <li>Leave GPIO3 <span class="UIText">Operation Mode</span> set to <span class="UIText">Input</span>. This will display the state of the button when pressed in the mobile app.</li>
@@ -95,7 +95,7 @@ Before you start, we assume that you’ve already run through [Tutorial 1: Linki
 </ul>
 </li>
 <p>Now click <span class="UIText">Button Attribute (I/O 3): Menu</span> to open it.</p>
-<img class="img-basic" src="../img/AttributeDef-Button.png" alt="Button Attribute">
+<img class="img-basic" src="../img/AttributeDef-Button.png" width="500" alt="Button Attribute">
 <p>Notice that we’ve also selected the <span class="UIText">INLINE</span> View Style.</p>
 </li>
 <li>Click <span class="UIText">Save</span> when you are finished defining UI controls.</li>
@@ -107,7 +107,7 @@ Before you start, we assume that you’ve already run through [Tutorial 1: Linki
 <li><p>We’ve already set up two groups, shown in the groups ribbon and labeled <strong>LED</strong> and <strong>Button</strong>. (We’ve already created groups for this project, but if we hadn’t, you would click<img src="../img/AddGroupIcon.png" vertical-align="baseline">to create a new group.)</p></li>
 <li>On the right, you’ll see all the controls you defined on the UI Controls window, identified by their Default Label. These are the controls available for grouping.</li>
 <li><p>Click the group labeled <strong>LED</strong> to make it active and ready for editing. The group will be highlighted in orange:</p>
-<img src="../img/Control_Groups_LED.png" alt="UI Control Group">
+<img src="../img/Control_Groups_LED.png" width="500" alt="UI Control Group">
 <p>Below the selected group, you’ll see the <strong>LED</strong> menu control. We’ve already moved the <strong>LED</strong> menu into the <strong>LED</strong> group, but if we hadn’t, you would add a control by dragging it from the <span class="UIText">Available UI Controls</span> pane on the right into the controls display on the left, below the groups ribbon.</p></li>
 <li><p>To remove a control from a group, simply drag it back to the <span class="UIText">Available UI Controls</span> pane.</p>
 <div class="af-callout">

@@ -6,7 +6,11 @@ The following functions are being exposed via the RESTful API:
 - [Execute an Action on a Device](../API-DeviceEndpoints#DevAction)
 - [Update the Friendly Name of a Device](../API-DeviceEndpoints#NameUpdate)
 
-<mark>**Note:**&nbsp; Before you begin using the API below, be sure you have read the information in [Afero Cloud API](../CloudAPIs).</mark>
+<div class="af-callout">
+<div class="callout-text">
+<p><strong>NOTE:</strong> Before you begin using the API below, be sure you have read the information in [Afero Cloud API](../CloudAPIs).
+</div>
+</div>
 
 ## List Current Device(s) and State Information
 

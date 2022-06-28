@@ -284,9 +284,10 @@ pre code {
 
 
 .af-callout {
+	margin-top: 6px;
 	margin-bottom: 6px;
-	padding: 10px 10px;
-	background: #f1f2f2;
+	padding: 8px 0px 4px 8px;
+	background: #FFF7EC;
 	.callout-text {
 		float: left;
 		width: calc(100% - 35px);

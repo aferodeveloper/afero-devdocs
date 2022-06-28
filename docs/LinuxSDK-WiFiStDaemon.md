@@ -127,7 +127,11 @@ network={
 }
 ```
 
-<mark>**Note:**&nbsp;   It is very important to disable the Wi-Fi network configuration so it doesn’t interfere with wifistad functionality.</mark>
+<div class="af-callout">
+<div class="callout-text">
+<p><strong>NOTE:</strong> It is very important to disable the Wi-Fi network configuration so it doesn’t interfere with wifistad functionality.
+</div>
+</div>
 
 #### WPA SCAN and SSID List
 
@@ -177,8 +181,10 @@ The following Wi-Fi related attributes are supported by wifstad:
 
 Developers can add and support their own attributes by first adding the attributes into the attrd database, then implementing the `get` and `set` functionality of these attributes.
 
-<mark>**Note:**&nbsp;  These attributes must be part of the device Profile to work properly.
-
-
+<div class="af-callout">
+<div class="callout-text">
+<p><strong>NOTE:</strong>  These attributes must be part of the device Profile to work properly.
+</div>
+</div>
 
 <strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[WAN Daemon Implementation](../LinuxSDK-WANDaemon)

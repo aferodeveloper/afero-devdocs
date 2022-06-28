@@ -20,7 +20,11 @@ At a high level, this is how it works:
 
 **8**&nbsp;&nbsp;Update success/failure is reported back to Afero.
 
-<mark>**Note:**&nbsp; In addition, you'll have to prepare your application code to accept an MCU OTA update. Instructions are on this page: [Handling MCU OTA Updates](../MCU-OTA).</mark>
+<div class="af-callout">
+<div class="callout-text">
+<p><strong>NOTE:</strong> In addition, you'll have to prepare your application code to accept an MCU OTA update. Instructions are on this page: <a href="../MCU-OTA">Handling MCU OTA Updates</a>.
+</div>
+</div>
 
 ## The OTA Manager and the Profile Editor Work Together
 
@@ -48,9 +52,11 @@ Before you can upload a firmware image, you must define at least one **Image Typ
 
 Image types are shown in the OTA Manager as folders; again, you should name them based on the “types” of firmware images you plan to use for your MCU updates. Types could include bootloader, application, or any specific identifier you choose to categorize your firmware.
 
-<mark>**Note:**&nbsp; You can create up to **100 Image Types**.</mark>
-
-
+<div class="af-callout">
+<div class="callout-text">
+<p><strong>NOTE:</strong> You can create up to <strong>100 Image Types</strong>.
+</div>
+</div>
 
 ### First-Time Flow
 
@@ -78,7 +84,11 @@ If you want to change the name or description of an existing Image Type, you can
 
 When you are ready to upload a firmware image, start from the OTA Manager main window.
 
-<mark>**Note:**&nbsp; Remember that before uploading an image, you must have already used the Profile Editor to create and publish a device Profile that has a firmware Image Type selected. You do this on the Attributes Definition window > MCU Configuration pane > Firmware OTA Updates section. Read [Define the MCU Attributes](../AttrDef#define-the-mcu-attributes) for more details.</mark>
+<div class="af-callout">
+<div class="callout-text">
+<p><strong>NOTE:</strong> Remember that before uploading an image, you must have already used the Profile Editor to create and publish a device Profile that has a firmware Image Type selected. You do this on the Attributes Definition window > MCU Configuration pane > Firmware OTA Updates section. Read <a href="../AttrDef#define-the-mcu-attributes">Define the MCU Attributes</a> for more details.
+</div>
+</div>
 
 **1**&nbsp;&nbsp;From the upper-right of the window, select <span class="UIText">+UPLOAD NEW IMAGE</span>. The three-step upload wizard appears.
 

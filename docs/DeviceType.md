@@ -18,7 +18,10 @@ After selecting a project on the Startup window, the Profile Editor opens to the
 
 **2**&nbsp;&nbsp;The <span class="UIText">POWER OPTIMIZATION</span> section provides controls and information regarding battery power consumption.
 
-<mark>**Note:**&nbsp; The Power Optimization calculations apply only to projects using either the Modulo-1 or Modulo-1B modules.</mark>
+<div class="af-callout">
+<div class="callout-text">
+<p><strong>NOTE:</strong> The Power Optimization calculations apply only to projects using either the Modulo-1 or Modulo-1B modules.
+</div></div>
 
 - Select an <span class="UIText">ADVERTISING INTERVAL</span> (in seconds) for Bluetooth. If you’re running on battery power, the shorter the interval, the more battery power is consumed. However, at higher intervals the responsiveness of the device will be negatively affected due to lag time.
 - Once you’ve selected an interval, the <span class="UIText">DAILY AVERAGE CURRENT</span> field will display the projected average current required by Modulo-1 or Modulo-1B for that interval while idle (the module is said to be idle when performing no function other than advertising).
@@ -31,7 +34,9 @@ After selecting a project on the Startup window, the Profile Editor opens to the
 - Clicking <span class="UIText">CANCEL</span> reverts any changes you made on the page.
 - Clicking <span class="UIText">SAVE</span> initiates validation of the new data and, if validation is successful, the data is saved to your local project directory.
 
-<mark>**Note:**&nbsp;  Every time you save, your data is validated. If validation fails for any reason, an error message will appear then move to the left. Click the error description in the message to highlight the field that needs correcting.</mark>
-
+<div class="af-callout">
+<div class="callout-text">
+<p><strong>NOTE:</strong>  Every time you save, your data is validated. If validation fails for any reason, an error message will appear then move to the left. Click the error description in the message to highlight the field that needs correcting.
+</div></div>
 
 <strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Define the Device Attributes](../AttrDef)

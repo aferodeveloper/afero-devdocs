@@ -2,7 +2,11 @@
 
 The RESTful API exposes the functionality related to Users described in this section.
 
-<mark>**Note:**&nbsp; Before you begin using the API below, be sure you have read the information in [Afero Cloud APIs](../CloudAPIs).</mark>
+<div class="af-callout">
+<div class="callout-text">
+<p><strong>NOTE:</strong> Before you begin using the API below, be sure you have read the information in <a href="../CloudAPIs">Afero Cloud APIs</a>.
+</div>
+</div>
 
 ## Get Information About a User
 

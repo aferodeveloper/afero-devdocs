@@ -175,7 +175,10 @@ void loop() {
 
 And there it is: while variable “blinking” is true, the MCU calls `setModuloLED()` every BLINK_INTERVAL (0.5 seconds) to set the GPIO attribute to the opposite state. In response to that call, ASR updates the attribute, and then sends an update message, which causes the MCU to execute `attrEventCallback()`.
 
-<mark>**Note:**&nbsp; In a typical product containing an MCU, any LED indicator in the device would likely be connected directly to the MCU, whereas in this example we have used the LED on the dev board. The difference is that in this lesson, the MCU changes the LED state by making a `af_lib_set_attribute()` call, which causes ASR to make the change and send an update; whereas in a product, the MCU would probably set the LED directly. We used this design not only for setup simplicity, but also to emphasize the way attributes are affected by making `af_lib_set_attribute()` calls.</mark>
+<div class="af-callout">
+<div class="callout-text">
+<p><strong>NOTE:</strong> In a typical product containing an MCU, any LED indicator in the device would likely be connected directly to the MCU, whereas in this example we have used the LED on the dev board. The difference is that in this lesson, the MCU changes the LED state by making a <code>af_lib_set_attribute()</code> call, which causes ASR to make the change and send an update; whereas in a product, the MCU would probably set the LED directly. We used this design not only for setup simplicity, but also to emphasize the way attributes are affected by making <code>af_lib_set_attribute()</code> calls.
+</div></div>
 
 The flow above illustrates the basic messaging pattern:
 

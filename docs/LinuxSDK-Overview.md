@@ -140,7 +140,11 @@ The Connection Manager daemon has two main responsibilities:
 - Switching the IP network between the Wi-Fi, wireless modem, and Ethernet interfaces; and
 - Maintaining firewalls that dynamically open and close IP addresses to allow only afero.io traffic.
 
-<mark>**Note:**&nbsp;  Firewall functionality is optional; you can disable the firewall by invoking connmgr with the -d option.</mark>
+<div class="af-callout">
+<div class="callout-text">
+<p><strong>NOTE:</strong>  Firewall functionality is optional; you can disable the firewall by invoking connmgr with the -d option.
+</div>
+</div>
 
 The Connection Manager chooses the network interface based on a fixed priority. Ethernet has highest priority, but if it’s down, the Connection Manager chooses Wi-Fi. If Wi-Fi is down, the Connection Manager falls back to wireless modem.
 

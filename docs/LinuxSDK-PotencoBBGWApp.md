@@ -42,7 +42,11 @@ Before we get started, let’s get some preliminaries out of the way.
 
 Again, be sure you have created a Potenco build image per the instructions in [Build the Potenco OS Image](../LinuxSDK-PotencoBBGW#build-the-potenco-os-image). This will be both the core image that is used on the BeagleBone Green Wireless and the image to which you will add your own application code.
 
-<mark>**Note:**&nbsp;  The first-time build of the Potenco image can take up to several hours, depending on the speed of your computer. In the instructions below, you will create your own BitBake layer so you can create your application by simply typing “`bitake app`”, avoiding having to rebuild from scratch. Also, when building the root filesystem, the time required will be much shorter once the Potenco image has been built vs. having to build it from scratch; that is, it will take minutes rather than hours.</mark>
+<div class="af-callout">
+<div class="callout-text">
+<p><strong>NOTE:</strong>  The first-time build of the Potenco image can take up to several hours, depending on the speed of your computer. In the instructions below, you will create your own BitBake layer so you can create your application by simply typing “`bitake app`”, avoiding having to rebuild from scratch. Also, when building the root filesystem, the time required will be much shorter once the Potenco image has been built vs. having to build it from scratch; that is, it will take minutes rather than hours.
+</div>
+</div>
 
 ### Step 2. Create af-app Directory
 
@@ -314,7 +318,11 @@ $ mkdir conf
 $ mkdir recipes-app
 ```
 
-<mark>**Note:**&nbsp;  The use of a separate layer for the application allows us to use “`bitake app`” (or whatever you might change it to as directed in the `layer.conf` file, in the “`BBFILE_COLLECTIONS +="app"`” label). This allows you to build the application very quickly without having to rebuild anything else… as long as you are using `scp` to copy the binary over to the BBGW. If you wish to include it in the root filesystem so that it’s part of the SD card, then you also need to use “`bitbake arag-afer-image`”, but this, again, will not take long, only a few minutes as the parts it requires are already built and it’s simply creating the final root filesystem to burn onto the SD card.</mark>
+<div class="af-callout">
+<div class="callout-text">
+<p><strong>NOTE:</strong>  The use of a separate layer for the application allows us to use “<code>bitake app</code>” (or whatever you might change it to as directed in the `layer.conf` file, in the “<code>BBFILE_COLLECTIONS +="app"</code>” label). This allows you to build the application very quickly without having to rebuild anything else… as long as you are using <code>scp</code> to copy the binary over to the BBGW. If you wish to include it in the root filesystem so that it’s part of the SD card, then you also need to use “<code>bitbake arag-afer-image</code>”, but this, again, will not take long, only a few minutes as the parts it requires are already built and it’s simply creating the final root filesystem to burn onto the SD card.
+</div>
+</div>
 
 ### Step 6. Create the BitBake Recipe for the App
 
