@@ -20,9 +20,9 @@ Before you start, we assume that you’ve already run through [Tutorial 1: Linki
 	</li>
 	<li>Once the project is open, click <span class="UIText">Device Type</span> in the Navigation pane in the left of the window. To be sure we’re all starting in the same view, your window should look something like this: <img src="../img/Mod2_DeviceType.png"  width="600" alt="Device Type Pane">
 <div class="af-callout">
-<div class="callout-text">
-<strong>NOTE:</strong> Notice the <span class="UIText">Module Type</span> of the Profile is specified right at the top of the pane (in the example, we’re working with a Modulo-2.) This module type was specified in the pre-built Profile you downloaded; when creating a Profile from scratch, you must specify the module type right from the beginning. Doing so is the first step in the <span class="UIText">New Profile</span> window. It’s critical that the module type in the Profile match the hardware you’re using in your project!
-</div>
+	<div class="callout-text">
+	<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong> A control can appear in multiple groups, but <em>must</em> appear in at least one group oNotice the <span class="UIText">Module Type</span> of the Profile is specified right at the top of the pane (in the example, we’re working with a Modulo-2.) This module type was specified in the pre-built Profile you downloaded; when creating a Profile from scratch, you must specify the module type right from the beginning. Doing so is the first step in the <span class="UIText">New Profile</span> window. It’s critical that the module type in the Profile match the hardware you’re using in your project!
+	</div>
 </div>
 <p>In the <span class="UIText">Device Type</span> view, you can set the device name, type a detailed device description, and set the device icon. Of these items, only the icon will be visible to the end-user. Notice the <span class="UIText">Preview</span> panel on the right of the view &ndash; it shows the selected device icon as it will appear in the mobile app.</p>
 <p>Since we’re working with a pre-configured Profile, you don’t need to make any changes, but if you like, feel free to do so. When you’re finished, click <span class="UIText">Save</span> to save any changes you might have made.</p>
@@ -111,9 +111,9 @@ Before you start, we assume that you’ve already run through [Tutorial 1: Linki
 <p>Below the selected group, you’ll see the <strong>LED</strong> menu control. We’ve already moved the <strong>LED</strong> menu into the <strong>LED</strong> group, but if we hadn’t, you would add a control by dragging it from the <span class="UIText">Available UI Controls</span> pane on the right into the controls display on the left, below the groups ribbon.</p></li>
 <li><p>To remove a control from a group, simply drag it back to the <span class="UIText">Available UI Controls</span> pane.</p>
 <div class="af-callout">
-<div class="callout-text">
-<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong> A control can appear in multiple groups, but <em>must</em> appear in at least one group or it won’t appear at all in the mobile app UI. That means that even if you have just one UI control, you’ll need to create a UI control group to contain it.</p>
-</div>
+	<div class="callout-text">
+	<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong> A control can appear in multiple groups, but <em>must</em> appear in at least one group or it won’t appear at all in the mobile app UI. That means that even if you have just one UI control, you’ll need to create a UI control group to contain it.</p>
+	</div>
 </div>
 </li>
 <li>Click <span class="UIText">Save</span> when you are finished defining UI control groups.</li>
