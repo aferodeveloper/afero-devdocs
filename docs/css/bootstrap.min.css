@@ -178,7 +178,7 @@ a:not([href]):not([tabindex]):focus
 }
 pre,code,kbd,samp
 {
-	font-family:"Roboto Mono", "Lucida Console", Courier, Geneva, monospace;
+	font-family:"Courier", "Lucida Console", "Roboto Mono", Geneva, monospace;
 	font-size:14px
 }
 pre
@@ -482,7 +482,7 @@ code
 {
 	font-size:95%;
 	font-family:"Courier";
-	font-color:#00000;
+	color:#00000;
 	font-weight:500;
 	word-break:keep-all
 }
@@ -520,7 +520,11 @@ max-height:340px;overflow-y:scroll
 }
 .container
 {
-width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto
+	width:100%;
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:auto
 }
 @media (min-width: 576px)
 {
