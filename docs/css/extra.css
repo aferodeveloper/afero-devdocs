@@ -265,12 +265,12 @@ code.code-large, .rst-content tt.code-large {
 }
 
 code {
-    padding: 2px 5px;
+    padding: 2px 3px;
     background: #f1f2f2;
     border: solid 1px #e1e4e5;
     color: #333;
     white-space: pre-wrap;
-    word-wrap: break-word;
+    word-wrap: keep-all;
 }
 
 pre code {

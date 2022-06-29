@@ -14,43 +14,47 @@ First, we’ll run through the example, then take a closer look at how it all wo
 
 Be sure you’ve done the following before starting the steps below:
 
-- You’ve downloaded, installed, and signed in to the Afero mobile app and the Afero Profile Editor.
-- You have an Afero development board.
-- You've got an Arduino-compatible MCU, such as an Arduino Uno, plus an Afero Plinto shield for the most basic examples, or preferably a PJRC “Teensy” MCU (from pjrc.com or elsewhere) for a more powerful MCU so you don’t have to worry about memory or processing power while you're learning the platform.
-- You’ve connected your development board to your Arduino. Refer to the [Data Sheet](../HWRef) appropriate for your development board if needed.
-- You have the Arduino IDE (1.8 or later) up and running, and have installed the Teensy Arduino support package from https://www.pjrc.com/teensy/td_download.html if you’re using a Teensy MCU.
+<ul class="af-ul">
+	<li>You’ve downloaded, installed, and signed in to the Afero mobile app and the Afero Profile Editor.</li>
+	<li>You have an Afero development board.</li>
+	<li>You've got an Arduino-compatible MCU, such as an Arduino Uno, plus an Afero Plinto shield for the most basic examples, or preferably a PJRC “Teensy” MCU (from pjrc.com or elsewhere) for a more powerful MCU so you don’t have to worry about memory or processing power while you're learning the platform.</li>
+	<li>You’ve connected your development board to your Arduino. Refer to the Data Sheet appropriate for your development board if needed.</li>
+	<li>You have the Arduino IDE (1.8 or later) up and running, and have installed the Teensy Arduino support package from <a id="1570743972.29" href="https://www.pjrc.com/teensy/td_download.html" target="_blank">https://www.pjrc.com/teensy/td_download.html</a> if you’re using a Teensy MCU.</li>
+</ul>
 
 ## The Steps
 
-**1&nbsp;&nbsp;Download and install afLib for Arduino:**
+<ol class="af-ol">
+	<li>Download and install afLib for Arduino:
+		<ol class="af-ol-lower-alpha">
+			<li>You can obtain afLib by going to <a id="016-AU01rXw" href="http://github.com/aferodeveloper/APE-Project-Profiles" target="_blank"> http://github.com/aferodeveloper/APE-Project-Profiles</a>.</li>
+			<li>Follow your <a id="016-gIgRTXF" href="https://www.arduino.cc/en/Guide/Libraries" target="_blank">IDE instructions</a> on how to install the library.</li>
+			<li>afLib contains an Examples directory. In this directory, you’ll find an Arduino sketch as well as a directory containing an Afero device Profile that can be published to your Modulo.</li>
+			<li>The examples live in your Documents directory under Arduino/libraries/afLib/examples/.</li>
+		</ol>
+	</li>
+	<li>If you haven’t already done so, register your Afero development board to your account by scanning the QR code on your dev board using the Afero mobile app.</li>
+	<li>Load the afBlink Profile in Afero Profile Editor:
+		<ol class="af-ol-lower-alpha">
+			<li>From the Profile Editor start page, select the <span class="UIText">Open</span> button. </li>
+			<li>In the Open dialog, navigate to Arduino/libraries/afLib/examples/afBlink/profile/</li>
+			<li>Open the device Profile directory that is appropriate for your developer device.</li>
+		</ol>
+	</li>
+	<li>From the Afero mobile app, make sure your developer device is connected. </li>
+	<li>Go to the <span class="UIText">Publish</span> tab in the Afero Profile Editor and check that your device is online and selected.</li>
+	<li>Click <span class="UIText">Publish</span>. The Profile will be uploaded over-the-air and in about a minute you should see the UI on your smartphone update to the new Profile UI.</li>
+	<li>Now that the developer device is all set, let’s update the Arduino:
+		<ol class="af-ol-lower-alpha">
+			<li>Open the Arduino IDE and from the File menu, select <span class="UIText">Examples &gt; afLib &gt; afBlink</span>. </li>
+			<li>Make sure the <span class="UIText">Board</span> and <span class="UIText">Port</span> are set correctly in the Tools menu.</li>
+			<li>With the afBlink sketch open, select <span class="UIText">Upload</span> from the Sketch menu. </li>
+			<li>Once the sketch has uploaded, open the Serial Monitor to see output from the example.</li>
+		</ol>
+	</li>
+	<li>Open the Afero mobile app and have some fun controlling your LED! The uppermost control, labeled “Blink”, lets you start and stop blinking; the lower control, labeled “LED”, displays the state of the module LED in real-time.</li>
+</ol>
 
-- You can obtain afLib by going to http://github.com/aferodeveloper/afLib.
-- Follow your [IDE instructions](https://www.arduino.cc/en/Guide/Libraries) on how to install the library.
-- afLib contains an Examples directory. In this directory, you’ll find an Arduino sketch as well as a directory containing an Afero device Profile that can be published to your Modulo.
-- The examples live in your Documents directory under Arduino/libraries/afLib/examples/.
-
-**2&nbsp;&nbsp;Register your Afero development board to your account, if you haven’t already done so.** Do this by scanning the QR code on your dev board using the Afero mobile app.
-
-**3&nbsp;&nbsp;Load the afBlink Profile in Afero Profile Editor:**
-
-- From the Profile Editor start page, select the OPEN button.
-- In the Open dialog, navigate to Arduino/libraries/afLib/examples/afBlink/profile/
-- Open the device Profile directory that is appropriate for your developer device.
-
-**4&nbsp;&nbsp;From the Afero mobile app, make sure your developer device is connected.**
-
-**5&nbsp;&nbsp;Go to the PUBLISH tab in the Afero Profile Editor and check that your device is online and selected.**
-
-**6&nbsp;&nbsp;Click PUBLISH.** The Profile will be uploaded over-the-air and in about a minute you should see the UI on your smartphone update to the new Profile UI.
-
-**7&nbsp;&nbsp;Now that the developer device is all set, let’s update the Arduino:**
-
-- Open the Arduino IDE and from the File menu, select EXAMPLES > AFLIB > AFBLINK.
-- Make sure the BOARD and PORT are set correctly in the Tools menu.
-- With the afBlink sketch open, select UPLOAD from the Sketch menu.
-- Once the sketch has uploaded, open the Serial Monitor to see output from the example.
-
-**8&nbsp;&nbsp;Open the Afero mobile app and have some fun controlling your LED!**  The uppermost control, labeled “Blink”, lets you start and stop blinking; the lower control, labeled “LED”, displays the state of the module LED in real-time.
 
 ## How It Works
 
@@ -182,27 +186,27 @@ And there it is: while variable “blinking” is true, the MCU calls `setModulo
 
 The flow above illustrates the basic messaging pattern:
 
-**1**&nbsp;&nbsp;A user action on the mobile app UI becomes a message to set the value of an attribute on a specific device.
-
-**2**&nbsp;&nbsp;The app sends the “set attribute value” message to the Afero Cloud, which broadcasts the message.
-
-**3**&nbsp;&nbsp;The ASR for the targeted device receives the message that the attribute value should be set.
-
-**4**&nbsp;&nbsp;ASR does a couple of things:
-
-- Stores the attribute’s current value and the new desired value.
-- Tells the MCU that the attribute value should be set to the desired value.
-
-**5**&nbsp;&nbsp;When the MCU gets the message, `attrEventCallback()` executes. In that call, you must write code to enable the MCU to make a state change that will correspond to the desired attribute value. This will typically involve some device action (e.g., starting LED blinking).
-
-**6**&nbsp;&nbsp;After ```attrEventCallback()``` runs, afLib informs ASR, which then:
-
-- Stores the new current value of the attribute, which should equal the desired value.
-- Sends the attribute value back to the Afero Cloud.
-
-**7**&nbsp;&nbsp;The Afero Cloud broadcasts the new attribute value.
-
-**8**&nbsp;&nbsp;The mobile app receives the broadcast and updates the UI, so the end-user knows the request has been filled.
+<ol class="af-ol">
+	<li>A user action on the mobile app UI becomes a message to set the value of an attribute on a specific device.</li>
+	<li>The app sends the “set attribute value” message to the Afero Cloud, which broadcasts the message.</li>
+	<li>The ASR for the targeted device receives the message that the attribute value should be set.</li>
+	<li>
+		<p>ASR does a couple of things:</p>
+		<ol class="af-ol-lower-alpha">
+			<li>Stores the attribute’s current value and the new desired value.</li>
+			<li>Tells the MCU that the attribute value should be set to the desired value.</li>
+		</ol>
+	</li>
+	<li>When the MCU gets the message, <code>attrEventCallback()</code> executes. In that call, you must write code to enable the MCU to make a state change that will correspond to the desired attribute value. This will typically involve some device action (e.g., starting LED blinking).</li>
+	<li>After <code>attrEventCallback()</code> runs, afLib informs ASR, which then:</p>
+		<ol class="af-ol-lower-alpha">
+			<li>Stores the new current value of the attribute, which should equal the desired value.</li>
+			<li>Sends the attribute value back to the Afero Cloud.</li>
+		</ol>
+	</li>
+	<li>The Afero Cloud broadcasts the new attribute value.</li>
+	<li>The mobile app receives the broadcast and updates the UI, so the end-user knows the request has been filled.</li>
+</ol>
 
 ## System Attributes
 
@@ -254,7 +258,7 @@ In the sample above, you can see that the file begins with a set of defines that
 Following that, you should see something that looks familiar: the define for the AF_BLINK attribute. We used the name AF_BLINK to refer to attribute #1 in the sketch we developed earlier in this exercise. At this point we’ll note two features of this attribute:
 
 - The Blink attribute you defined using the Profile Editor is an MCU attribute, and
-- The attribute ID = 1.
+- The attribute ID = 1
 
 It turns out that any MCU attributes you define will have ID numbers from 1 to 1023. Of course, you should use the #define names for the attributes and not their ID numbers, but we raise this point here because the ID range defines the number of MCU attributes you can create, and to introduce the fact that different types of attributes have different ID ranges.
 
@@ -352,10 +356,12 @@ The status “Reboot Requested” means that ASR has received an over-the-air (O
 
 So, you need to watch for reboot requests, and you need to respond by signaling ASR to reboot – how exactly do you go about this? Well, of course, this is all about communication via attribute values!
 
-1. When ASR receives an OTA, it signals receipt by changing the value of the ASR_STATE attribute.
-2. As we saw earlier in the example, whenever ASR sends an update message about an attribute, the MCU executes the `attrEventCallback()`.
-3. So, we’ll need to use our `attrEventCallback()` code to watch for a change to AF_SYSTEM_ASR_STATE; and specifically, for that attribute to change to value 3 (AF_MODULE_STATE_UPDATE_READY).
-4. Once we see that condition, we’ll want to write something into our `attrEventCallback()` to trigger an ASR reboot. How can we do that? Set an attribute! It turns out that there’s another system attribute, AF_SYSTEM_COMMAND, that provides a way to trigger that reboot.
+<ol class="af-ol">
+	<li>When ASR receives an OTA, it signals receipt by changing the value of the ASR_STATE attribute.</li>
+	<li>As we saw earlier in the example, whenever ASR sends an update message about an attribute, the MCU executes the <code>attrEventCallback()</code>.</li>
+	<li>So, we’ll need to use our <code>attrEventCallback()</code> code to watch for a change to AF_SYSTEM_ASR_STATE; and specifically, for that attribute to change to value 3 (AF_MODULE_STATE_UPDATE_READY).</li>
+	<li>Once we see that condition, we’ll want to write something into our <code>attrEventCallback()</code> to trigger an ASR reboot. How can we do that? Set an attribute! It turns out that there’s another system attribute, AF_SYSTEM_COMMAND, that provides a way to trigger that reboot.</li>
+</ol>
 
 Here’s a detailed example:
 

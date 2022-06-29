@@ -98,7 +98,7 @@ calling handle_ota_info()
 
 The attribute *value* received by the callback is cast to a pointer to an `af_ota_info_t`, so we can access the fields by name. Within the `ota_info`, the `state` field is AF_OTA_TRANSFER_BEGIN, which indicates that there’s an incoming OTA.
 
-The `ota_info` also provides us with incoming data size, file name, and file type. In the example code, we track these details (and more) in the global `ota_state`, but that’s an implementation detail (and don’t confuse the global `ota_state` with the `ota_info->state`!). Track progress however you like; the only requirement is that you *must* keep a running count of the bytes downloaded.
+The `ota_info` also provides us with incoming data size, file name, and file type. In the example code, we track these details (and more) in the global `ota_state`, but that’s an implementation detail (and don’t confuse the global `ota_state` with the `ota_info⟶state`!). Track progress however you like; the only requirement is that you *must* keep a running count of the bytes downloaded.
 
 At this point, real-world code would probably open a file to save into; in the example we’ll just create a fake file pointer.
 
