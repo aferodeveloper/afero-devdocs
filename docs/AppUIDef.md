@@ -27,7 +27,7 @@ For each of your attributes, you will define “attribute options”, which spec
 
 <div class="af-callout">
 <div class="callout-text">
-<p><strong>NOTE:</strong> If you're defining <strong>both</strong> Value and Range Options (below) for the same attribute option, <strong>make the number of value options equal to the number of range steps</strong>. For example, if your Range is <em>0-50</em>, with step size <em>10</em>, make sure you have <em>6</em> Value Options defined.
+<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong> If you're defining <strong>both</strong> Value and Range Options (below) for the same attribute option, <strong>make the number of value options equal to the number of range steps</strong>. For example, if your Range is <em>0-50</em>, with step size <em>10</em>, make sure you have <em>6</em> Value Options defined.
 </div>
 </div>
 
@@ -206,7 +206,7 @@ It’s possible to preview the UI as you’re creating it, right in the Afero mo
 
 <div class="af-callout">
 <div class="callout-text">
-<p><strong>NOTE:</strong> The Preview Device is a virtual device. Changing controls in the Preview UI will not affect the state of any actual device.
+<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong> The Preview Device is a virtual device. Changing controls in the Preview UI will not affect the state of any actual device.
 </div>
 </div>
 

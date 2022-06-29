@@ -173,7 +173,7 @@ $ cp ~/sama5/meta-afero/conf/local.conf     ~/sama5/poky/build-microchip/conf/lo
 
 <div class="af-callout">
 <div class="callout-text">
-<p><strong>NOTE:</strong>  Any changes to bblayers.conf or local.conf need to be saved to the meta-afero version. Specifically…<br>If you change the following files:</p>
+<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong>  Any changes to bblayers.conf or local.conf need to be saved to the meta-afero version. Specifically…<br>If you change the following files:</p>
 <p><code>~/sama5/poky/build-microchip/conf/local.conf~/sama5/poky/build-microchip/conf/bblayers.conf</code></p>
 <p>You must copy them and commit the changes to repo:</p>
 <p><code>~/sama5/meta-afero/conf/bblayers.conf~/sama5/meta-afero/conf/local.conf</code></p>

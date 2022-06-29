@@ -406,8 +406,11 @@ Option details are provided below:
 #### Using the partner-ota-hub-uploader.py Script
 
 This Python script is intended to be used in two different stages: 1) creating the OTA record, and 2) uploading the OTA image.
-
-<mark>**&#x26A0; Caution!**  The same options should be used for both the `createOTARecord` and `uploadOTAImage` calls.<br><br>The OTA record created with `createOTARecord` call is intended to be subsequently used in `uploadOTAImage`; that is, `the full-ota-record.json` is used by `uploadOTAImage`.</mark>
+<div class="af-callout-caution">
+	<div class="callout-text">
+	<p><img src="../img/Caution.svg" width="17" style="vertical-align:bottom;padding:0">&nbsp;&nbsp;<strong>CAUTION!</strong>&nbsp;  The same options should be used for both the <code>createOTARecord</code> and <code>uploadOTAImage</code> calls.</p><p>The OTA record created with <code>createOTARecord</code> call is intended to be subsequently used in <code>uploadOTAImage</code>; that is, the <code>full-ota-record.json</code> is used by <code>uploadOTAImage</code>.</p>
+	</div>
+</div>
 
 ##### **Stage 1. Create the OTA Record**
 

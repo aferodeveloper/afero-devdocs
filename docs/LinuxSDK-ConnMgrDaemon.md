@@ -62,7 +62,11 @@ The network interface may vary depending on what is being supported by the devic
 | Wireless Station     | stanet       | wlan0           | When the wireless is configured as station mode.             | config interface 'stanet'<br>option ifname 'wlan0'<br>option proto 'dhcp'<br>option metric '20' |
 | LTE Cellular network | modemnet     | wwan0           | The LTE cellular setup is controlled by the Afero WAN daemon (wand).The configuration specifics found in the configuration files are provided for completeness only. | Created by WAN daemon (wand).                                |
 
-<mark>**&#x26A0; Caution!**     The interface naming convention must be followed because ConnMgr assumes these are the interface names. If you change the “interface name”, you must make sure all the changes are propagated to all the various scripts and files supported by ConnMgr by using the `netif_names` configuration file. See directly below for details.</mark>
+<div class="af-callout-caution">
+	<div class="callout-text">
+	<p><img src="../img/Caution.svg" width="17" style="vertical-align:bottom;padding:0">&nbsp;&nbsp;<strong>CAUTION!</strong>&nbsp;  The interface naming convention must be followed because ConnMgr assumes these are the interface names. If you change the “interface name”, you must make sure all the changes are propagated to all the various scripts and files supported by ConnMgr by using the <code>netif_names</code> configuration file. See directly below for details.</p>
+	</div>
+</div>
 
 ### netif_names Configuration File
 
@@ -243,7 +247,10 @@ There are other attributes defined, but ConnMgr supports the following attribute
 
 Developers can add and support their own attributes by first adding these attributes into the attrd database, then implementing the `get` and `set` functionality of these attributes.
 
-<mark>**&#x26A0; Caution!**  These attributes must be part of the device Profile to work properly.</mark>
-
+<div class="af-callout-caution">
+	<div class="callout-text">
+	<p><img src="../img/Caution.svg" width="17" style="vertical-align:bottom;padding:0">&nbsp;&nbsp;<strong>CAUTION!</strong>&nbsp; These attributes must be part of the device Profile to work properly.</p>
+	</div>
+</div>
 
 <strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Edge Device Daemon Implementation](../LinuxSDK-EdgeDaemon)

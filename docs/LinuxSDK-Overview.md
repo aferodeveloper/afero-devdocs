@@ -142,7 +142,7 @@ The Connection Manager daemon has two main responsibilities:
 
 <div class="af-callout">
 <div class="callout-text">
-<p><strong>NOTE:</strong>  Firewall functionality is optional; you can disable the firewall by invoking connmgr with the -d option.
+<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong>  Firewall functionality is optional; you can disable the firewall by invoking connmgr with the -d option.
 </div>
 </div>
 

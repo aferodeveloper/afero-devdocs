@@ -550,8 +550,9 @@ int af_attr_open (struct event_base *base, char *clientName, uint16_t numListenR
 
 #####Parameters
 
+| Parameter | Description |
+|-----------|-------------|
 | `base`            | Event base for the daemon’s event loop. You need to set up the event loop using `event_base_new()` before calling this function. |
-| ----------------- | ------------------------------------------------------------ |
 | `clientName`      | Name of the client. All Attribute Client names must start with the “IPC.” prefix. The name must match the name in the `af_attr_def.h` include file. |
 | `numListenRanges` | Number of ranges in `listenRanges` list.                     |
 | `listenRanges`    | Array of ranges of attribute IDs for which the client wants attribute change notifications. |
@@ -580,8 +581,9 @@ int af_attr_set (uint32_t attributeId, uint8_t *value, int length, af_attr_set_r
 
 #####Parameters
 
+| Parameter | Description |
+|-----------|-------------|
 | `attributeId` | ID of the attribute to set.                                  |
-| ------------- | ------------------------------------------------------------ |
 | `value`       | Pointer to a byte array containing the value of the attribute. |
 | `length`      | Length of the value byte array.                              |
 | `setCB`       | Callback that is called to indicate if the `set` was successful or not. |
@@ -609,8 +611,9 @@ int af_attr_get (uint32_t attributeId, af_attr_get_response_callback_t cb, void 
 
 #####Parameters
 
+| Parameter | Description |
+|-----------|-------------|
 | `attributeId` | ID of the attribute to `get`.                                |
-| ------------- | ------------------------------------------------------------ |
 | `cb`          | Callback that is called to return the value of the attribute. |
 | `context`     | Reference context for the `get` callback.                    |
 
@@ -632,9 +635,10 @@ int af_attr_send_get_response (int status, uint16_t getId, uint8_t *value, int l
 
 #####Parameters
 
+| Parameter | Description |
+|-----------|-------------|
 | `status` | Status value you can set if you can’t return the specified attribute. |
-| -------- | ------------------------------------------------------------ |
-| `getId`  | The getId that was passed in from the `af_get_request_callback_t` used by the Attribute Client library to match this response to the original request. |
+| `getId`  | The `getId` that was passed in from the `af_get_request_callback_t` used by the Attribute Client library to match this response to the original request. |
 | `value`  | Byte buffer containing the attribute value to be returned.   |
 | `length` | Length of the request to be returned.                        |
 

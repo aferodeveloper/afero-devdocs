@@ -4,7 +4,7 @@ Before you start, we assume that you’ve already run through [Tutorial 1: Linki
 
 <div class="af-callout">
 <div class="callout-text">
-<p><strong>NOTE:</strong> This tutorial is designed for the Modulo-1 and Modulo-2 dev boards, but not for the Modulo-1B.
+<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0 ">  <strong>NOTE:</strong> This tutorial is designed for the Modulo-1 and Modulo-2 dev boards, but not for the Modulo-1B.
 </div>
 </div>
 
@@ -60,7 +60,7 @@ Before you start, we assume that you’ve already run through [Tutorial 1: Linki
 <p>There are two steps to defining the UI controls: a) we first define the “attribute options” for each attribute; and b) we then assign UI controls to each attribute.</p>
 <div class="af-callout">
 <div class="callout-text">
-<p><strong>NOTE:</strong> You might be wondering why defining attribute options is separate from assigning controls. The reason is so you can easily assign multiple controls to the same attribute without having to retype a lot of details (although that doesn’t apply to this Tutorial). To learn more about attribute options, read <a id="1560458198.45" href="/AppUIDef#Options">Define the Mobile App UI &gt; Define the Attribute Options</a>.</p>
+<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong> You might be wondering why defining attribute options is separate from assigning controls. The reason is so you can easily assign multiple controls to the same attribute without having to retype a lot of details (although that doesn’t apply to this Tutorial). To learn more about attribute options, read <a id="1560458198.45" href="/AppUIDef#Options">Define the Mobile App UI &gt; Define the Attribute Options</a>.</p>
 </div>
 </div>
 
@@ -104,7 +104,7 @@ Before you start, we assume that you’ve already run through [Tutorial 1: Linki
 <li><p>Click <span class="UIText">UI Control Groups</span> in the left-hand Navigation pane to group your controls.</p>
 <p>The left-hand pane, <span class="UIText">Define the UI Control Groups</span>, displays a representation of the device mobile app UI. At the top of both the mobile app and the Profile Editor is the “groups ribbon”; below are the controls for the selected group. Note that device Settings is a selection only shown in the mobile app groups ribbon, not in the Profile Editor.</p>
 <ol class="af-ol-lower-alpha">
-<li><p>We’ve already set up two groups, shown in the groups ribbon and labeled <strong>LED</strong> and <strong>Button</strong>. (We’ve already created groups for this project, but if we hadn’t, you would click<img src="../img/AddGroupIcon.png" vertical-align="baseline">to create a new group.)</p></li>
+<li><p>We’ve already set up two groups, shown in the groups ribbon and labeled <strong>LED</strong> and <strong>Button</strong>. (We’ve already created groups for this project, but if we hadn’t, you would click <img src="../img/AddGroupIcon.png" vertical-align="baseline"> to create a new group.)</p></li>
 <li>On the right, you’ll see all the controls you defined on the UI Controls window, identified by their Default Label. These are the controls available for grouping.</li>
 <li><p>Click the group labeled <strong>LED</strong> to make it active and ready for editing. The group will be highlighted in orange:</p>
 <img src="../img/Control_Groups_LED.png" width="500" alt="UI Control Group">
@@ -112,7 +112,7 @@ Before you start, we assume that you’ve already run through [Tutorial 1: Linki
 <li><p>To remove a control from a group, simply drag it back to the <span class="UIText">Available UI Controls</span> pane.</p>
 <div class="af-callout">
 <div class="callout-text">
-<p><strong>NOTE:</strong> A control can appear in multiple groups, but <em>must</em> appear in at least one group or it won’t appear at all in the mobile app UI. That means that even if you have just one UI control, you’ll need to create a UI control group to contain it.</p>
+<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong> A control can appear in multiple groups, but <em>must</em> appear in at least one group or it won’t appear at all in the mobile app UI. That means that even if you have just one UI control, you’ll need to create a UI control group to contain it.</p>
 </div>
 </div>
 </li>

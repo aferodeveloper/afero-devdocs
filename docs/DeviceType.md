@@ -20,7 +20,7 @@ After selecting a project on the Startup window, the Profile Editor opens to the
 
 <div class="af-callout">
 <div class="callout-text">
-<p><strong>NOTE:</strong> The Power Optimization calculations apply only to projects using either the Modulo-1 or Modulo-1B modules.
+<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong> The Power Optimization calculations apply only to projects using either the Modulo-1 or Modulo-1B modules.
 </div></div>
 
 - Select an <span class="UIText">ADVERTISING INTERVAL</span> (in seconds) for Bluetooth. If you’re running on battery power, the shorter the interval, the more battery power is consumed. However, at higher intervals the responsiveness of the device will be negatively affected due to lag time.
@@ -36,7 +36,7 @@ After selecting a project on the Startup window, the Profile Editor opens to the
 
 <div class="af-callout">
 <div class="callout-text">
-<p><strong>NOTE:</strong>  Every time you save, your data is validated. If validation fails for any reason, an error message will appear then move to the left. Click the error description in the message to highlight the field that needs correcting.
+<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong>  Every time you save, your data is validated. If validation fails for any reason, an error message will appear then move to the left. Click the error description in the message to highlight the field that needs correcting.
 </div></div>
 
 <strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Define the Device Attributes](../AttrDef)

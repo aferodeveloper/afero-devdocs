@@ -38,7 +38,7 @@ A rule is defined by specifying at least one condition in which an attribute you
 
 <div class="af-callout">
 <div class="callout-text">
-<p><strong>NOTE:</strong> If you list more than one condition, <strong>all</strong> conditions must be met before a notification is triggered.
+<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong> If you list more than one condition, <strong>all</strong> conditions must be met before a notification is triggered.
 </div>
 </div>
 

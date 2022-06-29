@@ -31,7 +31,11 @@ At any time during development, it’s possible to check your project into a rev
 
 The tool you will use to define your device Profiles is the Afero Profile Editor. The Profile Editor is available to all Afero partner-developers and can be downloaded for either [Windows](http://cdn.afero.io/latest-ape/win) or [macOS](http://cdn.afero.io/latest-ape/mac). For system requirements, go to the [Electron Supported Platforms](https://www.electronjs.org/docs/tutorial/support) page.
 
-**Chrome app users:** If you were previously using the Afero Profile Editor Chrome app, **remove** the Chrome app by going to `chrome://extensions/` in your browser, finding the Afero Profile Editor entry, then clicking the trash icon to the right.
+<div class="af-callout">
+<div class="callout-text">
+<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>CHROME APP USERS:</strong> If you were previously using the Afero Profile Editor Chrome app, <strong>remove</strong> the Chrome app by going to <code>chrome://extensions/</code> in your browser, finding the Afero Profile Editor entry, then clicking the trash icon to the right.</p>
+</div>
+</div>
 
 The Profile Editor takes care of the following:
 
@@ -56,6 +60,10 @@ Project files are complete and saved locally. This has a few practical implicati
 - **You can freely copy and share projects.** Thanks to the simple structure of a Profile Editor project, you can freely duplicate projects, share them, or import one as a template to start another.
 - **To delete a project,** simply delete the project directory through your filesystem.
 
-<mark>**&#x26A0; Caution!**  Avoid making edits directly on project files with tools other than the Afero Profile Editor. If you do, normal consistency checks and validation are bypassed, which could cause unexpected results.</mark>
+<div class="af-callout-caution">
+	<div class="callout-text">
+	<p><img src="../img/Caution.svg" width="17" style="vertical-align:bottom;padding:0"> <strong>CAUTION!</strong>&nbsp; Avoid making edits directly on project files with tools other than the Afero Profile Editor. If you do, normal consistency checks and validation are bypassed, which could cause unexpected results.</p>
+	</div>
+</div>
 
 <strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Select the Project](../SelectProject)

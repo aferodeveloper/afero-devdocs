@@ -22,7 +22,7 @@ At a high level, this is how it works:
 
 <div class="af-callout">
 <div class="callout-text">
-<p><strong>NOTE:</strong> In addition, you'll have to prepare your application code to accept an MCU OTA update. Instructions are on this page: <a href="../MCU-OTA">Handling MCU OTA Updates</a>.
+<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong> In addition, you'll have to prepare your application code to accept an MCU OTA update. Instructions are on this page: <a href="../MCU-OTA">Handling MCU OTA Updates</a>.
 </div>
 </div>
 
@@ -54,7 +54,7 @@ Image types are shown in the OTA Manager as folders; again, you should name them
 
 <div class="af-callout">
 <div class="callout-text">
-<p><strong>NOTE:</strong> You can create up to <strong>100 Image Types</strong>.
+<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong> You can create up to <strong>100 Image Types</strong>.
 </div>
 </div>
 
@@ -86,7 +86,7 @@ When you are ready to upload a firmware image, start from the OTA Manager main w
 
 <div class="af-callout">
 <div class="callout-text">
-<p><strong>NOTE:</strong> Remember that before uploading an image, you must have already used the Profile Editor to create and publish a device Profile that has a firmware Image Type selected. You do this on the Attributes Definition window > MCU Configuration pane > Firmware OTA Updates section. Read <a href="../AttrDef#define-the-mcu-attributes">Define the MCU Attributes</a> for more details.
+<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong> Remember that before uploading an image, you must have already used the Profile Editor to create and publish a device Profile that has a firmware Image Type selected. You do this on the Attributes Definition window > MCU Configuration pane > Firmware OTA Updates section. Read <a href="../AttrDef#define-the-mcu-attributes">Define the MCU Attributes</a> for more details.
 </div>
 </div>
 

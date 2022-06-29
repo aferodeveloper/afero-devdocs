@@ -4,7 +4,7 @@ The RESTful API exposes the OAuth function described in this section.
 
 <div class="af-callout">
 <div class="callout-text">
-<p><strong>NOTE:</strong>   Before you begin using the API below, be sure you have read the information in <a href="../CloudAPIs">Afero Cloud APIs</a>.
+<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong>   Before you begin using the API below, be sure you have read the information in <a href="../CloudAPIs">Afero Cloud APIs</a>.
 </div>
 </div>
 

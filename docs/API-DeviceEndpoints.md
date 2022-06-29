@@ -8,7 +8,7 @@ The following functions are being exposed via the RESTful API:
 
 <div class="af-callout">
 <div class="callout-text">
-<p><strong>NOTE:</strong> Before you begin using the API below, be sure you have read the information in [Afero Cloud API](../CloudAPIs).
+<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong> Before you begin using the API below, be sure you have read the information in <a href="../CloudAPIs">Afero Cloud APIs</a>.
 </div>
 </div>
 

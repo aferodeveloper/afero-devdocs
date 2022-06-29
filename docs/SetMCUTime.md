@@ -29,7 +29,7 @@ The two attributes are described below:
 
 <div class="af-callout">
 <div class="callout-text">
-<p><strong>NOTE:</strong> UTC Offset is determined by the Location attributes set (by you) for ASR and <strong>are not dynamic</strong> in any way. The UTC Offset can and will be wrong if the Location in the device configuration is incorrect. You can set the correct Location for your Afero device using the Afero mobile app, or by using the Afero Inspector developer tool at <a href="https://inspector.afero.io"> https://inspector.afero.io</a>.</p>
+<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong> UTC Offset is determined by the Location attributes set (by you) for ASR and <strong>are not dynamic</strong> in any way. The UTC Offset can and will be wrong if the Location in the device configuration is incorrect. You can set the correct Location for your Afero device using the Afero mobile app, or by using the Afero Inspector developer tool at <a href="https://inspector.afero.io"> https://inspector.afero.io</a>.</p>
 </div>
 </div>
 

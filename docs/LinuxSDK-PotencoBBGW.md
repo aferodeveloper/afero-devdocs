@@ -56,8 +56,11 @@ To install and boot a Potenco Operating System image on the BeagleBone Green Wir
 
 **4**&nbsp;&nbsp;Rename the `.afimg` file to use the extension “.img”. Write this .img file to the SD card, then eject the card from your PC. Etcher will unmount the SD card when it has successfully written.
 
-<mark>**&#x26A0; Caution!**  Do not remove the SD card until all the data has been written to it and the device has been unmounted!</mark>
-
+<div class="af-callout-caution">
+	<div class="callout-text">
+	<p><img src="../img/Caution.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>CAUTION!</strong>&nbsp; Do not remove the SD card until all the data has been written to it and the device has been unmounted!</p>
+	</div>
+</div>
 
 ### Boot from the SD Card Image
 

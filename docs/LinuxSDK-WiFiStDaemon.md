@@ -129,7 +129,7 @@ network={
 
 <div class="af-callout">
 <div class="callout-text">
-<p><strong>NOTE:</strong> It is very important to disable the Wi-Fi network configuration so it doesn’t interfere with wifistad functionality.
+<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong> It is very important to disable the Wi-Fi network configuration so it doesn’t interfere with wifistad functionality.
 </div>
 </div>
 
@@ -183,7 +183,7 @@ Developers can add and support their own attributes by first adding the attribut
 
 <div class="af-callout">
 <div class="callout-text">
-<p><strong>NOTE:</strong>  These attributes must be part of the device Profile to work properly.
+<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong>  These attributes must be part of the device Profile to work properly.
 </div>
 </div>
 

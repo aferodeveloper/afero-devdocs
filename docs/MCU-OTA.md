@@ -12,8 +12,9 @@ At a high level, the steps involved in an MCU OTA update are as described below.
 
 - Use the Afero OTA Manager to [prepare a firmware update](../OTAMgr) for your device. Note that the MCU OTA mechanism can be used to deliver any type of data to your device, not just MCU code.
 
-- Use the Afero Profile Editor to [define MCU OTA handling](../AttrDef#define-the-mcu-attributes) for the device Profile involved.<br><br>
-In order to support receipt of MCU OTA updates, your device Profile must include a few special attributes, including `AF_MCU_OTA_INFO` and `AF_MCU_OTA_TRANSFER`, which convey control information and the transferred data itself, respectively. All special attributes are added for you by the Afero Profile Editor when you select a particular firmware type to be received. Read more about this in the in the Profile Editor User Guide, [Define the MCU Attributes](../AttrDef#define-the-mcu-attributes) section.
+- Use the Afero Profile Editor to [define MCU OTA handling](../AttrDef#define-the-mcu-attributes) for the device Profile involved.
+
+	In order to support receipt of MCU OTA updates, your device Profile must include a few special attributes, including `AF_MCU_OTA_INFO` and `AF_MCU_OTA_TRANSFER`, which convey control information and the transferred data itself, respectively. All special attributes are added for you by the Afero Profile Editor when you select a particular firmware type to be received. Read more about this in the in the Profile Editor User Guide, [Define the MCU Attributes](../AttrDef#define-the-mcu-attributes) section.
 
 - You’ll include code in your MCU application to handle the messaging and data transfers involved in an MCU OTA update. The purpose of this page is to help you with that.
 
@@ -156,7 +157,7 @@ In order to accept and receive an MCU OTA update, your application code must:
 
 <div class="af-callout">
 <div class="callout-text">
-<p><strong>NOTE:</strong> The example code provides the skeleton for handling receipt of an incoming MCU OTA update, but does <strong>not</strong> include any procedures required to install, such as an OTA update once downloaded. Because such procedures will be platform-specific, writing that code is your responsibility.
+<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong> The example code provides the skeleton for handling receipt of an incoming MCU OTA update, but does <strong>not</strong> include any procedures required to install, such as an OTA update once downloaded. Because such procedures will be platform-specific, writing that code is your responsibility.
 </div>
 </div>
 

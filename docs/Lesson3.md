@@ -177,7 +177,7 @@ And there it is: while variable “blinking” is true, the MCU calls `setModulo
 
 <div class="af-callout">
 <div class="callout-text">
-<p><strong>NOTE:</strong> In a typical product containing an MCU, any LED indicator in the device would likely be connected directly to the MCU, whereas in this example we have used the LED on the dev board. The difference is that in this lesson, the MCU changes the LED state by making a <code>af_lib_set_attribute()</code> call, which causes ASR to make the change and send an update; whereas in a product, the MCU would probably set the LED directly. We used this design not only for setup simplicity, but also to emphasize the way attributes are affected by making <code>af_lib_set_attribute()</code> calls.
+<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong> In a typical product containing an MCU, any LED indicator in the device would likely be connected directly to the MCU, whereas in this example we have used the LED on the dev board. The difference is that in this lesson, the MCU changes the LED state by making a <code>af_lib_set_attribute()</code> call, which causes ASR to make the change and send an update; whereas in a product, the MCU would probably set the LED directly. We used this design not only for setup simplicity, but also to emphasize the way attributes are affected by making <code>af_lib_set_attribute()</code> calls.
 </div></div>
 
 The flow above illustrates the basic messaging pattern:

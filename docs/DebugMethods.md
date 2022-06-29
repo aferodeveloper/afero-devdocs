@@ -4,7 +4,7 @@ This section includes a couple useful methods that you can copy/paste into your 
 
 <div class="af-callout">
 <div class="callout-text">
-<p><strong>NOTE:</strong> Due to limitations in available memory, if you’re working with an Arduino Uno, it’s not likely you’ll be able to use these methods fully. If it’s possible for you to use a board with more memory, such as a Teensy, you’ll have a great deal more freedom, including the use of these debug methods. If you are restricted to an Uno or system with similar available memory, you may be able to include a subset of these calls, and get more reliable performance by reducing the ATTR_PRINT_MAX_VALUE_LEN.
+<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong> Due to limitations in available memory, if you’re working with an Arduino Uno, it’s not likely you’ll be able to use these methods fully. If it’s possible for you to use a board with more memory, such as a Teensy, you’ll have a great deal more freedom, including the use of these debug methods. If you are restricted to an Uno or system with similar available memory, you may be able to include a subset of these calls, and get more reliable performance by reducing the ATTR_PRINT_MAX_VALUE_LEN.
 </div>
 </div>
 

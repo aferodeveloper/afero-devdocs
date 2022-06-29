@@ -52,7 +52,11 @@ Afero account authentication flow follows the OAuth 2.0 standard as described in
 - Understanding of how to authenticate with the Afero Cloud and how to use authorization tokens in subsequent requests.
 - Client credentials as described in [RFC6749 Section 2](https://tools.ietf.org/html/rfc6749#section-2) for client application authentication.
 
-<mark>**&#x26A0; Caution!**   In production applications, **do not** use developer credentials obtained through the Afero Profile Editor!</mark>
+<div class="af-callout-caution">
+<div class="callout-text">
+<p><img src="../img/Caution.svg" width="17" style="vertical-align:bottom;padding:0">&nbsp;&nbsp;<strong>CAUTION!</strong>  In production applications, <strong>do not</strong> use developer credentials obtained through the Afero Profile Editor!</p>
+</div>
+</div>
 
 ### General Notes on Using the OTA API Endpoints
 
