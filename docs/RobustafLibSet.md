@@ -112,15 +112,14 @@ void loop() {
 }
 ```
 
-**Notes:**
+<strong>Notes:</strong>
 
-- In all three examples, we check the return value from `af_lib_set_attribute()`, and retry if the call was not successful. Doing this is essential to robust afLib usage.
-
-- While retrying unsuccessful afLib calls, it is important to call `af_lib_loop()` to ensure that afLib gets time to handle requests. If, for example, we called `set_attribute()` and the call failed due to a full request queue, retrying the call would be pointless unless afLib got time to service the queue.
-
-- It’s important to avoid calling `af_lib_loop()` within `attrEventCallback()`; doing so can have unexpected results. But we know that to make afLib calls robust we should confirm-and-retry, and we know that we must call `af_lib_loop()` *while* we retry. So if the callback tells us we need to call set_attribute, how do we do that robustly?<br><br>
-Examples #1 and #2 demonstrate a useful pattern: Code in the callback is restricted to setting a flag to indicate a `af_lib_set_attribute()` call is required. Then in the main `loop()`, the flag is checked, `set_attribute()` is called if indicated, and retried as needed until success. This pattern is robust, easy to read, and can reduce redundant code.
-
-- Example #3 shows a variation in which retrying is limited by a timeout: as above, the code retries `af_lib_set_attribute()`, waiting for AF_SUCCESS. But here a timeout prevents an indefinite cycle of re-trying in the face of some serious condition that is blocking us. If the timeout is exceeded, we assume that communication with afLib is fatally obstructed, so we trigger a reboot by directly manipulating the reset pin.
+<ul class="af-ul">
+	<li>In all three examples, we check the return value from <code>af_lib_set_attribute()</code>, and retry if the call was not successful. Doing this is essential to robust afLib usage.</li>
+	<li>While retrying unsuccessful afLib calls, it is important to call <code>af_lib_loop()</code> to ensure that afLib gets time to handle requests. If, for example, we called <code>set_attribute()</code> and the call failed due to a full request queue, retrying the call would be pointless unless afLib got time to service the queue.</li>
+	<li><p>It’s important to avoid calling <code>af_lib_loop()</code> within <code>attrEventCallback()</code>; doing so can have unexpected results. But we know that to make afLib calls robust we should confirm-and-retry, and we know that we must call <code>af_lib_loop()</code> <em>while</em> we retry. So if the callback tells us we need to call set_attribute, how do we do that robustly?</p>
+	<p>Examples #1 and #2 demonstrate a useful pattern: Code in the callback is restricted to setting a flag to indicate a <code>af_lib_set_attribute()</code> call is required. Then in the main <code>loop()</code>, the flag is checked, <code>set_attribute()</code> is called if indicated, and retried as needed until success. This pattern is robust, easy to read, and can reduce redundant code.</p></li>
+	<li>Example #3 shows a variation in which retrying is limited by a timeout: as above, the code retries <code>af_lib_set_attribute()</code>, waiting for AF_SUCCESS. But here a timeout prevents an indefinite cycle of re-trying in the face of some serious condition that is blocking us. If the timeout is exceeded, we assume that communication with afLib is fatally obstructed, so we trigger a reboot by directly manipulating the reset pin.</li>
+</ul>
 
 <strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Useful Debugging Methods](../DebugMethods)

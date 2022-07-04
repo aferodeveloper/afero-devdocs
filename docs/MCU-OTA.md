@@ -10,28 +10,33 @@ At a high level, the steps involved in an MCU OTA update are as described below.
 
 ### Preparation
 
-- Use the Afero OTA Manager to [prepare a firmware update](../OTAMgr) for your device. Note that the MCU OTA mechanism can be used to deliver any type of data to your device, not just MCU code.
-
-- Use the Afero Profile Editor to [define MCU OTA handling](../AttrDef#define-the-mcu-attributes) for the device Profile involved.
-
-	In order to support receipt of MCU OTA updates, your device Profile must include a few special attributes, including `AF_MCU_OTA_INFO` and `AF_MCU_OTA_TRANSFER`, which convey control information and the transferred data itself, respectively. All special attributes are added for you by the Afero Profile Editor when you select a particular firmware type to be received. Read more about this in the in the Profile Editor User Guide, [Define the MCU Attributes](../AttrDef#define-the-mcu-attributes) section.
-
-- You’ll include code in your MCU application to handle the messaging and data transfers involved in an MCU OTA update. The purpose of this page is to help you with that.
+<ul class="af-ul">
+	<li>Use the Afero OTA Manager to <a href="../OTAMgr">prepare a firmware update</a> for your device. Note that the MCU OTA mechanism can be used to deliver any type of data to your device, not just MCU code.</li>
+	<li><p>Use the Afero Profile Editor to <a href="../AttrDef#define-the-mcu-attributes">define MCU OTA handling</a> for the device Profile involved.</p>
+		<p>In order to support receipt of MCU OTA updates, your device Profile must include a few special attributes, including AF_MCU_OTA_INFO and AF_MCU_OTA_TRANSFER, which convey control information and the transferred data itself, respectively. All special attributes are added for you by the Afero Profile Editor when you select a particular firmware type to be received. Read more about this in the in the Profile Editor User Guide, <a href="../AttrDef#define-the-mcu-attributes">Define the MCU Attributes</a> section.</li>
+	<li>You’ll include code in your MCU application to handle the messaging and data transfers involved in an MCU OTA update. The purpose of this page is to help you with that.</li>
+</ul>
 
 ### OTA Delivery
 
-- You’ll use the Afero OTA Manager to [deploy a firmware image](../OTAMgr#deploy-a-firmware-image) to your device.
-
-- The incoming update will be handled as described below. Your MCU code will:
-    - Receive an AF_LIB_EVENT_ASR_NOTIFICATION event for attribute AF_MCU_OTA_INFO.
-    - Extract from that notification the incoming file type and amount of data to be received.
-    - Respond that it is ready to receive the data.
-    - Receive the data in the form of AF_LIB_EVENT_ASR_NOTIFICATION events for attribute AF_MCU_OTA_TRANSFER.
-    - For each data chunk received, respond with the amount of data received so far. When all expected data has been received, MCU will respond with AF_MCU_OTA_STOP_TRANSFER_OFFSET.
-    - Calculate a SHA-256 checksum of the data received, and send that checksum with the message AF_OTA_VERIFY_SIGNATURE, which requests validation of the data.
-    - Receive an AF_LIB_EVENT_ASR_NOTIFICATION event for attribute AF_MCU_OTA_INFO, with either:
-        - AF_OTA_APPLY, indicating that the data transfer occurred correctly and the download can be used; or,
-        - AF_OTA_FAIL, indicating that the checksum did not match, and the downloaded data should be discarded.
+<ul class="af-ul">
+	<li>You’ll use the Afero OTA Manager to <a href="../OTAMgr#deploy-a-firmware-image">deploy a firmware image</a> to your device.</li>
+	<li>The incoming update will be handled as described below. Your MCU code will:
+	<ul class="af-ul-2">
+		<li>Receive an AF_LIB_EVENT_ASR_NOTIFICATION event for attribute AF_MCU_OTA_INFO.</li>
+		<li>Extract from that notification the incoming file type and amount of data to be received.</li>
+		<li>Respond that it is ready to receive the data.</li>
+		<li>Receive the data in the form of AF_LIB_EVENT_ASR_NOTIFICATION events for attribute AF_MCU_OTA_TRANSFER.</li></li>
+		<li>For each data chunk received, respond with the amount of data received so far. When all expected data has been received, MCU will respond with AF_MCU_OTA_STOP_TRANSFER_OFFSET.</li>
+		<li>Calculate a SHA-256 checksum of the data received, and send that checksum with the message AF_OTA_VERIFY_SIGNATURE, which requests validation of the data.</li>
+		<li>Receive an AF_LIB_EVENT_ASR_NOTIFICATION event for attribute AF_MCU_OTA_INFO, with either:
+			<ul class="af-ul-3">
+				<li>AF_OTA_APPLY, indicating that the data transfer occurred correctly and the download can be used; or,</li>
+				<li>AF_OTA_FAIL, indicating that the checksum did not match, and the downloaded data should be discarded.</li>
+			</ul>
+		</li>
+	</ul>
+</ul>
 
 ### Example MCU OTA: Console Output
 
@@ -133,33 +138,30 @@ The simplified sketch code below provides examples of handlers for AF_MCU_OTA_IN
 
 In order to accept and receive an MCU OTA update, your application code must:
 
-- Handle AF_LIB_EVENT_ASR_NOTIFICATION events for attribute AF_MCU_OTA_INFO, with an attribute value that represents an ```af_ota_info_t``` struct (which is defined in ```af_mcu_ota.h```).
-
-    These AF_MCU_OTA_INFO events inform your MCU code when an MCU OTA update is available, when it’s complete, and so on. The ```af_ota_info_t``` struct contains a lot of information, but one of the highest-level pieces is the ```ota_state_t```. Your code should watch for, and react to the following OTA states:
-    
-     - AF_OTA_IDLE
-     - AF_OTA_TRANSFER_BEGIN
-     - AF_OTA_TRANSFER_END
-     - AF_OTA_APPLY
-     - AF_OTA_FAIL
-
-    In the example code below, this state-handling functionality is contained in the function `handle_ota_info()`.
-
-- Handle AF_LIB_EVENT_ASR_NOTIFICATION events for attribute AF_MCU_OTA_TRANSFER.
-
-    AF_MCU_OTA_TRANSFER events represent the actual data transfer; the value in each of these messages is comprised of a chunk of data being sent, plus 4-byte prefix indicating the current offset into the total data payload.
-
-    In the example code, we handle AF_MCU_OTA_TRANSFER events in the function `handle_ota_transfer()`.
-
-- Calculate a SHA-256 checksum for the downloaded data. Once the download is complete this checksum must be sent to ASR, where it will be verified. Your code will receive confirmation/denial based upon this verification, and should not use the downloaded data unless the checksum is confirmed.
-
-    In the example code, we calculate the SHA as data arrives because the example does not store the download; in real-world applications you are free to calculate the SHA as data arrives, or after the download is complete. The example code handles this task in `handle_ota_transfer()`.
+<ul class="af-ul">
+	<li><p>Handle AF_LIB_EVENT_ASR_NOTIFICATION events for attribute AF_MCU_OTA_INFO, with an attribute value that represents an <code>af_ota_info_t</code> struct (which is defined in <code>af_mcu_ota.h</code>).</p>
+	<p>These AF_MCU_OTA_INFO events inform your MCU code when an MCU OTA update is available, when it’s complete, and so on. The <code>af_ota_info_t</code> struct contains a lot of information, but one of the highest-level pieces is the <code>ota_state_t</code>. Your code should watch for, and react to the following OTA states:</p>
+		<ul class="af-ul-2">
+			<li>AF_OTA_IDLE</li>
+			<li>AF_OTA_TRANSFER_BEGIN</li>
+			<li>AF_OTA_TRANSFER_END</li>
+			<li>AF_OTA_APPLY</li>
+			<li>AF_OTA_FAIL</li>
+		</ul>
+	<p>In the example code below, this state-handling functionality is contained in the function <code>handle_ota_info()</code>.</p></li>
+	<li><p>Handle AF_LIB_EVENT_ASR_NOTIFICATION events for attribute AF_MCU_OTA_TRANSFER.</p>
+		<p>AF_MCU_OTA_TRANSFER events represent the actual data transfer; the value in each of these messages is comprised of a chunk of data being sent, plus 4-byte prefix indicating the current offset into the total data payload.</p>
+		<p>In the example code, we handle AF_MCU_OTA_TRANSFER events in the function <code>handle_ota_transfer()</code>.</p></li>
+	<li><p>Calculate a SHA-256 checksum for the downloaded data. Once the download is complete this checksum must be sent to ASR, where it will be verified. Your code will receive confirmation/denial based upon this verification, and should not use the downloaded data unless the checksum is confirmed.</p>
+		<p>In the example code, we calculate the SHA as data arrives because the example does not store the download; in real-world applications you are free to calculate the SHA as data arrives, or after the download is complete. The example code handles this task in <code>handle_ota_transfer()</code>.</p></li>
+</ul>
 
 <div class="af-callout">
 <div class="callout-text">
 <p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong> The example code provides the skeleton for handling receipt of an incoming MCU OTA update, but does <strong>not</strong> include any procedures required to install, such as an OTA update once downloaded. Because such procedures will be platform-specific, writing that code is your responsibility.
 </div>
 </div>
+<br>
 
 ```
 typedef struct {

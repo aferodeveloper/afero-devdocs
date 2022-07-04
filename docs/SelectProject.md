@@ -62,23 +62,27 @@ Before going to the next section, let’s do a quick tour of the Profile Editor 
 
 The system menu bar contains a few items worth noting. Select:
 
-- FILE > NEW PROJECT to begin a new project.
-- FILE > OPEN PROJECT to navigate to and open a saved project.
-- FILE > CLEAR LIST to clear the Startup window of all the displayed projects.
-- FILE > CLONE PROJECT to make a copy of your open project (menu item appears active when you have a project open). If you are defining a new Device Type with this project, make sure the Device Type Name you give it is unique across your projects, a name that you haven’t used before.
-- VIEW > ACCOUNT INFO to see information about your account: first name, last name, username, and authentication information. This includes your OAuth Client ID and OAuth Client Secret, which you’ll need when working with [Afero Cloud API endpoints](../CloudAPIs).
-- TOOLS > SAMPLE PROJECTS to download some projects we’ve posted to the [aferodeveloper GitHub site](http://github.com/aferodeveloper/APE-Project-Profiles). You can use these projects as starting points. To see all the projects we’ve created (not just those explicitly listed in the menu), select the GITHUB REPOSITORY menu item. This menu selection will open the GitHub page where you can conveniently download a zip file of all the projects.
-- HELP > COLLECT ANONYMOUS USAGE DATA to toggle this option on or off. Any data collected is anonymous and used only to help us improve the Profile Editor based on how you use it.
-
+<ul class="af-ul">
+	<li>FILE > NEW PROJECT to begin a new project.</li>
+	<li>FILE > OPEN PROJECT to navigate to and open a saved project.</li>
+	<li>FILE > CLEAR LIST to clear the Startup window of all the displayed projects.</li>
+	<li>FILE > CLONE PROJECT to make a copy of your open project (menu item appears active when you have a project open). If you are defining a new Device Type with this project, make sure the Device Type Name you give it is unique across your projects, a name that you haven’t used before.</li>
+	<li>VIEW > ACCOUNT INFO to see information about your account: first name, last name, username, and authentication information. This includes your OAuth Client ID and OAuth Client Secret, which you’ll need when working with <a href="../CloudAPIs">Afero Cloud API endpoints</a>.</li>
+	<li>TOOLS > SAMPLE PROJECTS to download some projects we’ve posted to the <a href="http://github.com/aferodeveloper/APE-Project-Profiles">“aferodeveloper” GitHub site</a>. You can use these projects as starting points. To see all the projects we’ve created (not just those explicitly listed in the menu), select the GITHUB REPOSITORY menu item. This menu selection will open the GitHub page where you can conveniently download a zip file of all the projects.</li>
+	<li>HELP > COLLECT ANONYMOUS USAGE DATA to toggle this option on or off. Any data collected is anonymous and used only to help us improve the Profile Editor based on how you use it.</li>
+</ul>
+<p></p>
 With a Profile Editor project open:
 
 <img src="../img/APE-BasicUI.png" width="900" style="vertical-align:middle;margin:0px 0px;border:.5px solid grey">
 
-- The leftmost section of the Profile Editor window is the NAVIGATION PANE. We’ll be working our way down the pane as we create a Profile. To close your current project, simply select CLOSE PROJECT at the bottom of the Navigation pane.
-- The rightmost section, below the Discard and Save buttons, is the PREVIEW/EXAMPLE pane. Depending on what is displaying in the center pane of the window, you may see example views of the mobile app UI, the Afero dev board, or UI elements you’re working with.
-- You can hide/show the Navigation pane on the left and the Preview pane on the right by clicking the arrows located at the top inside corners of the panes:<img src="../img/APE-Hide-Show-Arrows.png" width="30" style="vertical-align:middle;margin:0px 0px;>. They work as toggles, showing/hiding the associated pane.
-- In the upper-right of the window, you’ll see the DISCARD and SAVE buttons. These always act on the values in the currently-visible window.
-- Selected checkboxes and radio buttons are partially filled with orange<img src="../img/APE-CheckboxSel.png" width="40" style="vertical-align:middle;margin:0px 0px;border:none">; deselected checkboxes and radio buttons are filled with dark grey<img src="../img/APE-CheckboxDesel.png" width="40" style="vertical-align:middle;margin:0px 0px;border:none">.
-- Selected options have an orange background (“OUTPUT” in the example); deselected options have a black background<img src="../img/APE-Selection.png" width="100" style="vertical-align:middle;margin:0px 0px;border:none">.
+<ul class="af-ul">
+	<li>The leftmost section of the Profile Editor window is the NAVIGATION PANE. We’ll be working our way down the pane as we create a Profile. To close your current project, simply select CLOSE PROJECT at the bottom of the Navigation pane.</li>
+	<li>The rightmost section, below the Discard and Save buttons, is the PREVIEW/EXAMPLE pane. Depending on what is displaying in the center pane of the window, you may see example views of the mobile app UI, the Afero dev board, or UI elements you’re working with.</li>
+	<li>You can hide/show the Navigation pane on the left and the Preview pane on the right by clicking the arrows located at the top inside corners of the panes:<img src="../img/APE-Hide-Show-Arrows.png" width="30" style="vertical-align:middle;margin:0px 0px;>. They work as toggles, showing/hiding the associated pane.</li>
+	<li>In the upper-right of the window, you’ll see the DISCARD and SAVE buttons. These always act on the values in the currently-visible window.</li>
+	<li>Selected checkboxes and radio buttons are partially filled with orange<img src="../img/APE-CheckboxSel.png" width="40" style="vertical-align:middle;margin:0px 0px;border:none">; deselected checkboxes and radio buttons are filled with dark grey<img src="../img/APE-CheckboxDesel.png" width="40" style="vertical-align:middle;margin:0px 0px;border:none">.</li>
+	<li>Selected options have an orange background (“OUTPUT” in the example); deselected options have a black background<img src="../img/APE-Selection.png" width="100" style="vertical-align:middle;margin:0px 0px;border:none">.</li>
+</ul>
 
   <strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Define the Device Type](../DeviceType)

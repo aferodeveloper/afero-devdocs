@@ -70,15 +70,21 @@ The device Profile in this lesson has two GPIO attribute definitions similar to 
 
 We plan to use menu controls to represent the two GPIO attributes defined in this project. We’d like to have user-friendly labels representing the GPIO values in the mobile app UI. To do this, we’ll define attribute options consisting of Value Options, as follows.
 
-- **For the “Blink” attribute, which is set as the Primary Operation:**
-    - Value option “false” is mapped to label “Stop”.
-    - Value option “true” is mapped to label “Start” and set to Running State. This will make the device icon highlight when blinking starts.
-<br><img src="../img/Tut3_Blink_Attr_Option.png" width="500" style="vertical-align:middle;margin:0px 0px;border:none">
-
-- **For the "Modulo LED" attribute:**
-    - Value option “1” is mapped to label “ON” and set to Running State.
-    - Value option “0” is mapped to label “OFF”.
-<br><img src="../img/Tut3_LED_Attr_Option.png" width="500" style="vertical-align:middle;margin:0px 0px;border:none">
+<ul class="af-ul">
+	<li><strong>For the “Blink” attribute, which is set as the Primary Operation:</strong>
+		<ul class="af-ul-2">
+			<li>Value option “false” is mapped to label “Stop”.</li>
+			<li>Value option “true” is mapped to label “Start” and set to Running State. This will make the device icon highlight when blinking starts.<br><img src="../img/Tut3_Blink_Attr_Option.png" width="500" style="vertical-align:middle;margin:0px 0px;border:none">
+			</li>
+		</ul>
+	</li>
+	<li><strong>For the "Modulo LED" attribute:</strong>
+		<ul class="af-ul-2">
+			<li>Value option “1” is mapped to label “ON” and set to Running State.</li>
+			<li>Value option “0” is mapped to label “OFF”.<br><img src="../img/Tut3_LED_Attr_Option.png" width="500" style="vertical-align:middle;margin:0px 0px;border:none"></li>
+		</ul>
+	</li>
+</ul>
 
 ### Define the UI Controls
 
@@ -257,15 +263,20 @@ In the sample above, you can see that the file begins with a set of defines that
 
 Following that, you should see something that looks familiar: the define for the AF_BLINK attribute. We used the name AF_BLINK to refer to attribute #1 in the sketch we developed earlier in this exercise. At this point we’ll note two features of this attribute:
 
-- The Blink attribute you defined using the Profile Editor is an MCU attribute, and
-- The attribute ID = 1
+<ul class="af-ul">
+	<li>The Blink attribute you defined using the Profile Editor is an MCU attribute, and
+</li>
+	<li>The attribute ID = 1.</li>
+</ul>
 
 It turns out that any MCU attributes you define will have ID numbers from 1 to 1023. Of course, you should use the #define names for the attributes and not their ID numbers, but we raise this point here because the ID range defines the number of MCU attributes you can create, and to introduce the fact that different types of attributes have different ID ranges.
 
 After the definition of AF_BLINK, you see another attribute you created: AF_MODULO_LED. This is one of the GPIO attributes you defined in your Profile. GPIO attributes start at ID 1024, and each GPIO has a pair of attributes:
 
-- One for the base definition (what you defined in the Profile), and
-- One for extended attribute definition data (you don’t have to worry about this)
+<ul class="af-ul">
+	<li>One for the base definition (what you defined in the Profile), and</li>
+	<li>One for extended attribute definition data (you don’t have to worry about this)</li>
+</ul>
 
 Thus, GPIO 0 owns IDs 1024 and 1025, GPIO 1 owns 1026 and 1027, and so on.
 
@@ -277,19 +288,23 @@ In most cases, you can ignore the system attributes, but when your project inclu
 
 The ASR_STATE attribute can have one of a small range of values, or “states”:
 
-- 0 = Rebooted
-- 1 = Linked
-- 2 = Updating
-- 3 = Update Ready to Apply (Reboot Requested)
-- 4 = Initialized
-- 5 = Re-Linked
-- 6 = Factory Reset
+<ul class="af-ul no-bullet">
+	<li>0 = Rebooted</li>
+	<li>1 = Linked</li>
+	<li>2 = Updating</li>
+	<li>3 = Update Ready to Apply (Reboot Requested)</li>
+	<li>4 = Initialized</li>
+	<li>5 = Re-Linked</li>
+	<li>6 = Factory Reset</li>
+</ul>
 
 Let’s take a look at how your code can use three of these events:
 
-- [0 = Rebooted](../Lesson3#what-to-do-when-you-receive-the-rebooted-state-message)
-- [4 = Initialized](../Lesson3#waiting-until-initialized)
-- [3 = Update Ready to Apply (Reboot Requested)](../Lesson3#how-to-handle-a-reboot-request)
+<ul class="af-ul">
+	<li><a href="../Lesson3#what-to-do-when-you-receive-the-rebooted-state-message">0 = Rebooted</a></li>
+	<li><a href="../Lesson3#waiting-until-initialized">4 = Initialized</a></li>
+	<li><a href="../Lesson3#how-to-handle-a-reboot-request">3 = Update Ready to Apply</a></li>
+</ul>
 
 #### What to Do When You Receive the “Rebooted” State Message
 

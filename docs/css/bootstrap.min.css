@@ -480,10 +480,10 @@ mark,.mark {
 }
 code
 {
-	font-size:95%;
-	font-family:Courier;
+	font-size:100%;
+	font-family:Consolas;
 	color:#00000;
-	font-weight:500;
+	font-weight:550;
 	word-break:keep-all
 }
 a>code
@@ -500,9 +500,12 @@ kbd
 }
 kbd kbd
 {
-	padding:0;font-size:100%;font-weight:700
+	padding:0;
+	font-size:100%;
+	font-weight:600
 }
 pre {
+	font-family:Consolas;
 	display:block;
 	font-size:95%;
 	color:#212529

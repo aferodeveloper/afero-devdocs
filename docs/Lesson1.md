@@ -10,7 +10,7 @@ Follow these simple steps to set up your Afero dev board:
 			<li>Install the Afero mobile app (iOS or Android) on your smartphone, and</li>
 			<li>Download the Afero Profile Editor (Windows or macOS) on your computer.</li>
 		</ul>
-		<p>There’s also a “quick link” to the Hardware Products page for ordering Afero hardware development boards.</p>
+<!--		<p>There’s also a “quick link” to the Hardware Products page for ordering Afero hardware development boards.</p>-->
 	</li>
 	<li>Open the Afero mobile app on your smartphone, then follow the prompts to sign up for your Afero developer account.</li>
 	<li>Plug your Afero dev board into a micro-USB power source, either an AC adapter or your computer (not your smartphone).</li>

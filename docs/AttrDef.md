@@ -27,12 +27,14 @@ The GREY BAR indicates space used by system attributes. The BLUE BAR indicates s
 
 ### More Attribute Facts
 
-- Attribute history is stored in the Afero Cloud (30 days by default).
-- Attribute changes can be tracked and graphed across one-to-n devices.
-- Afero Inspector and Afero Console are developer tools available for viewing attribute changes and running analytics.
-- Attributes are accessible via a REST API.
-- Afero can pull data from your cloud to push to device attributes.
-- Afero can push attribute data back to your cloud.
+<ul class="af-ul">
+	<li>Attribute history is stored in the Afero Cloud (30 days by default).</li>
+	<li>Attribute changes can be tracked and graphed across one-to-n devices.</li>
+	<li>Afero Inspector and Afero Console are developer tools available for viewing attribute changes and running analytics.</li>
+	<li>Attributes are accessible via a REST API.</li>
+	<li>Afero can pull data from your cloud to push to device attributes.</li>
+	<li>Afero can push attribute data back to your cloud.</li>
+</ul>
 
 ## Does Your Device Include a Microcontroller (MCU)?
 

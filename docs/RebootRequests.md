@@ -2,13 +2,15 @@
 
 Your MCU code will use the `attrEventCallback()` callback to take action when attribute values change. Your primary concern will be changes to attributes you define, but your code must also watch for changes to the system attribute AF_SYSTEM_ASR_STATE. This attribute can have one of several values, including:
 
-- Rebooted
-- Linked
-- Updating
-- Update Ready
-- Initialized
-- Relinked
-- Factory Reset
+<ul class="af-ul">
+	<li>Rebooted</li>
+	<li>Linked</li>
+	<li>Updating</li>
+	<li>Update Ready</li>
+	<li>Initialized</li>
+	<li>Relinked</li>
+	<li>Factory Reset</li>
+</ul>
 
 AF_SYSTEM_ASR_STATE will change to “Updating” whenever ASR receives an Over-the-Air (OTA) firmware or profile update. When the OTA is complete, ASR will change AF_SYSTEM_ASR_STATE to “Update Ready”, and your MCU code is responsible for recognizing this case and triggering a reboot.
 

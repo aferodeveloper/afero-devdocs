@@ -20,8 +20,10 @@ The first step is to use the Profile Editor to create a Device Type, which inclu
 
 All projects require the definition of the communication interface between the Afero Platform and the device. That communication interface is called the device Profile and contains two parts:
 
-- **Device Attribute Definition** - A set of attributes whose values describe and control the state of your device. Attributes are specified in terms of function, data type, and read/write accessibility. For example, a thermostat would likely have the current room temperature as an attribute. Getting and setting attributes via the Afero Cloud is the heart of communication between the end-user and your device.
-- **Mobile App UI Definition** - Together with the communication interface, all projects must specify a user interface. After defining an attribute and giving it meaning, you must assign the attribute a standard presentation, which describes how it is represented to the end-user on the screen of the Afero mobile app.
+<ul class="af-ul">
+	<li><strong>Device Attribute Definition</strong> - A set of attributes whose values describe and control the state of your device. Attributes are specified in terms of function, data type, and read/write accessibility. For example, a thermostat would likely have the current room temperature as an attribute. Getting and setting attributes via the Afero Cloud is the heart of communication between the end-user and your device.</li>
+	<li><strong>Mobile App UI Definition</strong> - Together with the communication interface, all projects must specify a user interface. After defining an attribute and giving it meaning, you must assign the attribute a standard presentation, which describes how it is represented to the end-user on the screen of the Afero mobile app.</li>
+</ul>
 
 We refer to these combined definitions as the device **Profile**.
 
@@ -39,12 +41,14 @@ The tool you will use to define your device Profiles is the Afero Profile Editor
 
 The Profile Editor takes care of the following:
 
-- Declaration of a Device Type to the Afero Cloud.
-- Specification of the communication interface between a Device Type and the Afero ecosystem.
-- Definition of a set of standard UI elements that will be rendered in a mobile app UI to display Device Status and provide Device Control to the end-user.
-- Publication of the above information to the Afero Cloud.
-- Over-The-Air (OTA) installation of the device Profile to the ASR you are programming – whether that’s an Afero development board or an ASR installed in your product. (By the way, the examples we use in this section will assume we’re working with a Modulo; the operations are the same for any device module.)
-- Automatic generation of a project-specific header file that you’ll use with the afLib API, for projects that involve programming an in-product MCU.
+<ul class="af-ul">
+	<li>Declaration of a Device Type to the Afero Cloud.</li>
+	<li>Specification of the communication interface between a Device Type and the Afero ecosystem.</li>
+	<li>Definition of a set of standard UI elements that will be rendered in a mobile app UI to display Device Status and provide Device Control to the end-user.</li>
+	<li>Publication of the above information to the Afero Cloud.</li>
+	<li>Over-The-Air (OTA) installation of the device Profile to the ASR you are programming – whether that’s an Afero development board or an ASR installed in your product. (By the way, the examples we use in this section will assume we’re working with a Modulo; the operations are the same for any device module.)</li>
+	<li>Automatic generation of a project-specific header file that you’ll use with the afLib API, for projects that involve programming an in-product MCU.</li>
+</ul>
 
 Note that during project development you **do** need an active network connection. This is so Afero can provide checks against creating duplicate Device Types, refresh access tokens, and ensure integrity of the rules and notifications you define. If you do lose connectivity, the Profile Editor will notify you.
 
@@ -56,9 +60,11 @@ An Afero project is similar to any development environment project; essentially,
 
 Project files are complete and saved locally. This has a few practical implications:
 
-- **Use your preferred source control system.** Since all files are stored locally and the files comprising a project are all common types (text, image), your projects require no special treatment when used with a source control system. You are encouraged to use your preferred source control system to manage changes within your projects.
-- **You can freely copy and share projects.** Thanks to the simple structure of a Profile Editor project, you can freely duplicate projects, share them, or import one as a template to start another.
-- **To delete a project,** simply delete the project directory through your filesystem.
+<ul class="af-ul">
+	<li><strong>Use your preferred source control system.</strong> Since all files are stored locally and the files comprising a project are all common types (text, image), your projects require no special treatment when used with a source control system. You are encouraged to use your preferred source control system to manage changes within your projects.</li>
+	<li><strong>You can freely copy and share projects.</strong> Thanks to the simple structure of a Profile Editor project, you can freely duplicate projects, share them, or import one as a template to start another.</li>
+	<li><strong>To delete a project,</strong> simply delete the project directory through your filesystem.</li>
+</ul>
 
 <div class="af-callout-caution">
 	<div class="callout-text">
