@@ -74,5 +74,6 @@ After selecting a project on the Startup window, the Profile Editor opens to the
 		<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong>  Every time you save, your data is validated. If validation fails for any reason, an error message will appear then move to the left. Click the error description in the message to highlight the field that needs correcting.
 		</div></div>
 	</li>
-</ul>
+</ol>
+
 <strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Define the Device Attributes](../AttrDef)

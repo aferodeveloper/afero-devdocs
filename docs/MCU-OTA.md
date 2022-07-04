@@ -124,7 +124,7 @@ You will notice that the example code tracks the rate of data transfer–this is
 
 **➃** And another chunk. After this one, we snipped out several chunk-transfers, just for readability. 
 
-**➄** Another chunk…we’re getting close to completion!             |
+**➄** Another chunk…we’re getting close to completion!
 
 **➅** When your code detects that all the expected data has been received, the MCU must request verification of the data it has received. To do this this, your code must include the SHA checksum and the state `AF_OTA_VERIFY_SIGNATURE` in an `af_ota_info_t` struct, and send that in a call to `af_lib_set_attribute_bytes()` for attribute `AF_MCU_OTA_INFO`. 
 
