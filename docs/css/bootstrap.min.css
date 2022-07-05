@@ -481,9 +481,9 @@ mark,.mark {
 code
 {
 	font-size:100%;
-	font-family:Consolas;
+	font-family:Consolas, monospace;
 	color:#00000;
-	font-weight:550;
+	font-weight:500;
 	word-break:keep-all
 }
 a>code
