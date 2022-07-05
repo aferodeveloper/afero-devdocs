@@ -21,7 +21,9 @@ Not all attributes are Boolean; a more sophisticated device might use an attribu
 
 ### Attribute Sizing
 
-Your module has a defined amount of memory reserved for both system and developer-defined attributes – your Profile cannot exceed this limit. Each module has a different amount of RAM reserved, so as you add attributes to your Profile, select the <span class="UIText">PROFILE RAM USAGE</span> indicator at the top of the Attributes window to see remaining space:<img src="../img/Attribute-RAM-Gauge.png" width="300" style="vertical-align:middle;margin:0px 0px;border:none">
+Your module has a defined amount of memory reserved for both system and developer-defined attributes – your Profile cannot exceed this limit. Each module has a different amount of RAM reserved, so as you add attributes to your Profile, select the <span class="UIText">PROFILE RAM USAGE</span> indicator at the top of the Attributes window to see remaining space:
+
+<img src="../img/Attribute-RAM-Gauge.png" width="300" style="vertical-align:middle;margin:0px 0px;border:none">
 
 The GREY BAR indicates space used by system attributes. The BLUE BAR indicates space used by developer-defined attributes. Hover over the indicator bar to view actual remaining space, in bytes and percentage. For more details, read [Device Attribute RAM Size](../AttributeRAM).
 

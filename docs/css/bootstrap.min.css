@@ -176,18 +176,36 @@ a:not([href]):not([tabindex]):focus
 {
 	outline:0
 }
-pre,code,kbd,samp
-{
-	font-family:"Consolas", "Courier","Lucida Console", "Roboto Mono", Geneva, monospace;
-	font-size:11px
+
+code{
+	font-size:90%;
+	font-family:Consolas, monospace;
+	color:#00004C;
+	font-weight:500;
+	word-break:keep-all
 }
-pre
-{
+pre {
+	font-family:Consolas;
+	display:block;
+	font-size:90%;
+	color:#212529
 	margin-top:0;
 	margin-bottom:1rem;
 	overflow:auto;
 	-ms-overflow-style:scrollbar
 }
+pre code {
+	font-size:inherit;
+	color:inherit;
+	word-break:normal
+}
+
+kbd,samp
+{
+	font-family:"Consolas", "Courier","Lucida Console", "Roboto Mono", Geneva, monospace;
+	font-size:100%
+}
+
 figure
 {
 	margin:0 0 1rem
@@ -478,14 +496,7 @@ mark,.mark {
 {
 	font-size:90%;color:#868e96
 }
-code
-{
-	font-size:100%;
-	font-family:Consolas, monospace;
-	color:#00000;
-	font-weight:500;
-	word-break:keep-all
-}
+
 a>code
 {
 	color:inherit
@@ -504,18 +515,8 @@ kbd kbd
 	font-size:100%;
 	font-weight:600
 }
-pre {
-	font-family:Consolas;
-	display:block;
-	font-size:95%;
-	color:#212529
-}
 
-pre code {
-	font-size:inherit;
-	color:inherit;
-	word-break:normal
-}
+
 
 .pre-scrollable
 {
