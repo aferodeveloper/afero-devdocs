@@ -177,28 +177,7 @@ a:not([href]):not([tabindex]):focus
 	outline:0
 }
 
-code{
-	font-size:90%;
-	font-family:Consolas, monospace;
-	color:#00004C;
-	font-weight:500;
-	word-break:keep-all
-}
-pre {
-	font-family:Consolas;
-	display:block;
-	font-size:90%;
-	color:#212529
-	margin-top:0;
-	margin-bottom:1rem;
-	overflow:auto;
-	-ms-overflow-style:scrollbar
-}
-pre code {
-	font-size:inherit;
-	color:inherit;
-	word-break:normal
-}
+
 
 kbd,samp
 {

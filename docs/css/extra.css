@@ -263,7 +263,7 @@ mark,.mark {
 
 pre, .rst-content tt {
     max-width: 100%;
-    background: #fff;
+    background: #f1f2f2;
     border: solid 1px #e1e4e5;
     color: #333;
     overflow-x: auto;
@@ -273,22 +273,30 @@ code.code-large, .rst-content tt.code-large {
     font-size: 90%;
 }
 
-code {
+code{
+	font-size:90%;
+	font-family:Consolas, monospace;
+	color:#00004C;
+	font-weight:500;
+	word-break:keep-all;
     padding: 1px 2px;
-    background: none;
+    background: transparent;
     border: solid 1px #fff;
-    color: #333;
     white-space: pre-wrap;
-    word-wrap: keep-all;
+    word-wrap: break-word;
 }
 
-pre code {
-    display: block;
-    background: transparent;
-    border: none;
+pre {
+	font-family:Consolas, monospace;
+	display:block;
+	font-size:90%;
+	color:#212529
+	margin-top:0;
+	margin-bottom:1rem;
+	overflow:auto;
+	-ms-overflow-style:scrollbar
     white-space: pre;
     word-wrap: normal;
-    font-family: Consolas, "Roboto Mono", SFMono-Regular, Menlo, Monaco, "Liberation Mono", "Courier New", monospace;
 }
 
 .af-ul-table{
