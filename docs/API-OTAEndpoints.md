@@ -52,5 +52,3 @@ Below are two popular questions & answers about version numbers:
 Different types of devices often have some hardware components in common. Not only can multiple models of a device type share the same hardware, but you could have hardware that is common across different device types as well. For example, an air conditioner and a dishwasher are inherently different devices. However, they share the same radio module that facilitates connectivity to the internet. In this case, you would want to develop one piece of software and manage it centrally for both device types.
 
 This is where the firmware pool comes into play. The firmware for the radio module is written once and only one artifact exists. This firmware is uploaded to the firmware pool and a general firmware record is created in the Afero Platform. To make this firmware available for OTAs, the firmware must be associated with a specific device type.
-
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[OTA API Endpoints](../API-OTAEndpoints-Funcs)

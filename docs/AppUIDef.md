@@ -220,5 +220,3 @@ It’s possible to preview the UI as you’re creating it, right in the Afero mo
 To use the Attribute Tester, click any group icon to reveal the associated Attribute(s), type a desired value, and click <span class="UIText">UPDATE></span>. Changes will be visible in the mobile app UI.
 
 **6**&nbsp;&nbsp;When you’re done testing your UI, remove the Preview Device by doing this: In the mobile app, go to the Preview Device > Settings screen, then tap the Remove Device button.
-
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Define the Rules & Notifications](../RulesDef)

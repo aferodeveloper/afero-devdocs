@@ -160,5 +160,3 @@ The format of the messages is defined below:
     - The service owns no attributes, therefore it cannot initiate an UPDATE message.
     - When the MCU performs a SET or GET, it uses a request ID of zero.
 - If the MCU forgets to send an UPDATE for a SET initiated from the service for a specific attribute, that attribute **cannot be SET by the service again**. The attribute will remain **stuck** until ASR reboots and forgets that the SET is still pending.
-
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Device Attribute Registry](../AttrRegistry)

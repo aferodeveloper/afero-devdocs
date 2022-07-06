@@ -186,5 +186,3 @@ Developers can add and support their own attributes by first adding the attribut
 <p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong>  These attributes must be part of the device Profile to work properly.
 </div>
 </div>
-
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[WAN Daemon Implementation](../LinuxSDK-WANDaemon)

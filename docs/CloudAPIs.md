@@ -23,5 +23,3 @@ Sign in to the Afero Profile Editor and open the VIEW > ACCOUNT INFO window (exa
 1. Initiate communication with the API server by requesting an OAuth 2.0 access key, providing your OAuth Client ID and OAuth Client Secret. This step is shown in the first API example in the next section.
 2. Afero responds with an access key, which will expire after approximately four hours.
 3. Include the access key in all HTTP requests to the API endpoints as an Authorization header, as shown in examples in the next section.
-
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[OAuth API Endpoint](../API-OAuthEndpoints)

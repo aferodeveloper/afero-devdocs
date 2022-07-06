@@ -9,5 +9,3 @@ In the first two links below, we’ve provided timing diagrams to help you under
 - [afPro SPI Protocol - How It Works](../afPro-SPI)
 - [afPro UART Protocol - How It Works](../afPro-UART) - Also available as a [Tech Note (.pdf file)](../files/TechNote-AferoUARTProtocol.pdf).
 - [afPro UART Protocol - Practical Guide](../afPro-UART-S) - An alternative explanation.
-
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[afPro SPI Protocol](../afPro-SPI)

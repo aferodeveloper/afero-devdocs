@@ -60,5 +60,3 @@ You can always modify your rules & notifications definition:
 <strong>Duplicate a Notification</strong> - Locate the notification you want to duplicate and click the duplicate icon<img src="../img/DupIcon.png" width="25" style="vertical-align:middle;margin:0px 0px;border:none">, located on the right. A new notification window opens using the Description and Message from the original notification. Make your edits, then click SAVE.
 </li></ul>
 
-
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Publish Your Profile](../Publish)

@@ -513,4 +513,3 @@ void loop() {
 }
 ```
 
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Checking Capabilities](../afLibCapabilities)

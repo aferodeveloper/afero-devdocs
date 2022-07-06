@@ -87,4 +87,3 @@ The Murata 1LD Wi-Fi/BLE module has FCC-approval and other regulatory certificat
 | Bluetooth low energy (BLE) + Wi-Fi combo Module              | Murata       | IC    | 1        | LBEE5PA1LD      | [Digi-Key](https://www.digikey.com/catalog/en/partgroup/lbee5pa1ld/89234) |
 | SPI flash memory                                             | Winbond      | SPI   | 1        | W25Q32JVSSIQ    | [Digi-Key](https://www.digikey.com/product-detail/en/winbond-electronics/W25Q32JVSSIQ-TR/W25Q32JVSSIQCT-ND/7393546) |
 
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[QR Codes for Afero Products](../QRCodes)

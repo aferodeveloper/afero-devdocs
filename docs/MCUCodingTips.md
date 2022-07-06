@@ -61,5 +61,3 @@ If you’ve worked much with Arduino, this tip is probably not news to you: Memo
 ### See Also
 
 [Tutorial 3: Afero + Arduino](../Lesson3)
-
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Using the Afero Cloud to Keep Time on the MCU](../SetMCUTime)

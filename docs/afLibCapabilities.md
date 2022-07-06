@@ -16,7 +16,7 @@ af_lib_error_t af_lib_asr_has_capability(af_lib_t *af_lib, uint32_t af_asr_capab
 
 ### Parameters
 
-| `af_lib`            | Pointer to the active afLib instance. |
+|  af_lib             | Pointer to the active afLib instance. |
 | ------------------- | ------------------------------------- |
 | `af_asr_capability` | A given capability to test.           |
 
@@ -77,5 +77,3 @@ void loop() {
   af_lib_loop(af_lib);
 }
 ```
-
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Console Logging](../afLibLogging)

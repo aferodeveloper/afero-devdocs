@@ -145,4 +145,3 @@ Before you start, we assume that you’ve already run through [Tutorial 1: Linki
 </ol>
 
 
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Tutorial 3: Afero + Arduino](../Lesson3)

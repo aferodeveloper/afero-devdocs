@@ -24,4 +24,3 @@ We also describe the callback function you should write to work with afLib:
 
 If you need to refer to the API documentation for afLib3, [download the archive file (.zip).](../files/afLib3-DevDocs.zip)
 
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[The afLib Lifecycle: The transports, create( ), and destroy( )](../afLibLifecycle)

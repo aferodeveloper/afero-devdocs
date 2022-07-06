@@ -6,5 +6,3 @@ If you’re new to Afero, we have step-by-step lessons to help you understand th
 - [Tutorial 2: Creating a Device Profile](../Lesson2)
 - [Tutorial 3: Afero + Arduino](../Lesson3)
 
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Tutorial 1: Linking Your Afero Development Board](../Lesson1)
-

@@ -75,5 +75,3 @@ After selecting a project on the Startup window, the Profile Editor opens to the
 		</div></div>
 	</li>
 </ol>
-
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Define the Device Attributes](../AttrDef)

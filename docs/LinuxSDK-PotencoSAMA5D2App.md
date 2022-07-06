@@ -767,5 +767,3 @@ bitbake core-image-minimal
 The app will be deposited in `/usr/bin` in the root filesystem.
 
 Now you are ready to flash the image to the internal eMMC. Take the resulting `afimg` file and flash it onto the SAMA5D2 board using the method outlined in the [Potenco Setup Guide for SAMA5D2](../LinuxSDK-PotencoSAMA5D2#flash-the-sama5d2-image).
-
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Secure Linux SDK Frequently-Asked Questions](../LinuxSDK-FAQ)

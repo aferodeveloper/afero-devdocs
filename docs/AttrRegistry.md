@@ -438,5 +438,3 @@ Each Afero device will have a number of attributes associated with it. Attribute
 </tbody>
 </table>
 </div>
-
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Attribute Value Change Rules](../AttrChangeRules)

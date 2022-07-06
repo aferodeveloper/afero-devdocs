@@ -94,5 +94,3 @@ The example Profiles provided in the afero_clock project enable the ASR_UTC_TIME
 	</li>
 </ul>
 	
-
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Handling Reboot Requests](../RebootRequests)

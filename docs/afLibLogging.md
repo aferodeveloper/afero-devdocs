@@ -29,9 +29,7 @@ void af_logger_println_buffer(const char* val);
 void af_logger_println_formatted_value(int32_t val, af_logger_format_t format);
 ```
 
-For other platforms, check the `<*platform*>_logger.h` header file for proper parameters to `<*platform*>_logger_start()` function.
-
-
+For other platforms, check the `<platform>_logger.h` header file for proper parameters to `<platform>_logger_start()` function.
 
 ### Parameters
 
@@ -41,8 +39,6 @@ For other platforms, check the `<*platform*>_logger.h` header file for proper pa
 | `format` | Optional `af_logger_format_t` to determine output format. |
 
 Note that, because `val` is declared as a signed 32-bit type, `af_logger()` will not properly print values of unsigned 32-bit numbers larger than 2147483647. If you need support for such values, you should use the standard Arduino `Serial.print()`, or implement your own logger.
-
-
 
 ### Returns
 
@@ -54,4 +50,3 @@ None.
 
 2. On Arduino, the following two lines of code are functionally identical:<br>```Serial.println( int8variable, HEX );```<br>```  af_logger_println_formatted_value( int8variable, AF_LOGGER_HEX );```
 
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[afLib Result Codes](../afLibErrors)

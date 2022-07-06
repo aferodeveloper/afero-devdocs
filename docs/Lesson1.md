@@ -20,4 +20,3 @@ Follow these simple steps to set up your Afero dev board:
 
 <strong>Congratulations! You’ve just controlled an embedded device from your smartphone through the Cloud!</strong>
 
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Tutorial 2: Creating a Device Profile](../Lesson2)

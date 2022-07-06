@@ -43,4 +43,3 @@ The OAuth Authentication endpoint is used to authenticate end-users and generate
 
 - The expiration parameter in the response, `expires_in`, is measured in seconds.
 
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[User API Endpoint](../API-UserEndpoints)

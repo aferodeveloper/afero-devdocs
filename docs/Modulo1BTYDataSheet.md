@@ -226,5 +226,3 @@ Le présent appareil est conforme aux CNR d’Industrie Canada applicables aux a
 Contains EYSHCN: 001-A10745
 
 This product installs a radio system which has been approved as a radio station in a low power data communication system based on the Radio Law.
-
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Modulo-2 Data Sheet](../Modulo2DataSheet)

@@ -188,5 +188,3 @@ In the example above, the MCU wants to send 10 bytes to ASR. As it clocks out it
 At this point, ASR has queued its request and we are back in sync. After this message, the MCU sends the Sync Acknowledge followed by the data, just like in the examples above.
 
 In general, the protocol is designed so that whenever there is an unexpected result, the MCU can resend the Sync Request to get things back in sync. You may need to send the Sync Request a couple of times, but ASR will eventually respond with the correct result.
-
-**&#8674;** *Next:*&nbsp;&nbsp;[afPro UART Protocol](../afPro-UART)

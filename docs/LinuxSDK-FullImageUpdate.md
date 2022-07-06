@@ -506,7 +506,3 @@ Below is an example of deploying an OTA image, using `deviceId` = 012359551jr17e
 $ python partner-ota-hub-deploy.py -d 012359551jr17eba -i 49712 --conf dev-john-ota-conf.json
 Request accepted for processing
 ```
-
-
-
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Afero Potenco Setup Guides](../LinuxSDK-PotencoSetupGds)

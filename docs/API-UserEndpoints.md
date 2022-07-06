@@ -88,5 +88,3 @@ The `users/me` endpoint provides a variety of user-specific information useful f
   "userId": "123acdfa-asd2-4b26-2cd2-68cfe2acdd8b8"
 }
 ```
-
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Device API Endpoints](../API-DeviceEndpoints)

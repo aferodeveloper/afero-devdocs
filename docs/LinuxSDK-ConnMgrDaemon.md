@@ -253,4 +253,3 @@ Developers can add and support their own attributes by first adding these attrib
 	</div>
 </div>
 
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Edge Device Daemon Implementation](../LinuxSDK-EdgeDaemon)

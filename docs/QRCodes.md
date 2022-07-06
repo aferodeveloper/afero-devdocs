@@ -224,7 +224,3 @@ The plain-text Association ID is used for manual-entry of the Association ID by 
 #### Legacy Code Examples
 
 <img src="../img/ASR1-ExampleQRcodes.png" width="800" style="vertical-align:middle;margin:0px 0px;border:none">
-
-
-
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Hardware Design Files](../DataSheets)

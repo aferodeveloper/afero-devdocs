@@ -64,5 +64,3 @@ hyphen_font_height (Printed height of each font in DOTS)
 x_coord: (x coordinate of the left edge of the association ID in DOTS)
 y_coord: (y coordinate of the bottom edge of the association ID in DOTS)
 ```
-
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[Add Environment Variable Paths on a PC](../AddPath)

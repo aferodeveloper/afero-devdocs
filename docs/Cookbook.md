@@ -8,5 +8,3 @@ This section contains tips and “recipes” that you can use when integrating y
 - [Robust af_lib_set_attribute*() Calls](../RobustafLibSet)
 - [Useful Debugging Methods](../DebugMethods)
 - [Handling MCU OTA Updates](../MCU-OTA)
-
-<strong>&#8674;</strong> <em>Next:</em>&nbsp;&nbsp;[MCU Coding Tips](../MCUCodingTips)
