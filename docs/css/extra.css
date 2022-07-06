@@ -156,7 +156,7 @@ ul, ol, li {
 }
 
 .af-ul-2 {
-	margin-left: -30px;
+	margin-left: -25px;
 	list-style-type: circle;
 }
 
@@ -247,6 +247,15 @@ mark,.mark {
 	text-transform: uppercase;
 }
 
+.UITextLarge {
+	color: #077292;
+	font-family: 'Helvetica';
+	font-weight: 500;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+
 .highlight-orange {
 	color: #f15b2b;
 }
@@ -282,10 +291,20 @@ pre code {
     font-family: Consolas, "Roboto Mono", SFMono-Regular, Menlo, Monaco, "Liberation Mono", "Courier New", monospace;
 }
 
+.af-ul-table{
+	margin-left: -15px;
+	font-size: 15px;
+	list-style-type: disc;
+	margin: 0px 0 5px 5	5px;
+	& > li {
+		margin-bottom: 2px;
+		}
+}
 
-.af-callout-note {
-	margin-top: 6px;
-	margin-bottom: 6px;
+
+.af-callout-table {
+	margin-top: 0px;
+	margin-bottom: 0px;
 	padding: 8px 0px 4px 8px;
 	background: #FFF7EC;
 	.callout-text {

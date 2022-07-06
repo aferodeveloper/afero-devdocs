@@ -96,10 +96,11 @@ The GREY BAR indicates space used by system attributes. The BLUE BAR indicates s
 <td><p><span class="UIText">Input</span> - Inputs are read-only. <!--<span class="UIText">Is Toggle</span> and <span class="UIText">Comparator</span> are mutually exclusive. The <span class="UIText">Comparator</span> option is <strong>not</strong> available for the Modulo-2.--></p>
 <ul class="af-ul">
 <li><p><span class="UIText">Pull Up</span> or <span class="UIText">Pull Down</span> - Select one of these options (they are mutually exclusive) to specify the inclusion of a pull-up or pull-down resistor on the pin, or select neither for <span class="UIText">No Pull</span>. Any digital input <!-- (i.e., not ADC or Comparator) -->can be configured as Pull Up, Pull Down, or No Pull.</p>
-<p><strong>Note:</strong> On Modulo boards, GPIO 0 is connected to an LED in series with a resistor. When the pin is pulled low the LED turns on; when floating or high the LED turns off. If you enable <span class="UIText">Pull Down</span> on this pin the LED partly turns on and the pin stays between logic levels and does not properly go LOW. This does not cause functionality problems but will show up with a voltmeter. So on this pin only, Pull Down will not work properly unless the LED hardware is manually disconnected, as a voltage divider circuit will be formed.</p></li>
+<p><strong>Note:</strong> On Modulo boards, GPIO 0 is connected to an LED in series with a resistor. When the pin is pulled low the LED turns on; when floating or high the LED turns off. If you enable <span class="UIText">Pull Down</span> on this pin the LED partly turns on and the pin stays between logic levels and does not properly go <span class="UIText">LOW</span>. This does not cause functionality problems but will show up with a voltmeter. So on this pin only, <span class="UIText">Pull Down</span> will not work properly unless the LED hardware is manually disconnected, as a voltage divider circuit will be formed.</p></li>
 
 <li><span class="UIText">Is Toggle</span> - This is a special case for momentary-contact buttons. When <span class="UIText">Is Toggle</span> is selected, a pulse on the input line (i.e., transition from one state to another and then back again) will cause the attribute value to toggle between 0 and 1. This lets you implement a push button.</li>
-<li><span class="UIText">Debounce Time</span> - This field allows you to apply a debounce interval (measured in milliseconds) to the associated input. A typical use case would be to ensure that a single press on a noisy pushbutton is interpreted as a single event.  Specify 0 to disable the option; the allowed range of debounce intervals is 30-10000 ms.</li>
+
+<li><span class="UIText">Debounce Time</span> - This field allows you to apply a debounce interval (measured in milliseconds) to the associated input. A typical use case would be to ensure that a single press on a noisy pushbutton is interpreted as a single event. Specify 0 to disable the option; the allowed range of debounce intervals is 30-10000 ms.</li>
 
 <!-- <li><span class="UIText">Comparator</span> - (Does not apply to the Modulo-2.) You can configure only one GPIO as a comparator; select from GPIOs 0-2. Once you’ve specified the GPIO to be used as a comparator, select a <span class="UIText">Reference Voltage</span> value from the drop-down menu. Reference Voltage can be a fraction of V<sub>CC</sub>, or the voltage on GPIO3. An attribute set as a comparator will go high if the voltage applied to the associated GPIO pin exceeds your specified Reference Voltage.</p></li> -->
 
@@ -366,8 +367,8 @@ The GREY BAR indicates space used by system attributes. The BLUE BAR indicates s
 <p>First you will configure your Potenco, then add attributes:</p>
 <ol class="af-ol">
 <li>
-<p>Once you’ve clicked <span class="UIText">Attributes</span> in the right-hand navigation bar, you’ll see the <span class="UIText">Define the MCU Attributes</span> window:
-<img class="img-br" src="../img/APE-PotencoConfig.png" alt="Potenco Configuration"></p>
+<p>Once you’ve clicked <span class="UIText">Attributes</span> in the right-hand navigation bar, you’ll see the <span class="UIText">Define the MCU Attributes</span> window:</p>
+<img class="img-br" src="../img/APE-PotencoConfig.png" alt="Potenco Configuration">
 <li>
 <p>In the Supported Network Interfaces pane, select all the network interfaces that your device supports. Select from <span class="UIText">Wi-Fi</span>, <span class="UIText">Ethernet</span>, and <span class="UIText">WAN</span>.</p>
 </li>
