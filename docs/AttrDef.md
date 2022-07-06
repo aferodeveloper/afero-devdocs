@@ -49,7 +49,7 @@ The GREY BAR indicates space used by system attributes. The BLUE BAR indicates s
 </li>
 <li>
 <p><strong>Devices with an MCU</strong> - A more complicated device might include an MCU, and so might perform logic involving attribute values communicated with Afero. For this purpose, ASR allows you to define 1024 attributes that are not directly tied to the state of a pin on ASR. These are referred to as <span class="UIText">MCU Attributes</span>.</p>
-<p>MCU attributes can be Read-Only or Read/Write, and you can specify the data type for each. (Read <a id="004-Otq90j3" href="/AttrDef#MCUAttrs">Define MCU Attributes</a> for details on data types.)</p>
+<p>MCU attributes can be Read-Only or Read/Write, and you can specify the data type for each. (Read <a id="004-Otq90j3" href="/AttrDef#define-the-mcu-attributes">Define the MCU Attributes</a> for details on data types.)</p>
 <p>Two MCU serial protocols are supported:</p>
 <ul class="af-ul-2">
 <li>Serial Peripheral Interface bus (SPI)</li>
