@@ -4,7 +4,7 @@ The questions below have been raised during practical use of the Secure Linux SD
 
 ## FAQ on Using the Secure Linux SDK
 
-<hr>
+
 **Q: I’m pruning the Yocto build to the bare minimum to save space on the target device. Can I replace the available tools with BusyBox variants?**
 
 A: Yes, you can replace the tools with BusyBox variants; however, you should test your application thoroughly if you choose to do so. Afero does not support this directly, but it should not cause any problems. Again, the motto here is test thoroughly.

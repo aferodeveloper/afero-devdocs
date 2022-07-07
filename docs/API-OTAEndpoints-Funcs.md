@@ -43,14 +43,14 @@ Depending on the partner’s internal development and build processes, the usage
 
 ### Prerequisites
 
-Afero account authentication flow follows the OAuth 2.0 standard as described in [RFC6749](https://tools.ietf.org/html/rfc6749). The API documentation uses JSON format for data model examples. The full prerequisites are listed below:
+Afero account authentication flow follows the OAuth 2.0 standard as described in <a href="https://tools.ietf.org/html/rfc6749" target="_blank">RFC6749</a>. The API documentation uses JSON format for data model examples. The full prerequisites are listed below:
 
-- Understand how Afero authorization API (OAuth) works. To read about OAuth, go to [OAuth.net documentation](http://oauth.net/documentation/). Also please read [Cloud API](../CloudAPIs).
+- Understand how Afero authorization API (OAuth) works. To read about OAuth, go to <a href="http://oauth.net/documentation/" target="_blank">OAuth.net documentation</a>. Also please read [Cloud APIs](../CloudAPIs).
 - Base Cloud API URL: [https://api.afero.io](https://api.afero.io/).
 - Understanding of JSON and common HTTP methods POST, PUT, GET, and DELETE and their usage in the context of RESTful web services.
 - Be familiar with public [OAuth/User API Endpoints](../API-UserEndpoints) and [Device API Endpoints](../API-DeviceEndpoints).
 - Understanding of how to authenticate with the Afero Cloud and how to use authorization tokens in subsequent requests.
-- Client credentials as described in [RFC6749 Section 2](https://tools.ietf.org/html/rfc6749#section-2) for client application authentication.
+- Client credentials as described in <a href="https://tools.ietf.org/html/rfc6749#section-2" target="_blank">RFC6749 Section 2</a> for client application authentication.
 
 <div class="af-callout-caution">
 <div class="callout-text">
@@ -72,7 +72,7 @@ Afero account authentication flow follows the OAuth 2.0 standard as described in
 
 - Certain IDs and integer values returned by the API are represented as strings. For example, the id and versionNumber fields are such instances. They are represented as strings as they may exceed common ranges for numbers, especially in JavaScript, whose whole integers are only precise up to 53 bits.
 
-    If arithmetic operations need to be performed on these values, they can be converted using a library or type that supports arbitrary-precision integers; i.e., the [BigInteger](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html) type in Java, the [big-integer](https://www.npmjs.com/package/big-integer) package, or BigInt type in JavaScript. These fields are annotated as `"<integer_string>"` in the model schemas.
+    If arithmetic operations need to be performed on these values, they can be converted using a library or type that supports arbitrary-precision integers; i.e., the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html" target="_blank">BigInteger</a> type in Java, the <a href="https://www.npmjs.com/package/big-integer" target="_blank">big-integer</a> package, or BigInt type in JavaScript. These fields are annotated as `"<integer_string>"` in the model schemas.
 
 ## Firmware Type Endpoints
 

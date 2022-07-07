@@ -6,9 +6,9 @@ The Console is easy to use and self-documenting. A description of the user inter
 
 ## Sign In and Out of Afero Console
 
-Go to [https://console.afero.io](https://console.afero.io/) then sign in with your Afero partner username (email) and password.
+Go to <a href="https://console.afero.io" target="_blank">https://console.afero.io</a> then sign in with your Afero partner username (email) and password.
 
-To sign out, click the arrow<img src="../img/Console-SignOut.png" width="23" style="vertical-align:middle;margin:0px 0px;border:none">in the upper-right of the main Console window.
+To sign out, click the arrow <img src="../img/Console-SignOut.png" width="23" style="vertical-align:middle;margin:0px 0px;border:none"> in the upper-right of the main Console window.
 
 ## Switch Partners
 
@@ -48,7 +48,7 @@ Click <span class="UIText">DEVICE LISTING</span> in the left-hand Navigation pan
 
 In the table titled <span class="UIText">YOUR AFERO POWERED DEVICE LISTING</span>, click a Device ID to open the [Individual Device Data Viewer](../Console#individual-device-data-viewer), or click a <span class="UIText">DEVICE TYPE NAME</span> to go to the relevant [Device Type Reports](../Console#device-type-reports-window) window.
 
-You can package and download the contents of this device listings table (with additional Creation Date, Profile ID, and Location information) into a zipped .csv file. Click the download icon on the far right<img src="../img/Console-DownloadIcon.png" width="30" style="vertical-align:middle;margin:0px 0px;border:none">then click the download link that appears. When unzipping the file, you’ll be prompted to enter the password provided under the download link (use copy & paste).
+You can package and download the contents of this device listings table (with additional Creation Date, Profile ID, and Location information) into a zipped .csv file. Click the download icon on the far right <img src="../img/Console-DownloadIcon.png" width="25" style="vertical-align:middle;margin:0px 0px;border:none"> then click the download link that appears. When unzipping the file, you’ll be prompted to enter the password provided under the download link (use copy & paste).
 
 <img src="../img/Console-DeviceListing.png" width="700" style="vertical-align:middle;margin:0px 0px;border:none">
 
@@ -136,7 +136,7 @@ To find out how associated devices have connected to the Afero Cloud, Bluetooth,
 
 ### Data Explorer
 
-Click DATA EXPLORER on the left-hand Navigation pane to run your own SQL-92 compliant queries across all your devices’ historical data. Each query is run across multiple servers, returning results quickly and efficiently.
+Click <span class="UIText">DATA EXPLORER</span> on the left-hand Navigation pane to run your own SQL-92 compliant queries across all your devices’ historical data. Each query is run across multiple servers, returning results quickly and efficiently.
 
 #### SQL Query Credits
 
@@ -150,7 +150,7 @@ Your remaining monthly credits will always appear at the top of the Data Explore
 
 There are a few ways you can query your data:
 
-- Type your SQL query in the SQL Query field at the top of the Data Explorer Home window (shown above where you see “Type your SQL query here …”). Use the <span class="UIText">TABLE SCHEMA REFERENCE</span> tab for field names, and you can find a good SQL reference at this site: [Google Cloud Big Query Standard SQL Reference](https://cloud.google.com/bigquery/docs/reference/standard-sql/).
+- Type your SQL query in the SQL Query field at the top of the Data Explorer Home window (shown above where you see “Type your SQL query here …”). Use the <span class="UIText">TABLE SCHEMA REFERENCE</span> tab for field names, and you can find a good SQL reference at this site: <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/" target="_blank">Google Cloud Big Query Standard SQL Reference</a>.
 
 - Construct your SQL query using one of the <span class="UIText">SQL BUILDER TOOLS</span> in the upper-right corner of the Data Explorer Home window:
 
@@ -178,7 +178,7 @@ If your query is valid and you have enough Query Credits, you can go ahead and s
 
 #### View Query Results
 
-Results are displayed in the <span class="UIText">RESULTS</span> tab, on the far right of the tab bar. Each query you run is displayed in a numbered <span class="UIText">RESULTS</span> tab. You can clear any of the results by clicking<img src="../img/Console-ClearResults.png" width="25" style="vertical-align:middle;margin:0px 0px;border:none">in the tab.
+Results are displayed in the <span class="UIText">RESULTS</span> tab, on the far right of the tab bar. Each query you run is displayed in a numbered <span class="UIText">RESULTS</span> tab. You can clear any of the results by clicking <img src="../img/Console-ClearResults.png" width="25" style="vertical-align:middle;margin:0px 0px;border:none"> in the tab.
 
 By default, results are displayed in tabular format:
 

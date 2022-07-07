@@ -300,10 +300,10 @@ The ASR_STATE attribute can have one of a small range of values, or “states”
 
 Let’s take a look at how your code can use three of these events:
 
-<ul class="af-ul">
+<ul class="af-ul no-bullet">
 	<li><a href="../Lesson3#what-to-do-when-you-receive-the-rebooted-state-message">0 = Rebooted</a></li>
 	<li><a href="../Lesson3#waiting-until-initialized">4 = Initialized</a></li>
-	<li><a href="../Lesson3#how-to-handle-a-reboot-request">3 = Update Ready to Apply</a></li>
+	<li><a href="../Lesson3#how-to-handle-a-reboot-request">3 = Update Ready to Apply (Reboot Requested)</a></li>
 </ul>
 
 #### What to Do When You Receive the “Rebooted” State Message

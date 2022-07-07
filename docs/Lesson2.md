@@ -1,6 +1,6 @@
 # Tutorial 2: Creating a Device Profile
 
-Before you start, we assume that you’ve already run through [Tutorial 1: Linking Modulo](../Lesson1). If not, please start there.
+Before you start, we assume that you’ve already run through [Tutorial 1: Linking Your Afero Development Board](../Lesson1). If not, please start there.
 
 <div class="af-callout">
 <div class="callout-text">
@@ -60,7 +60,7 @@ Before you start, we assume that you’ve already run through [Tutorial 1: Linki
 <p>There are two steps to defining the UI controls: a) we first define the “attribute options” for each attribute; and b) we then assign UI controls to each attribute.</p>
 <div class="af-callout">
 <div class="callout-text">
-<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong> You might be wondering why defining attribute options is separate from assigning controls. The reason is so you can easily assign multiple controls to the same attribute without having to retype a lot of details (although that doesn’t apply to this Tutorial). To learn more about attribute options, read <a id="1560458198.45" href="/AppUIDef#Options">Define the Mobile App UI &gt; Define the Attribute Options</a>.</p>
+<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong> You might be wondering why defining attribute options is separate from assigning controls. The reason is so you can easily assign multiple controls to the same attribute without having to retype a lot of details (although that doesn’t apply to this Tutorial). To learn more about attribute options, read <a id="1560458198.45" href="/AppUIDef#define-the-attribute-options">Define the Mobile App UI &gt; Define the Attribute Options</a>.</p>
 </div>
 </div>
 

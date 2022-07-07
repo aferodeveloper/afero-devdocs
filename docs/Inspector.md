@@ -2,7 +2,7 @@
 
 The Afero Inspector provides a real-time, in-depth view of the state of each device associated with a given Afero account. The tool is useful for developers when testing and debugging device behavior.
 
-You can open the Inspector by going to [https://inspector.afero.io](https://inspector.afero.io/) then signing in with your Afero developer account.
+<p>You can open the Afero Inspector by going to <a class="link" id="1491332083.88" href="https://inspector.afero.io" target="_blank">https://inspector.afero.io</a> then signing in with your Afero developer account.</p>
 
 ## The Inspector Home Window
 
@@ -21,11 +21,11 @@ This window offers you the following information and actions:
 		<li>Device ID (alpha-numeric string under the device name) - Click the Device ID to copy the ID to your clipboard.</li>
 		<li>Connectivity status - Online or offline.</li>
 	</ul>
-	<li>View details for any of your devices by selecting the associated card; click the friendly name directly, not the Device ID. (Read more in <a id="1541707823.53" href="#InspectorDeviceDetails">Device Details Window</a>.)</li>
+	<li>View details for any of your devices by selecting the associated card; click the friendly name directly, not the Device ID. (Read more in <a id="1541707823.53" href="#device-details-window">Device Details Window</a>.)</li>
 	<li>The icons in the upper-right of the window are links to the following:
 		<ul class="af-ul no-bullet">
 			<li><img class="img-inline" src="../img/Inspector-HomeIcon.png" width="25" alt="Inspector Home Window Icon" >- Returns you to this Home window from the Device Details or Account Information windows.</li>
-			<li><img class="img-inline" src="../img/Inspector-AccountIcon.png" width="25" alt="Inspector Account Icon">- Opens a window with your account information. (Read more in <a id="1491415625.45" href="#UserInfo">Developer Account Information</a>.)</li>
+			<li><img class="img-inline" src="../img/Inspector-AccountIcon.png" width="25" alt="Inspector Account Icon">- Opens a window with your account information. (Read more in <a id="1491415625.45" href="#developer-account-information">Developer Account Information</a>.)</li>
 			<li><img class="img-inline" src="../img/Inspector-UserGuideIcon.png" width="25" alt="Inspector User Guide Icon">- Opens this Inspector User Guide in a new window.</li>
 			<li><img class="img-inline" src="../img/Inspector-SignOutIcon.png" width="25" alt="Inspector Sign Out Icon">- Signs you out from Inspector.</li>
 		</ul>
@@ -47,12 +47,12 @@ The selected device details are presented in the following panes:
 
 ### Attribute Tabs
 
-The attributes relevant to the selected device are displayed in two tabs: [Device Attributes](../Inspector#DeviceAttr) and [Afero System Attributes](../Inspector#SystemAttr).
+The attributes relevant to the selected device are displayed in two tabs: [Device Attributes](../Inspector#device-attributes) and [Afero System Attributes](../Inspector#afero-system-attributes).
 
 You can download the information and even edit the <span class="UIText">READ/WRITE</span> attributes from these windows.
 
 <ul class="af-ul">
-	<li>Click<img class="img-inline" src="../img/Inspector-DownloadIcon.png" width="25" alt="Inspector Download Icon">(there is one on each tab) to download the attribute information to a file in JSON format.</li>
+	<li>Click <img class="img-inline" src="../img/Inspector-DownloadIcon.png" width="25" alt="Inspector Download Icon"> (there is one on each tab) to download the attribute information to a file in JSON format.</li>
 	<li>You can sort on the Attribute ID, Attribute Name, or Last Update columns. Click the associated arrow to select that column for sort (the arrow will turn orange), plus reverse the sort order.</li>
 	<li>You can edit READ/WRITE attribute values in real-time when the device is online; these values are indicated with a pencil icon. Click the pencil to edit and update a value:<br>
 	<img src="../img/Inspector-EditValue.png" alt="Edit Attribute Value" width="400"><br>
@@ -193,7 +193,7 @@ For devices connected via Bluetooth and a hub, the RSSI is primarily a function 
 This section lists the activity (events) between this device and Afero in real-time.
 
 <ul class="af-ul">
-	<li>Filter the log contents by typing a search string in the search box<img class="img-inline" src="../img/Inspector-SearchBox.png" width="150" alt="Inspector Log Search Box">.</li>
+	<li>Filter the log contents by typing a search string in the search box<img class="img-inline" src="../img/Inspector-SearchBox.png" width="200" alt="Inspector Log Search Box">.</li>
 	<li>Clear the search results by clicking<img class="img-inline" src="../img/Inspector-ClearFilterIcon.png" width="25" alt="Inspector Clear Filter Icon">.</li> 
 	<li>Click<img class="img-inline" src="../img/Inspector-DownloadIcon.png" width="25" alt="Inspector Download Icon">to download the log contents to a file. Note that this file also contains the current RSSI connectivity data.</li>
 	<li>Click<img class="img-inline" src="../img/Inspector-ClearLogIcon.png" width="25" alt="Inspector Clear Log Icon">to remove the current log contents.</li>
@@ -255,7 +255,7 @@ This section contains details that you have defined for the device in the Afero 
 
 ## Developer Account Information
 
-To view your account information, click<img src="../img/Inspector-AccountIcon.png" width="25" style="vertical-align:middle;margin:0px 0px;border:none">in the upper-right of the window. Most of the information in this section was provided by you when registering for an Afero developer account:
+To view your account information, click <img src="../img/Inspector-AccountIcon.png" width="25" style="vertical-align:middle;margin:0px 0px;border:none"> in the upper-right of the window. Most of the information in this section was provided by you when registering for an Afero developer account:
 
 <div class="af-table-borders">
 	<table class="af-table-borders">

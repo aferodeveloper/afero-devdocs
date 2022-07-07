@@ -55,7 +55,7 @@ Only assume that `LINKED_TIMESTAMP` is current when the state of ASR transitions
 
 ## Periodic Time-of-Day Attribute Updates
 
-After ASR comes online, you can receive a periodic timestamp update from ASR via attribute. This attribute is sent to the MCU every 60 seconds *starting at the first full minute after link time*. This update is disabled by default but you can enable it for your device Profile using the Afero Profile Editor as follows: on the Attributes Definition window, [MCU Configuration](../AttrDef#ConfigMCU) section, select the RECEIVE UTC TIME checkbox. You must enable this attribute on a per-Profile basis, and the feature requires that your device be running firmware Release 2.0.1 or higher.
+After ASR comes online, you can receive a periodic timestamp update from ASR via attribute. This attribute is sent to the MCU every 60 seconds *starting at the first full minute after link time*. This update is disabled by default but you can enable it for your device Profile using the Afero Profile Editor as follows: on the Attributes Definition window, [Define the MCU Attributes](../AttrDef#define-the-mcu-attributes) section, select the RECEIVE UTC TIME checkbox. You must enable this attribute on a per-Profile basis, and the feature requires that your device be running firmware Release 2.0.1 or higher.
 
 <ul class="af-ul">
 	<li><strong>1201 - ASR_UTC_TIME (signed 32-bit long)</strong>

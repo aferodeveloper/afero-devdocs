@@ -177,8 +177,6 @@ a:not([href]):not([tabindex]):focus
 	outline:0
 }
 
-
-
 kbd,samp
 {
 	font-family:"Consolas", "Courier","Lucida Console", "Roboto Mono", Geneva, monospace;

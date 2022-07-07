@@ -10,11 +10,11 @@ The base URL for the Afero API is **https://api.afero.io**.
 
 ## Security
 
-Afero API is secure. All Afero API requests must be made over SSL, and must be authenticated using an OAuth 2.0 access key. (To read more, go to [OAuth.net documentation](http://oauth.net/documentation/)). This means your data is safe, but also means you must perform a couple of security-related steps when you use the API, described in the sections below.
+Afero API is secure. All Afero API requests must be made over SSL, and must be authenticated using an OAuth 2.0 access key. (To read more, go to <a href="http://oauth.net/documentation/" target="_blank">OAuth.net documentation</a>). This means your data is safe, but also means you must perform a couple of security-related steps when you use the API, described in the sections below.
 
 ### One-Time Setup
 
-Sign in to the Afero Profile Editor and open the VIEW > ACCOUNT INFO window (example shown below). From this Account Information window, you can view your “OAuth Client ID” and “OAuth Client Secret”, which you will need to authenticate requests on behalf of the end-user. These credentials **should not** be shared with untrusted parties!
+Sign in to the Afero Profile Editor and open the <span class="UIText">VIEW > ACCOUNT INFO</span> window (example shown below). From this Account Information window, you can view your “OAuth Client ID” and “OAuth Client Secret”, which you will need to authenticate requests on behalf of the end-user. These credentials **should not** be shared with untrusted parties!
 
 <img src="../img/AccountInfo.png" width="500" style="vertical-align:middle;margin:0px 0px;border:none">
 

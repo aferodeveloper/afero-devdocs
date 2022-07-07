@@ -25,7 +25,7 @@ Your module has a defined amount of memory reserved for both system and develope
 
 <img src="../img/Attribute-RAM-Gauge.png" width="300" style="vertical-align:middle;margin:0px 0px;border:none">
 
-The GREY BAR indicates space used by system attributes. The BLUE BAR indicates space used by developer-defined attributes. Hover over the indicator bar to view actual remaining space, in bytes and percentage. For more details, read [Device Attribute RAM Size](../AttributeRAM).
+The <span class="UIText">GREY BAR</span> indicates space used by system attributes. The <span class="UIText">BLUE BAR</span> indicates space used by developer-defined attributes. Hover over the indicator bar to view actual remaining space, in bytes and percentage. For more details, read [Device Attribute RAM Size](../AttributeRAM).
 
 ### More Attribute Facts
 <ul class="af-ul">
@@ -63,17 +63,17 @@ The GREY BAR indicates space used by system attributes. The BLUE BAR indicates s
 ## Define the GPIO Attributes
 <p>We’ll start by defining the GPIO attributes. Note that not all modules have GPIO pins.</p>
 <ol class="af-ol">
-<li><p>Click <span class="UIText">ATTRIBUTES</span> in the Navigation pane to open the Attribute Definition window. (We’ll talk about the MCU PROTOCOL drop-down menu when we <a href="../AttrDef#define-the-mcu-attributes">define MCU attributes</a>, later.) By default the GPIO attributes appear, ready to be defined:</p>
+<li><p>Click <span class="UIText">ATTRIBUTES</span> in the Navigation pane to open the Attribute Definition window. (We’ll talk about the <span class="UIText">MCU PROTOCOL</span> drop-down menu when we <a href="../AttrDef#define-the-mcu-attributes">define MCU attributes</a>, later.) By default the GPIO attributes appear, ready to be defined:</p>
 <img src="../img/AttributeDefinition.png" width="500" style="vertical-align:middle;margin:0px 0px;border:none">
 </li>
-<li><p>Click an attribute’s <span class="UIText">ON/OFF</span> toggle switch to turn it ON and open the attribute’s definition editor. Depending on the Operation Mode you select for your GPIO pin (INPUT vs. OUTPUT), different options will appear:</p>
+<li><p>Click an attribute’s <span class="UIText">ON/OFF</span> toggle switch to turn it ON and open the attribute’s definition editor. Depending on the Operation Mode you select for your GPIO pin (<span class="UIText">INPUT</span> vs. <span class="UIText">OUTPUT</span>), different options will appear:</p>
 <ul class="af-ul">
 <li><strong>GPIO Input Options</strong><br><img src="../img/GPIO-Attributes-Input.png" width="500" style="vertical-align:middle;margin:0px 0px;border:none"></li>
 <li><strong>GPIO Output Options</strong><br><img src="../img/GPIO-Attributes-Output.png" width="500" style="vertical-align:middle;margin:0px 0px;border:none"></li>
 </ul>
 <div class="af-callout">
 <div class="callout-text">
-<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong> If you turn an attribute OFF, you will lose its current definition. To retain your attribute definition but close that attribute’s editor, click the name of the attribute shown in orange at the top-left of the editor. Save your work at any time by clicking the SAVE button in the upper-right of the window.
+<p><img src="../img/Note.svg" width="15" style="vertical-align:bottom;padding:0"> <strong>NOTE:</strong> If you turn an attribute <span class="UIText">OFF</span>, you will lose its current definition. To retain your attribute definition but close that attribute’s editor, click the name of the attribute shown in orange at the top-left of the editor. Save your work at any time by clicking the SAVE button in the upper-right of the window.
 </div>
 </div>
 </li>
@@ -368,7 +368,7 @@ The GREY BAR indicates space used by system attributes. The BLUE BAR indicates s
 <ol class="af-ol">
 <li>
 <p>Once you’ve clicked <span class="UIText">Attributes</span> in the right-hand navigation bar, you’ll see the <span class="UIText">Define the MCU Attributes</span> window:</p>
-<img class="img-br" src="../img/APE-PotencoConfig.png" alt="Potenco Configuration">
+<img class="img-br" src="../img/APE-PotencoConfig.png" width="300" alt="Potenco Configuration">
 <li>
 <p>In the Supported Network Interfaces pane, select all the network interfaces that your device supports. Select from <span class="UIText">Wi-Fi</span>, <span class="UIText">Ethernet</span>, and <span class="UIText">WAN</span>.</p>
 </li>
@@ -377,7 +377,7 @@ The GREY BAR indicates space used by system attributes. The BLUE BAR indicates s
 </li>
 <li>
 <p>Now you’re ready to add an attribute. Click the <span class="UIText">+Device Attribute</span> button to open the device attribute editor:
-<img class="img-br" src="../img/APE-PotencoAttrEditor.png" alt="Potenco Attribute Editor"></p>
+<img class="img-br" src="../img/APE-PotencoAttrEditor.png" width="500" alt="Potenco Attribute Editor"></p>
 </li>
 <li><p>Complete the fields using the information in the table below:</p>
 <div class="af-table-borders">
@@ -483,7 +483,7 @@ The GREY BAR indicates space used by system attributes. The BLUE BAR indicates s
 </li>				
 <li>
 <p>Now you’re ready to add an MCU attribute. Click the <span class="UIText">+MCU Attribute</span> button to open the MCU attribute definition editor:
-<img class="img-br" src="../img/Define_MCU_Attr.png" alt="MCU Attribute"></p></li>
+<img class="img-br" src="../img/Define_MCU_Attr.png" width="500" alt="MCU Attribute"></p></li>
 <li><p>Complete the fields using the information in the table below:</p>
 <div class="af-table-borders">
 <table>

@@ -22,7 +22,7 @@ Do the following to prepare for publishing:
    
 ### QR Code Generator
 
-It might be convenient to generate a QR code on the fly. This would be helpful, for example, if you soldered your Afero module onto a board and made it inaccessible for subsequent scanning. To use the generator, click the QR CODE GENERATOR button. In the window that appears, type the Association ID, click GENERATE, and your code will appear. To save the code as a Scalable Vector Graphics (SVG) file, click the SAVE AS SVG button. To generate your device’s QR code, you can also click the little QR code icon just to the right of your Association ID in the Developer Device table.
+It might be convenient to generate a QR code on the fly. This would be helpful, for example, if you soldered your Afero module onto a board and made it inaccessible for subsequent scanning. To use the generator, click the <span class="UIText">QR CODE GENERATOR</span> button. In the window that appears, type the Association ID, click <span class="UIText">GENERATE</span>, and your code will appear. To save the code as a Scalable Vector Graphics (SVG) file, click the <span class="UIText">SAVE AS SVG</span> button. To generate your device’s QR code, you can also click the little QR code icon just to the right of your Association ID in the Developer Device table.
 
 ### Developer Devices
 
@@ -34,7 +34,7 @@ For each device, you’ll see:
 		<tbody>
 			<tr>
 				<td>Checkbox</td>
-				<td><p>Use the checkbox(es) in the first column to select the device(s) to which you want to publish the active Profile. If you see a red exclamation mark<img class="img-inline" src="../img/RedBang.png" alt="Exclamation Mark">(as shown above), it could mean:</p>
+				<td><p>Use the checkbox(es) in the first column to select the device(s) to which you want to publish the active Profile. If you see a red exclamation mark <img class="img-inline" src="../img/RedBang.png" alt="Exclamation Mark"> (as shown above), it could mean:</p>
 				<ul class="af-ul">
 					<li>The Module Type is not compatible with the Module Type of the active Profile.</li>
 					<li>The device has a firmware update pending. Cycle the power on the device to trigger the firmware update. You’ll be able to see the update progress in the mobile app.</li>

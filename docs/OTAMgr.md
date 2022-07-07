@@ -77,7 +77,7 @@ After the first sign-in wizard flow, you will be able to create Image Types from
 If you want to change the name or description of an existing Image Type, you can do this from the main window. Note that once you’ve created an Image Type, that type is assigned an ID that does not change even when you edit the name or description. So, if what you want is the underlying category of the image to be different, create a new Image Type rather than changing the name on an existing type.
 
 <ol class="af-ol">
-	<li>From the OTA Manager main window on the left, hover your cursor over the pencil icon<img class="img-inline" src="../img/EditIcon.png" style="vertical-align:middle" width="25">to the left of an existing Image Type. The option to <span class="UIText">Edit Image Type</span> will appear. Select the icon.</li>
+	<li>From the OTA Manager main window on the left, hover your cursor over the pencil icon <img class="img-inline" src="../img/EditIcon.png" style="vertical-align:middle" width="20"> to the left of an existing Image Type. The option to <span class="UIText">Edit Image Type</span> will appear. Select the icon.</li>
 	<li>The Edit Firmware Image Type window will appear. Make your edits and <span class="UIText">Save</span>.</li>
 </ol>
 

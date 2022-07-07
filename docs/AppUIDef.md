@@ -180,7 +180,7 @@ Use this window to define which attribute option(s) will be displayed using whic
 			</tbody>
 		</table>
 	</div></li>
-	<li><p>Use the following guidelines when selecting and defining a control. Note that if you have not defined attribute options for a given attribute, that attribute won’t be available in the <span class="UIText">Attribute Option</span> drop-down menu. You must do that by selecting the <span class="UIText">+Attribute Option</span> button in the right-hand pane. Instructions for completing those fields are described above in <a id="1557952685.46" href="#Options">Define the Attribute Options</a>.</p>
+	<li><p>Use the following guidelines when selecting and defining a control. Note that if you have not defined attribute options for a given attribute, that attribute won’t be available in the <span class="UIText">Attribute Option</span> drop-down menu. You must do that by selecting the <span class="UIText">+Attribute Option</span> button in the right-hand pane. Instructions for completing those fields are described above in <a id="1557952685.46" href="#define-the-attribute-options">Define the Attribute Options</a>.</p>
 		<p id="MenuControl"><span class="UITextLarge">Menu</span> - Use when the function has a small number of discrete value states and when each value state is short (can only be one line of text). When you select this control you must define the fields described below:</p>
 		<div class="af-table-borders">
 			<table>

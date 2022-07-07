@@ -35,7 +35,7 @@ Categorizing firmware into types allows for better management of version numbers
 
 Version numbers are reported through the attribute system and usually map directly to a firmware type by simply adding 2000 to the firmware type value. For example, the APPLICATION firmware type has the type value 3. The corresponding version attribute in the device Profile has the ID 2003. Similarly, for MCU firmware types the firmware type 105 would be represented and report its version numbers through attribute ID 2105.
 
-Integer numbers are great for machines to process, but they can be confusing when managing software releases. That is where the version string property of firmware image records comes into play. This property allows you to set more user-friendly version information that aligns with the versioning scheme of your choice. For example, Afero follows the [Semantic Versioning 2.0.0](https://semver.org/) schemes for its software releases. However, you can pick whatever scheme you want.
+Integer numbers are great for machines to process, but they can be confusing when managing software releases. That is where the version string property of firmware image records comes into play. This property allows you to set more user-friendly version information that aligns with the versioning scheme of your choice. For example, Afero follows the <a href="https://semver.org/" target="_blank">Semantic Versioning 2.0.0</a> schemes for its software releases. However, you can pick whatever scheme you want.
 
 Below are two popular questions & answers about version numbers:
 

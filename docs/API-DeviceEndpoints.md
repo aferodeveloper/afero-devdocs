@@ -2,9 +2,9 @@
 
 The following functions are being exposed via the RESTful API:
 
-- [List Current Device(s) and State Information](../API-DeviceEndpoints#CurrentDevState)
-- [Execute an Action on a Device](../API-DeviceEndpoints#DevAction)
-- [Update the Friendly Name of a Device](../API-DeviceEndpoints#NameUpdate)
+- [List Current Device(s) and State Information](../API-DeviceEndpoints#list-current-devices-and-state-information)
+- [Execute an Action on a Device](../API-DeviceEndpoints#execute-an-action-on-a-device)
+- [Update the Friendly Name of a Device](../API-DeviceEndpoints#update-the-friendly-name-of-a-device)
 
 <div class="af-callout">
 <div class="callout-text">

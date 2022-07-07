@@ -27,11 +27,11 @@ To build or prototype Afero powered, connected products, you can choose from the
 <li>An Afero Secure Radio module (ASR-1 or ASR-2KL), to be directly integrated into a product and used either standalone (multiple I/O ports provided) or in conjunction with a host microcontroller.</li>
 </ul>
 
-You can order Afero development boards and tools using the vendors and part numbers listed on the [Afero Hardware Products](../Hardware) page.
+<!--You can order Afero development boards and tools using the vendors and part numbers listed on the [Afero Hardware Products](../Hardware) page.-->
 
 The Afero Secure Radio (ASR) can be embedded in new and existing product designs. It comes programmed with authentication, encryption, and connection management software, ensuring a reliable connection to the Afero Cloud.
 
-Read more about our development tools in the [Profile Editor User Guide](../Projects), the [Inspector User Guide](../Inspector), the [Console User Guide](../Console), and [Afero Cloud API](../CloudAPIs).
+Read more about our development tools in the [Profile Editor User Guide](../Projects), the [Inspector User Guide](../Inspector), the [Console User Guide](../Console), and [Afero Cloud APIs](../CloudAPIs).
 
 ## Your Connected Product
 

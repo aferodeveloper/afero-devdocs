@@ -153,7 +153,7 @@ Afero provides a Debian Repository for the packages we publish. If you add our r
  $ sudo dpkg -i afero-ble*.deb
 </pre>
 	</li>
-	<li><p>You will be prompted to accept the <a id="1518220410.77" href="<%= appContext.config.urls.corpsite %>/legal#developer" target="_blank">Afero Developer Terms of Service</a>, which is the license that covers your use of the Afero ble and hub packages.</p>
+	<li><p>You will be prompted to accept the <a id="1518220410.68" href="https://www.afero.io/html/home/privacy.html" target="_blank">Afero Developer Terms of Service</a> (scroll down on this page to find the Developer Terms), which is the license that covers your use of the Afero ble and hub packages.</p>
 <pre>
  $ sudo dpkg -i afero-hub*.deb</pre>
 	</li>
@@ -252,7 +252,7 @@ $ sudo apt-get remove afero-hub afero-ble</pre>
 	</li>
 	<li><p>To remove the software along with your associated configuration, first remove the virtual-hub device from your Afero account via the mobile app, then run:</p>
 <pre>
-$ sudo apt-get remove --purge afero-hub afero-ble</pre>
+ $ sudo apt-get remove --purge afero-hub afero-ble</pre>
 	</li>
 	<li>If you installed the packages manually (rather than through <code>apt-get</code>), do one of the following.
 		<ul class="af-ul-2">
@@ -274,9 +274,8 @@ $ sudo apt-get remove --purge afero-hub afero-ble</pre>
 	</li>
 </ul>
 
-
 ## Get Support
 
-Support for the Afero Hub Software is provided through the project's [GitHub Issue Tracker](https://github.com/aferodeveloper/developerhub/issues). More sensitive questions (e.g., concerning your credentials) can be sent to [developer@afero.io](mailto:developer@afero.io).
+Support for the Afero Hub Software is provided through the project's <a id="1574355920.01" href="https://github.com/aferodeveloper/developerhub/issues" target="_blank">GitHub Issue Tracker</a>. More sensitive questions (e.g., concerning your credentials) can be sent to <a id="1501865590.75" href="mailto:developer@afero.io" target="_blank">developer@afero.io</a>.
 
 The Afero Hub Software daemons write information to `/var/log/syslog` so if you have any issues with the operation of the Hub Software please be sure to save a copy of `/var/log/syslog` before you contact us.
