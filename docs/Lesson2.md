@@ -9,7 +9,7 @@ Before you start, we assume that you’ve already run through [Tutorial 1: Linki
 </div>
 
 <ol class="af-ol">
-	<li>If you haven’t already, download the Afero Profile Editor, for <a id="1501883700.09" href="http://cdn.afero.io/latest-ape/win" target="_blank">Windows</a> or <a id="1501883699.99" href="http://cdn.afero.io/latest-ape/mac" target="_blank">macOS</a>. Open and sign in to the Profile Editor. The Startup window appears:<br><img src="../img/APE-StartScreen-Tut.png" width="600" alt="Startup Window"></li>
+	<li>If you haven’t already, download the Afero Profile Editor, for <a id="1501883700.09" href="https://cdn.afero.io/latest-ape/win" target="_blank">Windows</a> or <a href="https://cdn.afero.io/latest-ape/mac" target="_blank">macOS</a>. Open and sign in to the Profile Editor. The Startup window appears:<br><img src="../img/APE-StartScreen-Tut.png" width="600" alt="Startup Window"></li>
 	<li>For the purposes of this tutorial, we’re going to save you some typing by providing a pre-configured Modulo project.
 		<ol class="af-ol-lower-alpha">
 			<li>First, you will need the appropriate Sample Project. The easiest way to get this is from the Profile Editor system <span class="UIText">Tools</span> menu. From this menu, select <span class="UIText">Sample Projects &gt; <a id="1507320504.19" href="http://github.com/aferodeveloper/APE-Project-Profiles" target="_blank">GitHub Repository</a></span>. (All Modulo projects, and more, are available from this GitHub repository.)</li>
