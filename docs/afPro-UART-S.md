@@ -143,7 +143,7 @@ ASR notifies MCU of Afero System Attribute changes.
 					&bull;SS = 0x00<br>
 					&bull;UU = Ignore<br>
 					&bull;NNNN = Length of Attribute Data</td>
-				<td>See <a id="1543364174.99" href="#AttrData">Attribute Data</a> below for details of "TTTT" and "NNNN".</td>
+				<td>See <a href="#attribute-data">Attribute Data</a> below for details of "TTTT" and "NNNN".</td>
 			</tr>
 			<tr>
 				<td>8</td>
@@ -151,7 +151,7 @@ ASR notifies MCU of Afero System Attribute changes.
 				<td></td>
 				<td>Set Attribute Data</td>
 				<td>NNNN Bytes of Attribute Data</td>
-				<td>See <a id="1543364175.09" href="#AttrData">Attribute Data</a> below for details of "V&hellip;".</td>
+				<td>See <a id="1543364175.09" href="#attribute-data">Attribute Data</a> below for details of "V&hellip;".</td>
 			</tr>
 			<tr>
 				<td>9</td>
