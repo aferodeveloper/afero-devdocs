@@ -85,7 +85,7 @@ ASR notifies MCU of Afero System Attribute changes.
 				<td>1</td>
 				<td>0x32</td>
 				<td></td>
-				<td><%- locale.OurChipShort %> Ready</td>
+				<td>ASR Ready</td>
 				<td></td>
 				<td>ASR sends ASR Ready to MCU when ASR has bytes to send. 0x32 sent every one second until MCU responds.</td>
 			</tr>
@@ -102,7 +102,7 @@ ASR notifies MCU of Afero System Attribute changes.
 				<td>0x300000YYYYZZ</td>
 				<td></td>
 				<td>Sync Response</td>
-				<td>&bull;YYYY (# of bytes of data ASR will send) = LLLL + 2 (for value of LLLL, see row 7 below)<br>
+				<td>&bull; YYYY (# of bytes of data ASR will send) = LLLL + 2 (for value of LLLL, see row 7 below)<br>
 					&bull;ZZ = Checksum</td>
 				<td></td>
 			</tr>
