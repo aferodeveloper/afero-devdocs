@@ -32,7 +32,7 @@ void loop() {
 - **IMPORTANT!** Calling `af_lib_loop()` from within the `attrEventCallback` callback is NOT supported and will likely result in undesired behavior.
 - When afLib is finished with a task, you’ll get an event via `attrEventCallback()`. Within that callback, you’ll want to listen for any eventTypes that you need. See [attrEventCallback()](../afLibCallbacks#attreventcallback) for information on handling this callback.
 - Make sure afLib has time to complete its work. When doing multiple `af_lib_set_attribute*()` calls, ideally wait for `attrEventCallback` before doing additional writes.
-- If you write faster than afLib can process, the queue may fill up, and the return code will be:
+- If you write faster than afLib can process, the queue may fill up, and the return code will be:<br>
   `AF_ERROR_QUEUE_OVERFLOW  -4 // Queue is full`
 - Always check the [return code](../afLibErrors) from afLib calls. Check for return of AF_SUCCESS.
 

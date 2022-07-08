@@ -2,7 +2,7 @@
 
 This page describes a single path through the UART protocol, the minimum required for an MCU to communicate over UART. The full explanation is covered in [afPro UART Protocol - How It Works](../afPro-UART) and includes all the corner cases.
 
-The high-level interactions between the MCU and ASR are outlined below in [Protocol Flow](../afPro-UART-S/#protocol-flow). The details of each interaction are described in the second section, [Procedure Descriptions](../afPro-UART-S/#protocol-procedures). The last section, [Attribute Data](../afPro-UART-S/#attribute-data), provides a handy worksheet for defining and mapping attributes to protocol messages, illustrated with our smart toaster oven data model from [Great Attribute Modeling](../AttrModel).
+The high-level interactions between the MCU and ASR are outlined below in [Protocol Flow](../afPro-UART-S/#protocol-flow). The details of each interaction are described in the second section, [Protocol Procedures](../afPro-UART-S/#protocol-procedures). The last section, [Attribute Data](../afPro-UART-S/#attribute-data), provides a handy worksheet for defining and mapping attributes to protocol messages, illustrated with our smart toaster oven data model from [Great Attribute Modeling](../AttrModel).
 
 ## Protocol Flow
 
@@ -51,38 +51,124 @@ This procedure is only performed during the boot process.
 
 ### ASR to MCU Notify Procedure
 
-GG=0x0D & TTTT=0xF5FD; if TTTT!=0xF5FD, then discard
+**GG=0x0D & TTTT=0xF5FD; if TTTT!=0xF5FD, then discard**
 
 ASR notifies MCU of Afero System Attribute changes.
 
-<mark>This example is designed to demonstrate basic principles while keeping things simple. The suggestion “if TTTT!=0xF5FD, then discard” is based on that idea of simplicity, but deserves some explanation, below.
+<div class="af-callout">
+	<div class="callout-text">
+	<p class="callout-br"><img src="../img/Note.svg" width="17" style="vertical-align:bottom;padding:0">&nbsp;&nbsp;<strong>NOTE:</strong>  This example is designed to demonstrate basic principles while keeping things simple. The suggestion “if TTTT!=0xF5FD, then discard” is based on that idea of simplicity, but deserves some explanation, below.</p>
+	<p class="callout-br">The attribute ID 0xF5FD translates to 65013 decimal… which is ASR_SYSTEM_STATE. Even a simple application must watch for messages with this attribute ID, for a couple reasons:
+	<ul class="af-ul">
+		<li>After a reboot, an MCU must wait for an ASR_SYSTEM_STATE message with value AF_MODULE_STATE_INITIALIZED before it is allowed to begin sending afLib commands.</li>
+		<li>At any time, if the device receives an Over-The-Air application update, MCU will receive an ASR_SYSTEM_STATE with value AF_MODULE_STATE_UPDATE_READY when the update has been completely received. At that point, the MCU should trigger a reboot of ASR, to install the new software.</li>
+	</ul></p>
+	<p>So, in the case of a very simple application (like this example), your code could choose to ignore ASR-to-MCU Notifications EXCEPT those where attribute ID is 65013. Those notifications must be handled, even by simple applications.</p>
 
-<mark>The attribute ID 0xF5FD translates to 65013 decimal… which is ASR_SYSTEM_STATE. Even a simple application must watch for messages with this attribute ID, for a couple reasons:
-
-- <mark>After a reboot, an MCU must wait for an ASR_SYSTEM_STATE message with value AF_MODULE_STATE_INITIALIZED before it is allowed to begin sending afLib commands.
-- <mark>At any time, if the device receives an Over-The-Air application update, MCU will receive an ASR_SYSTEM_STATE with value AF_MODULE_STATE_UPDATE_READY when the update has been completely received. At that point, the MCU should trigger a reboot of ASR, to install the new software.
-
-<mark>So, in the case of a very simple application (like this example), your code could choose to ignore ASR-to-MCU Notifications EXCEPT those where attribute ID is 65013. Those notifications must be handled, even by simple applications.</mark>
+	</div>
+</div>
+<br>
 
 
+<div class="af-table-borders">
+	<table>
+		<thead>
+			<th>Row</th>
+			<th>From ASR</th>
+			<th>From MCU</th>
+			<th>Function</th>
+			<th>Data Format</th>
+			<th>Comments</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>0x32</td>
+				<td></td>
+				<td><%- locale.OurChipShort %> Ready</td>
+				<td></td>
+				<td>ASR sends ASR Ready to MCU when ASR has bytes to send. 0x32 sent every one second until MCU responds.</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td></td>
+				<td>0x300000000030</td>
+				<td>Sync Request</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>0x300000YYYYZZ</td>
+				<td></td>
+				<td>Sync Response</td>
+				<td>&bull;YYYY (# of bytes of data ASR will send) = LLLL + 2 (for value of LLLL, see row 7 below)<br>
+					&bull;ZZ = Checksum</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>0x32</td>
+				<td></td>
+				<td>Sync Response Terminator</td>
+				<td></td>
+				<td>0x32 sent every one second until MCU responds.</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td></td>
+				<td>0x310000YYYYZZ</td>
+				<td>Sync Acknowledgement</td>
+				<td>&bull;YYYY= YYYY from Sync Response (above)<br>
+					&bull;ZZ = Checksum</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>0x32</td>
+				<td></td>
+				<td>Sync Complete</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>LLLLGGRRTTTTSSUUNNNN</td>
+				<td></td>
+				<td>Update Attribute Header</td>
+				<td>&bull;LLLL = NNNN + 8<br>
+					&bull;GG = 0x0D<br>
+					&bull;RR = Ignore<br>
+					&bull;TTTT = Attribute ID (if !=0xF5FD, then discard)<br>
+					&bull;SS = 0x00<br>
+					&bull;UU = Ignore<br>
+					&bull;NNNN = Length of Attribute Data</td>
+				<td>See <a id="1543364174.99" href="#AttrData">Attribute Data</a> below for details of "TTTT" and "NNNN".</td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>V&hellip;</td>
+				<td></td>
+				<td>Set Attribute Data</td>
+				<td>NNNN Bytes of Attribute Data</td>
+				<td>See <a id="1543364175.09" href="#AttrData">Attribute Data</a> below for details of "V&hellip;".</td>
+			</tr>
+			<tr>
+				<td>9</td>
+				<td>0x32</td>
+				<td></td>
+				<td>Procedure Complete</td>
+				<td></td>
+				<td>0x32 sent every five seconds until MCU sends next message.</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
 
-
-
-| ROW  | FROM ASR             | FROM MCU       | FUNCTION                 | DATA FORMAT                                                  | COMMENTS                                                     |
-| :--- | :------------------- | :------------- | :----------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| 1    | 0x32                 |                | ASR Ready                |                                                              | ASR sends ASR Ready to MCU when ASR has bytes to send. 0x32 sent every one second until MCU responds. |
-| 2    |                      | 0x300000000030 | Sync Request             |                                                              |                                                              |
-| 3    | 0x300000YYYYZZ       |                | Sync Response            | <ul><li>YYYY (# of bytes of data ASR will send) = LLLL + 2 (for value of LLLL, see row 7 below)</li><li>ZZ = Checksum</li></ul> |                                                              |
-| 4    | 0x32                 |                | Sync Response Terminator |                                                              | 0x32 sent every one second until MCU responds.               |
-| 5    |                      | 0x310000YYYYZZ | Sync Acknowledgement     | <ul><li>YYYY= YYYY from Sync Response (above)</li><li>ZZ = Checksum</li></ul>        |                                                              |
-| 6    | 0x32                 |                | Sync Complete            |                                                              |                                                              |
-| 7    | LLLLGGRRTTTTSSUUNNNN |                | Update Attribute Header  | <ul><li>LLLL = NNNN + 8</li><li>GG = 0x0D</li><li>RR = Ignore</li><li>TTTT = Attribute ID (if !=0xF5FD, then discard)</li><li>SS = 0x00</li><li>UU = Ignore</li><li>NNNN = Length of Attribute Data</li></ul> | See [Attribute Data](../afPro-UART-S/#attribute-data) below for details of "TTTT" and "NNNN". |
-| 8    | V…                   |                | Set Attribute Data       | NNNN Bytes of Attribute Data                                 | See [Attribute Data](../afPro-UART-S/#attribute-data) below for details of "V…". |
-| 9    | 0x32                 |                | Procedure Complete       |                                                              | 0x32 sent every five seconds until MCU sends next message.   |
 
 ### ASR to MCU Command Procedure
 
-GG=0x0B
+**GG=0x0B**
 
 ASR sends command to MCU, MCU acknowledges that command was successful (SS=0x00), or failed (SS=0x05).
 

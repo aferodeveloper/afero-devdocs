@@ -259,17 +259,17 @@ Each Afero device will have a number of attributes associated with it. Attribute
 </tr>
 <tr>
 <td>65013</td>
-<td>ASR State (<code>AF_SYSTEM_ASR_STATE</code>)</td>
+<td>ASR State (AF_SYSTEM_ASR_STATE)</td>
 <td>SINT8</td>
 <td>This byte will hold ASR state information, including:
 <ul class="af-ul no-bullet">
-<li>0 = Rebooted (<code>AF_MODULE_STATE_REBOOTED</code>)</li>
-<li>1 = Linked (<code>AF_MODULE_STATE_LINKED</code>)</li>
-<li>2 = Updating (<code>AF_MODULE_STATE_UPDATING</code>)</li>
-<li>3 = Update ready to apply (reboot requested) (<code>AF_MODULE_STATE_UPDATE_READY</code>)</li>
-<li>4 = Initialized (<code>AF_MODULE_STATE_INITIALIZED</code>)</li>
-<li>5 = Re-linked (<code>AF_MODULE_STATE_RELINKED</code>)</li>
-<li>6 = Factory Reset (<code>MODULE_STATE_FACTORY_RESET</code>)</li>
+<li>0 = Rebooted (AF_MODULE_STATE_REBOOTED)</li>
+<li>1 = Linked (AF_MODULE_STATE_LINKED)</li>
+<li>2 = Updating (AF_MODULE_STATE_UPDATING)</li>
+<li>3 = Update ready to apply (reboot requested) (AF_MODULE_STATE_UPDATE_READY)</li>
+<li>4 = Initialized (AF_MODULE_STATE_INITIALIZED)</li>
+<li>5 = Re-linked (AF_MODULE_STATE_RELINKED)</li>
+<li>6 = Factory Reset (MODULE_STATE_FACTORY_RESET)</li>
 </ul>
 </td>
 </tr>
@@ -278,7 +278,7 @@ Each Afero device will have a number of attributes associated with it. Attribute
 <td>SINT8</td>
 <td><p><em>Applies to ASR-1 Only</em></p>
 <p>This value will be updated by ASR-1 when the battery gets low. It will track the battery level as:</p>
-<ul class="af-ul">
+<ul class="af-ul no-bullet">
 <li>0: voltage &gt;2.7V</li>
 <li>1: 2.5V &lt;voltage&gt; 2.7V</li>
 <li>2: 2.3V &lt;voltage&gt; 2.5V</li>
@@ -352,7 +352,7 @@ Each Afero device will have a number of attributes associated with it. Attribute
 <div class="af-table-nostyle">
 <table>
 <tr class="underline">
-<td><strong>Bit Index</strong></td>
+<td><strong>Bit&nbsp;Index</strong></td>
 <td><strong>Name</strong></td>
 <td><strong>Description</strong></td>
 </tr>
@@ -419,7 +419,7 @@ Each Afero device will have a number of attributes associated with it. Attribute
 <td>This is an optional list of queued attribute configs used by the attribute store to queue a given attribute instead of overwriting when offline. An individual config is five (5) bytes long and has the following format: <code>[attribute][queue policy][queue size]</code>, where:
 <ul class="af-ul">
 <li>[attribute] (2 bytes): Attribute to which the following rate limits apply.</li>
-<li>[queue policy] (1 byte): Queue order and replacement policy. (See <a id="1555364880.52" href="/AttrDef#queuepolicy">All About Queuing</a>.)</li>
+<li>[queue policy] (1 byte): Queue order and replacement policy. (See <a id="1555364880.52" href="/AttrDef#all-about-queuing">All About Queuing</a>.)</li>
 <li>[queue size] (2 bytes): Maximum number of elements.</li>
 </ul>
 </tr>
