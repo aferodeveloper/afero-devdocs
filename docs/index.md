@@ -36,3 +36,5 @@ We’ve built Afero to be accessible to a broad range of developers, from novice
 - Create a standalone developer hub using the [Developer Hub](/StandaloneHub) setup instructions.
 - Access cloud functions using our [Cloud APIs](/CloudAPIs).
 - Monitor and evaluate your device deployments and usage with the [Afero Console](/Console).
+
+.
